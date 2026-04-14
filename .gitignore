@@ -1,0 +1,28 @@
+# Obsidian 系统文件夹
+.obsidian/
+.trash/
+
+# macOS 系统文件
+.DS_Store
+
+# Node.js（如果使用的话）
+node_modules/
+
+# 编辑器临时文件
+*.swp
+*.swo
+*~
+
+
+# 环境变量文件
+.env
+.env.local
+
+# 排除所有文件夹（除了你想要的）
+/*
+!.gitignore
+!.git/
+
+# 只保留这些文件夹
+!/002-学习笔记/
+!/004-Templates/
