@@ -42,13 +42,7 @@ jobs:
           elif [ -f "000-Dashboard.md" ]; then
             cp "000-Dashboard.md" "quartz/content/index.md"
           else
-            cat > "quartz/content/index.md" << 'EOF'
-            ---
-            title: 首页
-            ---
-
-            欢迎来到我的学习笔记网站。
-            EOF
+            printf '%s\n' '---' 'title: 首页' '---' '' '欢迎来到我的学习笔记网站。' > "quartz/content/index.md"
           fi
 
       - name: Install dependencies
