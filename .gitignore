@@ -25,7 +25,7 @@ node_modules/
 
 # 只保留这些文件夹
 !/002-学习笔记/
-!/004-Templates/
+!/003-Attachments/
 !/quartz/
 !/.github/
 !/.github/workflows/
