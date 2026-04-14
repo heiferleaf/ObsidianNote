@@ -53,8 +53,11 @@ jobs:
           find quartz/public -name 'feed.rss' -delete 2>/dev/null || true
           find quartz/public -name '*.rss' -delete 2>/dev/null || true
           find quartz/public -type d \( -name '*练习*' -o -name '*作业*' \) -exec rm -rf {} + 2>/dev/null || true
-          find quartz/public -type f -name '*.excalidraw.md' -delete 2>/dev/null || true
-          if [ ! -f quartz/public/index.html ]; then echo "ERROR: index.html not found"; exit 1; fi
+          find quartz/public -type f -name '*.excalidraw.md' -delete 2>/dev/null || true          
+          # 创建 .nojekyll 文件禁用 Jekyll 处理
+          touch quartz/public/.nojekyll
+          
+          # 验证首页存在          if [ ! -f quartz/public/index.html ]; then echo "ERROR: index.html not found"; exit 1; fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
