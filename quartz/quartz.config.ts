@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "zh-CN",
-    baseUrl: "heiferleaf.github.io/ObsidianNote",
+    baseUrl: "heiferleaf.github.io/ObsidianNote/",
     ignorePatterns: ["private", ".obsidian"],
     defaultDateType: "modified",
     theme: {
