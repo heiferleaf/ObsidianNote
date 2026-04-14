@@ -49,6 +49,9 @@ jobs:
         working-directory: quartz
         run: npx quartz build
 
+      - name: Clean up RSS feed
+        run: rm -f quartz/public/feed.xml quartz/public/feed.rss
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
