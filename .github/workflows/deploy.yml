@@ -33,7 +33,7 @@ jobs:
         run: |
           rm -rf quartz/content/*
           cp -a 002-学习笔记 quartz/content/
-          cp -a 004-Templates quartz/content/
+          cp -a 003-Attachments quartz/content/
 
       - name: Install dependencies
         working-directory: quartz
