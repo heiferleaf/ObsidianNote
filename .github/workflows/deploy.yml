@@ -31,18 +31,11 @@ jobs:
       - name: Sync notes into Quartz content
         shell: bash
         run: |
-          # Remove only the folders we'll replace, to preserve index.md
-          rm -rf quartz/content/002-学习笔记 quartz/content/003-Attachments
-          
-          # Sync fresh copies
+          rm -rf quartz/content/*
+          mkdir -p quartz/content
           cp -a 002-学习笔记 quartz/content/
           cp -a 003-Attachments quartz/content/
-
-          # Exclude practice/homework folders from published notes
-          find quartz/content/002-学习笔记 -type d \( -name '*练习*' -o -name '*作业*' \) -delete
-
-          # Keep attachment images, drop Excalidraw markdown source notes from published content
-          find quartz/content/003-Attachments -type f -name '*.excalidraw.md' -delete
+          cp index.md quartz/content/ 2>/dev/null || true
 
       - name: Install dependencies
         working-directory: quartz
@@ -52,8 +45,11 @@ jobs:
         working-directory: quartz
         run: npx quartz build
 
-      - name: Clean up RSS feed
-        run: rm -f quartz/public/feed.xml quartz/public/feed.rss
+      - name: Clean up
+        run: |
+          rm -f quartz/public/feed.xml quartz/public/feed.rss
+          find quartz/public -type d \( -name '*练习*' -o -name '*作业*' \) -exec rm -rf {} + 2>/dev/null || true
+          find quartz/public -type f -name '*.excalidraw.md' -delete 2>/dev/null || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
