@@ -31,9 +31,22 @@ jobs:
       - name: Sync notes into Quartz content
         shell: bash
         run: |
+          # Preserve index.md if it exists
+          INDEX_BACKUP=""
+          if [ -f "quartz/content/index.md" ]; then
+            INDEX_BACKUP=$(mktemp)
+            cp quartz/content/index.md "$INDEX_BACKUP"
+          fi
+
           rm -rf quartz/content/*
           cp -a 002-学习笔记 quartz/content/
           cp -a 003-Attachments quartz/content/
+
+          # Restore index.md
+          if [ -n "$INDEX_BACKUP" ] && [ -f "$INDEX_BACKUP" ]; then
+            cp "$INDEX_BACKUP" quartz/content/index.md
+            rm "$INDEX_BACKUP"
+          fi
 
           # Exclude practice/homework folders from published notes
           find quartz/content/002-学习笔记 -type d \( -name '*练习*' -o -name '*作业*' \) -delete
