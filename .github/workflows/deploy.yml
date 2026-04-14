@@ -33,9 +33,23 @@ jobs:
         run: |
           rm -rf quartz/content/*
           mkdir -p quartz/content
-          cp -a 002-学习笔记 quartz/content/
-          cp -a 003-Attachments quartz/content/
-          cp index.md quartz/content/ 2>/dev/null || true
+          cp -a "002-学习笔记" "quartz/content/"
+          cp -a "003-Attachments" "quartz/content/"
+
+          # Ensure home page exists for Quartz deployments.
+          if [ -f "index.md" ]; then
+            cp "index.md" "quartz/content/index.md"
+          elif [ -f "000-Dashboard.md" ]; then
+            cp "000-Dashboard.md" "quartz/content/index.md"
+          else
+            cat > "quartz/content/index.md" << 'EOF'
+            ---
+            title: 首页
+            ---
+
+            欢迎来到我的学习笔记网站。
+            EOF
+          fi
 
       - name: Install dependencies
         working-directory: quartz
@@ -43,7 +57,7 @@ jobs:
 
       - name: Build Quartz
         working-directory: quartz
-        run: npx quartz build
+        run: node ./quartz/bootstrap-cli.mjs build
 
       - name: Clean up generated files
         run: |
@@ -56,8 +70,15 @@ jobs:
           find quartz/public -type f -name '*.excalidraw.md' -delete 2>/dev/null || true          
           # 创建 .nojekyll 文件禁用 Jekyll 处理
           touch quartz/public/.nojekyll
-          
-          # 验证首页存在          if [ ! -f quartz/public/index.html ]; then echo "ERROR: index.html not found"; exit 1; fi
+
+          # 验证首页存在
+          if [ ! -f quartz/public/index.html ]; then
+            echo "ERROR: index.html not found"
+            exit 1
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
