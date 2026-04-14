@@ -36,7 +36,7 @@ jobs:
           cp -a 003-Attachments quartz/content/
 
           # Exclude practice/homework folders from published notes
-          find quartz/content/002-学习笔记 -type d \( -name '*练习*' -o -name '*作业*' \) -prune -exec rm -rf '{}' +
+          find quartz/content/002-学习笔记 -type d \( -name '*练习*' -o -name '*作业*' \) -delete
 
           # Keep attachment images, drop Excalidraw markdown source notes from published content
           find quartz/content/003-Attachments -type f -name '*.excalidraw.md' -delete
