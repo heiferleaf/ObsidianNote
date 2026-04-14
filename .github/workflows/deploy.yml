@@ -45,11 +45,16 @@ jobs:
         working-directory: quartz
         run: npx quartz build
 
-      - name: Clean up
+      - name: Clean up generated files
         run: |
-          rm -f quartz/public/feed.xml quartz/public/feed.rss
+          # 删除所有 RSS/Feed 文件
+          find quartz/public -name 'index.xml' -delete 2>/dev/null || true
+          find quartz/public -name 'feed.xml' -delete 2>/dev/null || true
+          find quartz/public -name 'feed.rss' -delete 2>/dev/null || true
+          find quartz/public -name '*.rss' -delete 2>/dev/null || true
           find quartz/public -type d \( -name '*练习*' -o -name '*作业*' \) -exec rm -rf {} + 2>/dev/null || true
           find quartz/public -type f -name '*.excalidraw.md' -delete 2>/dev/null || true
+          if [ ! -f quartz/public/index.html ]; then echo "ERROR: index.html not found"; exit 1; fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

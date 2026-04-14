@@ -22,12 +22,20 @@ node_modules/
 /*
 !.gitignore
 !.git/
+!index.md
 
 # 只保留这些文件夹
 !/002-学习笔记/
 !/003-Attachments/
 !/quartz/
 !/.github/
+
+# quartz 生成的临时文件
+quartz/node_modules/
+quartz/public/
+quartz/.next/
+quartz/dist/
+quartz/*.cache
 !/.github/workflows/
 !/.github/workflows/*.yml
 !/.github/workflows/*.yaml
