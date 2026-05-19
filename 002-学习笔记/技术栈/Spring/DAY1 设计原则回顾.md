@@ -1,7 +1,7 @@
 ---
 title: DAY1 设计原则回顾
 created: 2026-01-27
-modified: 2026-01-29
+modified: 2026-04-23
 tags:
   - 技术栈
 subject: Spring
@@ -60,11 +60,10 @@ subject: Spring
 ```
 
 反编译得到的代码
-- 类加载的时候，会把需要代理的方法，包括从 `Object` 类继承的
+- 类加载的时候，会把被代理实现接口的方法，以及从 `Object` 类继承的
 	- `toString`
 	- `hashCode`
 	- `equals`
-	以及实现接口的多态方法加载
 - 代理类对象构建的时候，会将生成代理类传入的 `InvocationHandler` 对象传入构造函数，初始化 `Proxy` 父类的参数 `h`
 - 在使用代理类对象调用方法的时候，内部会调用 `h` 来 `invoke`
 - `invoke` 的逻辑是在写代理类的时候，指定的

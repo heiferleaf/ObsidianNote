@@ -1,6 +1,6 @@
 ---
 created: 2026-02-08
-modified: 2026-02-10
+modified: 2026-04-23
 ---
 
 ## BeanFactory 提供的获取bean的方法
@@ -19,7 +19,7 @@ modified: 2026-02-10
 
 - 在 Spring 容器初始化的时候，会将 xml 配置的 bean 信息封装成 BeanDefinition 对象
 - 所有的 BeanDefinition 存储到一个 Map 集合中
-- Spring 容器通过对集合进行遍历，使用反射创建 Bean 实例对象
+- Spring 容器通过对集合进行遍历，使用反射创建 Bean 实例对象，然后初始化
 - 将创建好的 Bean 对象存在一个 singletonObjects 的 map集合中
 - 当调用getBean方法时，获取实例化的对象
 

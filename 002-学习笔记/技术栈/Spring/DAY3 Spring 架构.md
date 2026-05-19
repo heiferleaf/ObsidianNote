@@ -1,6 +1,6 @@
 ---
 created: 2026-01-30
-modified: 2026-01-31
+modified: 2026-04-23
 ---
 # 架构
 ## 架构图
@@ -19,7 +19,7 @@ modified: 2026-01-31
 
 - 前两个是 `spring` 的核心模块，包含了 `IOC` 和 `DI`。其中 `BeanFactory` 使用控制反转，将应用程序的配置和实际的应用程序代码进行分离。 ==工厂实例化之后，不会自动实例化 `Bean`，只有 `Bean` 使用的时候，工厂才会进行装配==
 - `spring-context` 拓展了 `BeanFactory` ，增加了 `Bean` 声明周期控制，框架事件体系和透明化加载等功能
-	- `ApplicationContext` 是该模块的核心接口，是 `BeanFactory` 的子类。不同的是，在 `ApplicationContext` 实例化之后，会自动实例化所有**单例**的 `Bean` 对象
+	- `ApplicationContext` 是该模块的核心接口，是 `BeanFactory` 的子类。不同的是，在 `ApplicationContext` 实例化之后，会自动实例化所有**单例、非延迟加载**的 `Bean` 对象
 - `spring-expression` 模块是统一表达式语言的拓展模块，可以查询管理运行中的对象，可以调用对象中的方法
 
 ## AOP和设备支持

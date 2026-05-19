@@ -1,6 +1,6 @@
 ---
 created: 2026-03-03
-modified: 2026-03-07
+modified: 2026-04-16
 ---
 # Sentinel 原理部分
 
@@ -58,7 +58,7 @@ spring:
 
 资源注册，在方法上注解 @SentinelResource
 - value ： 资源命名
-- fallback ： 熔断发生时，降级服务
+- fallback ： 异常发生时，降级服务
 - blockhandler ： 限流时，降级服务
 
 流量控制：在 Dashboard 中，配置资源的流控规则
