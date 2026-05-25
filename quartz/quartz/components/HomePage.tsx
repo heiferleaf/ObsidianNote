@@ -13,11 +13,25 @@ export default ((userOpts?: any) => {
     return (
       <div class="home-page">
         <section class="home-hero">
-          <p class="eyebrow">Obsidian Note Atlas</p>
-          <h1 class="hero-title">把笔记整理成一张可走的地图。</h1>
-          <p class="hero-copy">
-            这里不是仓库树，而是按专题直接进入的学习站。你可以从专题卡片、最近更新和侧栏快捷入口继续深入，按知识主题而不是文件夹层级浏览。
-          </p>
+          <div class="profile-card">
+            <div class="profile-badge" aria-hidden="true">
+              <svg viewBox="0 0 64 64" class="whu-icon" role="img" aria-label="武汉大学图标">
+                <path d="M12 48V20l20-10 20 10v28" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round" />
+                <path d="M18 28h28M18 36h28M24 48V28m16 20V28" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" />
+                <circle cx="32" cy="18" r="4" fill="currentColor" />
+              </svg>
+            </div>
+            <div class="profile-copy">
+              <p class="eyebrow">个人主页</p>
+              <h1 class="hero-title">yhf</h1>
+              <p class="hero-copy">武汉大学软件工程专业本科生。</p>
+              <div class="profile-tags">
+                <span class="profile-tag">武汉大学</span>
+                <span class="profile-tag">软件工程</span>
+                <span class="profile-tag">本科生</span>
+              </div>
+            </div>
+          </div>
           <div class="hero-stats">
             <div class="stat-card">
               <span class="stat-label">专题</span>
@@ -37,7 +51,7 @@ export default ((userOpts?: any) => {
         <section>
           <div class="section-header">
             <h2>专题入口</h2>
-            <p>直接进入专题页，不暴露目录前缀。</p>
+            <p>按专题继续深入。</p>
           </div>
           <div class="topic-grid">
             {topicList.map((topic) => (

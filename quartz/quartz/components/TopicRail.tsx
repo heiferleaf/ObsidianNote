@@ -13,7 +13,7 @@ export default ((userOpts?: any) => {
       <div class="topic-rail">
         <section class="rail-panel">
           <p class="rail-title">专题</p>
-          <p class="rail-summary">扁平入口，直接进入专题页而不是目录树。</p>
+          <p class="rail-summary">常用专题和最近更新。</p>
           <ul class="topic-list">
             {topicList.map((topic) => (
               <li>
