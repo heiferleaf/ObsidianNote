@@ -45,6 +45,10 @@ jobs:
             printf '%s\n' '---' 'title: 首页' '---' '' '欢迎来到我的学习笔记网站。' > "quartz/content/index.md"
           fi
 
+      - name: Normalize Quartz LaTeX
+        working-directory: quartz
+        run: npm run fix:latex
+
       - name: Install dependencies
         working-directory: quartz
         run: npm ci

@@ -1,6 +1,6 @@
 ---
 created: 2026-05-06
-modified: 2026-05-12
+modified: 2026-05-25
 ---
 
 # 基础概念
@@ -22,24 +22,26 @@ modified: 2026-05-12
 2. 常见的计算
 	- $n$个数据，在$m$阶$B$树中存储，树的高度$h$最小值
 	  **通过计算每一个结点包含最多关键字的情况下，h层高度的关键字数量和**
-	  关键字数量最多为 $m - 1, m * (m - 1), ..., m^{h-1}*(m-1)$$$\begin{aligned}
-N_{max} &= \sum_{i=1}^{h} m^{i-1}(m-1) \\
-&= (m-1) \cdot \frac{m^h - 1}{m - 1} \\
-&= m^h - 1 \\
-\text{令 } N_{max} \ge n & \implies m^h - 1 \ge n \\
-&\implies m^h \ge n + 1 \\
-&\implies h \ge \log_m(n + 1) \\
-\therefore h_{min} &= \lceil \log_m(n + 1) \rceil
-\end{aligned}$$
+	  关键字数量最多为 $m - 1, m * (m - 1), ..., m^{h-1}*(m-1)$
+	  $$\begin{aligned}
+	  N_{max} &= \sum_{i=1}^{h} m^{i-1}(m-1) \\
+	  &= (m-1) \cdot \frac{m^h - 1}{m - 1} \\
+	  &= m^h - 1 \\
+	  令 N_{max} \ge n &\implies m^h - 1 \ge n \\
+	  &\implies m^h \ge n + 1 \\
+	  &\implies h \ge \log_m(n + 1) \\
+	  因此 h_{min} &= \lceil \log_m(n + 1) \rceil
+	  \end{aligned}$$
 	- $n$个数据，在$m$阶$B$树中存储，树的高度$h$最大值
 	  **通过叶子结点数量为n+1这个固定量，计算结点关键字最少的情况下，叶子结点层的数量**
-	  结点的数量最少分别为 $1, 2, 2\lceil m/2 \rceil,...,2(\lceil m/2 \rceil)^{h-1}$ $$\begin{aligned}
-n + 1 &\ge 2 \cdot \lceil m/2 \rceil^{h-1} \\
-\frac{n+1}{2} &\ge \lceil m/2 \rceil^{h-1} \\
-\log_{\lceil m/2 \rceil} \left( \frac{n+1}{2} \right) &\ge h - 1 \\
-h - 1 &\le \log_{\lceil m/2 \rceil} \left( \frac{n+1}{2} \right) \\
-h &\le \log_{\lceil m/2 \rceil} \left( \frac{n+1}{2} \right) + 1
-\end{aligned}$$
+	  结点的数量最少分别为 $1, 2, 2\lceil m/2 \rceil,...,2(\lceil m/2 \rceil)^{h-1}$
+	  $$\begin{aligned}
+	  n + 1 &\ge 2 \cdot \lceil m/2 \rceil^{h-1} \\
+	  \frac{n+1}{2} &\ge \lceil m/2 \rceil^{h-1} \\
+	  \log_{\lceil m/2 \rceil} \left( \frac{n+1}{2} \right) &\ge h - 1 \\
+	  h - 1 &\le \log_{\lceil m/2 \rceil} \left( \frac{n+1}{2} \right) \\
+	  h &\le \log_{\lceil m/2 \rceil} \left( \frac{n+1}{2} \right) + 1
+	  \end{aligned}$$
 
 
 ## B+树
