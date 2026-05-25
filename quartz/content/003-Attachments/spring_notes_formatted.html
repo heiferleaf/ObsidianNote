@@ -1,0 +1,139 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans);color:var(--color-text-primary);background:transparent}
+.doc{max-width:660px;padding:8px 0 32px}
+h1{font-size:22px;font-weight:500;margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid var(--color-border-tertiary)}
+h2{font-size:18px;font-weight:500;margin:32px 0 14px}
+h3{font-size:16px;font-weight:500;margin:20px 0 10px;color:var(--color-text-secondary)}
+p{font-size:15px;line-height:1.75;margin-bottom:12px;color:var(--color-text-primary)}
+ul,ol{padding-left:20px;margin-bottom:12px}
+li{font-size:15px;line-height:1.75;margin-bottom:4px}
+li li{margin-bottom:2px}
+code{font-family:var(--font-mono);font-size:13px;background:var(--color-background-secondary);padding:1px 5px;border-radius:4px;border:1px solid var(--color-border-tertiary)}
+.note{background:var(--color-background-secondary);border-left:3px solid var(--color-border-secondary);padding:12px 16px;border-radius:0 6px 6px 0;margin:12px 0}
+.note p{margin:0;font-size:14px;line-height:1.7;color:var(--color-text-secondary)}
+.note strong{color:var(--color-text-primary);font-weight:500}
+.tag{display:inline-block;font-size:12px;font-family:var(--font-mono);padding:1px 7px;border-radius:12px;border:1px solid var(--color-border-secondary);color:var(--color-text-secondary);margin:0 2px 4px 0;vertical-align:middle}
+.section-divider{border:none;border-top:1px solid var(--color-border-tertiary);margin:28px 0}
+.checklist{list-style:none;padding-left:0}
+.checklist li{display:flex;align-items:flex-start;gap:8px;font-size:14px;line-height:1.6;margin-bottom:5px;color:var(--color-text-secondary)}
+.checklist li::before{content:"✓";color:var(--color-text-success,#3B6D11);font-weight:500;flex-shrink:0;margin-top:1px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.card{background:var(--color-background-secondary);border:1px solid var(--color-border-tertiary);border-radius:8px;padding:12px 14px}
+.card-title{font-size:13px;font-weight:500;margin-bottom:4px}
+.card-body{font-size:13px;line-height:1.6;color:var(--color-text-secondary)}
+</style>
+
+<div class="doc">
+<h1>Spring 设计思想与核心模块笔记</h1>
+
+<h2>一、常见设计思想</h2>
+
+<h3>类的扩展</h3>
+<p>借助 JDK 反射机制，通过动态代理（JDK Proxy、CGLib）实现代理类的创建。常见于 AOP、MyBatis Mapper 接口实现类 Bean 的创建以及事务管理（本质也是 AOP）。</p>
+<p><strong>适配器模式：</strong>WebMVC 处理器适配器将处理器映射器得到的处理器所需参数进行适配，使处理器专注于业务逻辑，不必关心参数获取的具体方式。</p>
+
+<h3>类的创建</h3>
+<p>容器以<strong>单例模式</strong>管理 Bean（也可配置为原型）。复杂 Bean 的创建借助<strong>建造者模式</strong>，并通过<strong>工厂模式</strong>封装创建过程。</p>
+
+<h3>类对象之间的协作</h3>
+<p>事件订阅机制本质是<strong>观察者模式</strong>。<strong>责任链模式</strong>用于 HandlerMapping 的执行传递，以及多个 AOP 通知对同一方法的串联执行。</p>
+
+<hr class="section-divider">
+
+<h2>二、IOC 容器体系</h2>
+
+<h3>BeanFactory 核心接口</h3>
+<p>最基础的接口是 <code>BeanFactory</code>，提供 Bean 的获取能力。其下有四个核心子接口：</p>
+<div class="grid">
+  <div class="card"><div class="card-title">HierarchicalBeanFactory</div><div class="card-body">父子容器管理。WebMVC 中业务 Bean 在父容器，DispatcherServlet 相关 Bean（映射器、适配器、Controller 等）在子容器，Controller 可注入父容器的 Bean。</div></div>
+  <div class="card"><div class="card-title">ListableBeanFactory</div><div class="card-body">支持按类型获取一批 Bean，提供迭代访问能力。</div></div>
+  <div class="card"><div class="card-title">ConfigurableBeanFactory</div><div class="card-body">赋予容器配置能力：设置 ClassLoader、类型转换器，支持通过 Bean 后处理器和 BeanFactory 后处理器动态修改容器中的 Bean。</div></div>
+  <div class="card"><div class="card-title">AutowireCapableBeanFactory</div><div class="card-body">定义 Bean 的实例化与初始化方式，支持 <code>@Autowired</code> 属性注入。</div></div>
+</div>
+<p><code>DefaultListableBeanFactory</code> 同时实现 <code>ConfigurableListableBeanFactory</code> 和 <code>BeanDefinitionRegistry</code>，是两套体系的核心汇聚点。</p>
+
+<h3>ApplicationContext 的扩展能力</h3>
+<p>仅有 BeanFactory 还不够，<code>ApplicationContext</code> 在此基础上补充了四项能力：</p>
+<ul>
+  <li><strong>资源读取：</strong>支持从 classpath、文件系统、URL 等路径加载外部配置</li>
+  <li><strong>配置环境管理：</strong>区分开发配置与部署配置，按 Profile 激活</li>
+  <li><strong>国际化支持：</strong>根据用户语言环境自动转换文本</li>
+  <li><strong>事件发布订阅：</strong>Bean 之间通过事件机制解耦协作</li>
+</ul>
+<p>常用实现类：<code>ClassPathXmlApplicationContext</code>（XML 配置）、<code>AnnotationConfigApplicationContext</code>（注解配置）。</p>
+
+<h3>三级缓存与循环依赖</h3>
+<div class="note">
+  <p><strong>三级缓存结构</strong></p>
+  <p>① <code>singletonObjects</code>（一级）— 完整的 Bean<br>
+  ② <code>earlySingletonObjects</code>（二级）— 已实例化但未完成初始化、且被其他 Bean 引用的对象<br>
+  ③ <code>singletonFactories</code>（三级）— 存放 Lambda 表达式，而非对象本身。当尝试从三级缓存获取 Bean 时，Lambda 判断该 Bean 是否需要代理：若需要，则提前执行 <code>postProcessAfterInitialization</code> 返回代理对象，并在 <code>earlyProxyReferences</code> 中标记"已提前代理"，防止后续重复代理。</p>
+</div>
+<p>关于三级缓存的几个关键细节：</p>
+<ul>
+  <li>代理类内部持有被代理对象 <code>target</code> 的引用，提前代理时 <code>target</code> 可能尚未完成初始化，但属性注入等后续操作都作用在 <code>target</code> 上，代理类无需关心</li>
+  <li>Bean 提前代理后，正常初始化流程会跳过代理步骤，最终一级缓存中存放的是代理类</li>
+  <li><strong>构造函数引发的循环依赖无法通过三级缓存解决</strong>，因为连 Bean 实例都尚未创建</li>
+  <li>原型（Prototype）Scope 的 Bean 不会放入三级缓存，因此也无法处理循环依赖</li>
+</ul>
+
+<hr class="section-divider">
+
+<h2>三、AOP</h2>
+
+<h3>核心概念</h3>
+<p>AOP（面向切面编程）在 OOP 基础上，对类、属性、方法进行横向组合，在保持代码解耦的同时实现功能增强。</p>
+<ul>
+  <li><strong>Target：</strong>被增强的对象</li>
+  <li><strong>Advice：</strong>增强/通知逻辑</li>
+  <li><strong>JoinPoint：</strong>连接点，包含代理对象、被代理对象、方法及参数的完整上下文</li>
+  <li><strong>PointCut：</strong>切入点表达式，在 JoinPoint 集合中筛选需要增强的执行点</li>
+</ul>
+
+<h3>底层代理机制</h3>
+<p>Spring 默认使用 JDK 动态代理（基于接口），也可指定 CGLib（基于继承）。两者的主要差异：</p>
+<div class="note"><p>CGLib 在代理类生成阶段略慢（需生成 Class 方法表），但方法调用时更快——通过方法索引直接定位，无需反射。</p></div>
+
+<hr class="section-divider">
+
+<h2>四、事务管理</h2>
+<p>Spring 事务本质是 AOP，提供三种配置方式：</p>
+<ul>
+  <li><strong>XML 配置：</strong>注册事务管理器 Bean，通过 <code>&lt;tx:advice&gt;</code> 和 <code>&lt;aop:config&gt;</code> 定义切面与属性</li>
+  <li><strong>半注解配置：</strong>注册事务管理器 + <code>&lt;tx:annotation-driven&gt;</code> + <code>@Transactional</code></li>
+  <li><strong>纯注解配置：</strong>注册事务管理器 + <code>@EnableTransactionManagement</code> + <code>@Transactional</code></li>
+</ul>
+
+<hr class="section-divider">
+
+<h2>五、WebMVC</h2>
+
+<h3>核心处理流程</h3>
+<p><code>DispatcherServlet</code> 在初始化时优先使用容器中注册的 Bean，不存在则回退至默认配置组件。核心组件包括：</p>
+<ul>
+  <li><strong>处理器映射器</strong>（HandlerMapping）：根据请求 URL 找到对应处理器</li>
+  <li><strong>处理器适配器</strong>（HandlerAdapter）：适配方法参数，执行处理器</li>
+  <li><strong>视图解析器</strong>（ViewResolver）：解析逻辑视图名为具体视图</li>
+</ul>
+
+<h3>注解配置启动方式</h3>
+<p>Spring Web 在启动时扫描 <code>META-INF/services/</code> 中指定的 <code>ServletContainerInitializer</code> 实现类，通过 <code>@HandlesTypes</code> 收集 <code>WebApplicationInitializer</code> 的子类并调用 <code>onStartup</code>。继承 <code>AbstractAnnotationConfigDispatcherServletInitializer</code> 即可在重写方法中指定父子容器的配置类，实现全注解开发。</p>
+
+<h3>常用注解</h3>
+<div style="margin:8px 0 12px">
+  <span class="tag">@Component</span><span class="tag">@Repository</span><span class="tag">@Service</span><span class="tag">@Controller</span>
+  <span class="tag">@Scope</span><span class="tag">@Lazy</span><span class="tag">@PreDestroy</span><span class="tag">@PostConstruct</span>
+  <span class="tag">@Autowired</span><span class="tag">@Value</span><span class="tag">@Resource</span><span class="tag">@Qualifier</span>
+  <span class="tag">@Configuration</span><span class="tag">@ComponentScan</span><span class="tag">@PropertySource</span><span class="tag">@Primary</span><span class="tag">@Profile</span>
+</div>
+
+<h3>拦截器配置</h3>
+<p>通过 <code>&lt;mvc:interceptors&gt;</code>（XML）或实现 <code>WebMvcConfigurer</code> 中的 <code>addInterceptors</code> 方法（注解）注册拦截器，配置匹配路径，用于通用逻辑的解耦处理。</p>
+
+<hr class="section-divider">
+
+<h2>六、数据访问（以 MyBatis 集成为例）</h2>
+<p>Spring 集成 MyBatis 的核心是将 <code>SqlSessionFactoryBean</code> 和 <code>MapperScannerConfigurer</code> 注册为 Bean。所有第三方命名空间（如 <code>mybatis:</code>）的原理一致：容器启动时扫描自定义标签，从 <code>META-INF/spring.handlers</code> 中找到处理器，在处理器内部注册所需 Bean，省去手写静态工厂的步骤。</p>
+</div>

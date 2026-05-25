@@ -1,0 +1,515 @@
+{
+  "generatedAt": "2026-05-25T06:18:34.892Z",
+  "apply": false,
+  "items": [
+    {
+      "file": "content\\002-学习笔记\\技术学习\\LLM\\So-LLM\\LLM 到底是怎么一回事.md",
+      "suggested": [
+        "llm"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术学习\\RAG\\RAG概念.md",
+      "suggested": [
+        "rag"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术学习\\RAG\\第一节：模型调用——LLM 与 ChatModel 的深度协议复盘.md",
+      "suggested": [
+        "rag"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术学习\\RAG\\第三节：解析器 (Parser) 与 Chain 组织链 —— 声明式逻辑流转.md",
+      "suggested": [
+        "rag"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术学习\\RAG\\第二节：提示词工程 (Prompt Engineering) —— 结构化模板与少样本增强.md",
+      "suggested": [
+        "rag"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术学习\\RAG\\第五节 记忆存储、文本加载、RAG.md",
+      "suggested": [
+        "rag",
+        "memory"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术学习\\RAG\\第四节：嵌入模型 (Embedding) 与向量存储 (Vector Store) —— RAG 的基石.md",
+      "suggested": [
+        "rag",
+        "embedding"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术学习\\思特奇实训\\开营仪式.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术学习\\思特奇实训\\智能体 (AI Agent) 技术与架构.md",
+      "suggested": [
+        "ai",
+        "agent"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术学习\\思特奇实训\\离线与实时数仓架构及 Flink 理论实战.md",
+      "suggested": [
+        "flink"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术学习\\思特奇实训\\软件框架.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术学习\\思特奇实训\\软件框架的思考.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术学习\\思特奇实训\\领域建模实操.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\JAVA EE\\DAY21 设计模式收官.md",
+      "suggested": [
+        "java-ee",
+        "day21"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\JAVA EE\\DAY22 基础解疑.md",
+      "suggested": [
+        "java-ee",
+        "day22"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\JAVA EE\\DAY23 Web开发.md",
+      "suggested": [
+        "java-ee",
+        "day23",
+        "web"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\JAVA EE\\笔记\\Java 并发编程.md",
+      "suggested": [
+        "java-ee"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\JVM\\JVM 内存空间管理.md",
+      "suggested": [
+        "jvm"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\JVM\\JVM 加载类.md",
+      "suggested": [
+        "jvm"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\JVM\\JVM 堆区GC机制.md",
+      "suggested": [
+        "jvm",
+        "gc"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\LangChain\\note1 LangChain六大模块初识.md",
+      "suggested": [
+        "langchain",
+        "model"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\Spring\\B1 BeanFactory.md",
+      "suggested": [
+        "spring",
+        "ioc"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\Spring\\B2 Bean初始化.md",
+      "suggested": [
+        "spring",
+        "b2",
+        "bean"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\Spring\\B3 Spring XML 整合第三方框架.md",
+      "suggested": [
+        "spring",
+        "mybatis"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\Spring\\B4 注解配置Spring.md",
+      "suggested": [
+        "spring"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\Spring\\B5 总结 + AOP.md",
+      "suggested": [
+        "spring",
+        "b5",
+        "aop"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\Spring\\B6 Spring 事务.md",
+      "suggested": [
+        "spring",
+        "xml"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\Spring\\B7 Spring Web.md",
+      "suggested": [
+        "spring",
+        "javaweb"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\Spring\\DAY3 Spring 架构.md",
+      "suggested": [
+        "spring"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\Spring\\笔记\\Spring\\Autowired 与 Resource.md",
+      "suggested": [
+        "spring",
+        "autowired",
+        "resource"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\Spring\\笔记\\Spring\\Bean 之间的循环依赖.md",
+      "suggested": [
+        "spring",
+        "bean"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\Spring\\笔记\\Spring\\Spring Bean 的作用域.md",
+      "suggested": [
+        "spring",
+        "bean"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\Spring\\笔记\\Spring\\Spring 的框架体系.md",
+      "suggested": [
+        "spring"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\Spring\\笔记\\Spring\\Spring、SpringMVC、SpringBoot之间的区别和联系.md",
+      "suggested": [
+        "spring",
+        "springmvc",
+        "springboot"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\Spring\\笔记\\Spring\\事务传播机制、隔离级别.md",
+      "suggested": [
+        "spring"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\Spring\\笔记\\Spring Boot\\Spring Boot Starter 有什么用.md",
+      "suggested": [
+        "spring",
+        "boot",
+        "starter"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\Spring\\笔记\\Spring Boot\\SpringBoot 启动时如何自动执行一段初始化逻辑.md",
+      "suggested": [
+        "spring",
+        "springboot"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\云计算平台与技术\\Docker 整理.md",
+      "suggested": [
+        "docker"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\云计算平台与技术\\Kubernetes.md",
+      "suggested": [
+        "kubernetes",
+        "k8s"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\云计算平台与技术\\概念引入.md",
+      "suggested": [
+        "ip"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\分布式软件\\SpringCloud 服务管理.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\分布式软件\\SpringCloud 流量治理.md",
+      "suggested": [
+        "sentinel"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\分布式软件\\微服务核心架构技术手册.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\数据结构与算法\\笔记\\单调栈.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\数据结构与算法\\笔记\\堆.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\数据结构与算法\\笔记\\数据结构与算法.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\数据结构与算法\\笔记\\数组的压缩存储.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\数据结构与算法\\笔记\\树.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\数据结构与算法\\笔记\\线性表.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\数据结构与算法\\笔记\\递归程序.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\现代编程思想\\Course1.md",
+      "suggested": [
+        "course1"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\现代编程思想\\Course2 泛型.md",
+      "suggested": [
+        "course2"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\现代编程思想\\Course3 反射 & 注解.md",
+      "suggested": [
+        "course3"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\现代编程思想\\Course5 AOP.md",
+      "suggested": [
+        "course5",
+        "aop"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\现代编程思想\\Course6 函数式编程.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\现代编程思想\\练习\\AOP练习.md",
+      "suggested": [
+        "spring",
+        "aop"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\现代编程思想\\练习\\Java 泛型课堂测验卷.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\现代编程思想\\练习\\函数式编程.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\现代编程思想\\练习\\函数式编程2.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\现代编程思想\\练习\\反射&注解练习题.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\现代编程思想\\练习\\现代编程思想 · 综合练习.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\计算机系统基础\\关系型数据库\\B树、B+树，数据库索引使用数据结构.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\计算机系统基础\\关系型数据库\\数据库索引优化.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\计算机系统基础\\关系型数据库\\锁.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\技术栈\\设计模式\\备忘录模式.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\课程学习\\机器学习\\作业\\第三次作业.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\课程学习\\机器学习\\作业\\第二次作业.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\课程学习\\离散数学\\离散数学笔记.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\课程学习\\编译原理\\C2 Lexical Analysis.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\课程学习\\编译原理\\C3 Grammer.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\课程学习\\软件安全\\C5 软件漏洞.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\BIO、NIO、AIO 理论体系.md",
+      "suggested": [
+        "bionioaio",
+        "bio",
+        "nio",
+        "aio"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\Clash Verge 使用手册.md",
+      "suggested": [
+        "clash-verge",
+        "clash",
+        "verge"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\ClassLoader.md",
+      "suggested": [
+        "classloader"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\Claude Code 从0到1.md",
+      "suggested": [
+        "claude-code-0-1"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\Docker 命令、网络配置.md",
+      "suggested": [
+        "docker",
+        "ubuntu"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\Docker 部署使用命令工具.md",
+      "suggested": [
+        "docker",
+        "mysql"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\JWT（Json Web Token）--》双Token.md",
+      "suggested": [
+        "jwtjson-web-token-token",
+        "jwt",
+        "json",
+        "web",
+        "token"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\MySql 并发机制总结.md",
+      "suggested": [
+        "mysql"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\OpenClaw 养成计划.md",
+      "suggested": [
+        "openclaw",
+        "session"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\Redis 雪崩、击穿、穿透防护.md",
+      "suggested": [
+        "redis"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\Redis服务器.md",
+      "suggested": [
+        "redis"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\Stream 并行计算的原则.md",
+      "suggested": [
+        "stream"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\WebSocket 配置.md",
+      "suggested": [
+        "websocket"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\Word2Vec.md",
+      "suggested": [
+        "word2vec"
+      ]
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\异常处理通用流程.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\提示词工程.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\虚拟机的网络虚拟化.md",
+      "suggested": []
+    },
+    {
+      "file": "content\\002-学习笔记\\零碎知识笔记\\跨域问题.md",
+      "suggested": []
+    }
+  ]
+}
