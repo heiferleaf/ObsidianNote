@@ -35,7 +35,9 @@ modified: 2026-03-29
 > 已经编译器处理的源代码都看作字符串
 ## 字符串集定义
 
-字母表定义 $$Σ=一个有限的非空符号集合$$
+字母表定义 
+$$
+Σ=一个有限的非空符号集合
 基定义：$ε（空串）是字符串, ε\in\sum^*$
 归纳定义：$如果\omega是字符串，a\in\sum,wa\in\sum^*$
 > 其中 $\omega 记为a_0a_1\dots a_{n-1},\omega a记为a_0a_1\dots a_{n-1}a_n$
@@ -102,9 +104,19 @@ $$
 3. **空集**：$L(\emptyset) = \emptyset$
 ### 2. 归纳步骤 (Induction)
 设 $r$ 和 $s$ 是正则表达式，则：
-4. **并运算 (Union / Choice)**：$$L(r \mid s) = L(r) \cup L(s)$$
-5. **连接运算 (Concatenation)**：$$L(r \cdot s) = \{w_r \cdot w_s \mid w_r \in L(r) \wedge w_s \in L(s)\} \triangleq L(r) \cdot L(s)$$
-6. **闭包运算 (Kleene Star)**：$$L(r^*) = \bigcup_{n=0}^{\infty} (L(r))^n$$
+4. **并运算 (Union / Choice)**：
+$$
+L(r \mid s) = L(r) \cup L(s)
+$$
+5. **连接运算 (Concatenation)**：
+
+$$
+L(r \cdot s) = \{w_r \cdot w_s \mid w_r \in L(r) \wedge w_s \in L(s)\} \triangleq L(r) \cdot L(s)
+$$
+
+6. **闭包运算 (Kleene Star)**：
+$$
+L(r^*) = \bigcup_{n=0}^{\infty} (L(r))^n
 > [!IMPORTANT] 注：语言的幂运算
 > * $(L(r))^0 \triangleq \{\varepsilon\}$
 > * $(L(r))^n \triangleq (L(r))^{n-1} \cdot L(r)$ （其中 $n \geq 1$）
@@ -117,7 +129,9 @@ $$
 
 ### 严格的数学定义
 
-DFA 是一个**五元组**：$$M = (Q,\ \Sigma,\ \delta,\ q_0,\ F)$$
+DFA 是一个**五元组**：
+$$
+M = (Q,\ \Sigma,\ \delta,\ q_0,\ F)
 
 | 符号       | 名称    | 含义                              |
 | -------- | ----- | ------------------------------- |
@@ -139,7 +153,8 @@ DFA 是一个**五元组**：$$M = (Q,\ \Sigma,\ \delta,\ q_0,\ F)$$
 - $q_1$：刚刚看到了 `a`
 - $q_2$：刚刚看到了 `ab`（接受状态）这个 DFA 的五元组写出来就是：
 
-$$Q = {q_0, q_1, q_2}, \quad \Sigma = {a, b}, \quad q_0 = q_0, \quad F = {q_2}$$
+$$
+Q = {q_0, q_1, q_2}, \quad \Sigma = {a, b}, \quad q_0 = q_0, \quad F = {q_2}
 
 转移函数 $\delta$ 用表格表示：
 
@@ -152,9 +167,11 @@ $$Q = {q_0, q_1, q_2}, \quad \Sigma = {a, b}, \quad q_0 = q_0, \quad F = {q_2}$$
 
 单步转移 $\delta$ 处理一个字符，我们把它扩展到处理整个字符串，记作 $\hat{\delta}$：
 
-$$\hat{\delta}(q,\ \varepsilon) = q$$
+$$
+\hat{\delta}(q,\ \varepsilon) = q
 
-$$\hat{\delta}(q,\ wa) = \delta(\hat{\delta}(q,\ w),\ a)$$
+$$
+\hat{\delta}(q,\ wa) = \delta(\hat{\delta}(q,\ w),\ a)
 
 意思是：读完字符串 $wa$，等于先读完 $w$ 到达某个状态，再从那个状态读 $a$。
 
@@ -162,7 +179,8 @@ $$\hat{\delta}(q,\ wa) = \delta(\hat{\delta}(q,\ w),\ a)$$
 
 DFA $M$ 接受的语言定义为：
 
-$$L(M) = \{w \in \Sigma^* \mid \hat{\delta}(q_0,\ w) \in F\}$$
+$$
+L(M) = \{w \in \Sigma^* \mid \hat{\delta}(q_0,\ w) \in F\}
 
 即：从初始状态出发，读完字符串 $w$ 后，停在接受状态集 $F$ 中的所有字符串的集合。
 
@@ -210,11 +228,14 @@ DFA 的结构编排，通过以下特征：
 
 **DFA 定义：** $\langle \Sigma, \mathcal{S}, Trans, \mathcal{S}_0, \mathcal{F} \rangle$
 
-$$\mathcal{S}_0 = \overline{\epsilon\text{-closure}({s_0})}$$
+$$
+\mathcal{S}_0 = \overline{\epsilon\text{-closure}({s_0})}
 
-$$Trans(\bar{T}, a) = \overline{\epsilon\text{-closure}\left(\bigcup_{t \in \bar{T}} Move(t, a)\right)}$$
+$$
+Trans(\bar{T}, a) = \overline{\epsilon\text{-closure}\left(\bigcup_{t \in \bar{T}} Move(t, a)\right)}
   
-$$\mathcal{F} = {\bar{T} \mid \bar{T} \cap F \neq \emptyset}$$
+$$
+\mathcal{F} = {\bar{T} \mid \bar{T} \cap F \neq \emptyset}
 
 **构造流程（BFS）：**
 
@@ -240,10 +261,12 @@ $$\mathcal{F} = {\bar{T} \mid \bar{T} \cap F \neq \emptyset}$$
 
 **MDFA 唯一性：** 同一正则语言的 MDFA 在同构意义下唯一，故可判断正则表达式等价性：
 
-$$r = s \iff MDFA(r) \cong MDFA(s)$$
+$$
+r = s \iff MDFA(r) \cong MDFA(s)
 
 ---
 
 ### 总览
 
-$$\text{正则表达式} \xrightarrow{\text{Thompson 构造}} \text{NFA} \xrightarrow{\text{子集构造 + BFS}} \text{DFA} \xrightarrow{\text{Partition 细分合并}} \text{MDFA}$$
+$$
+\text{正则表达式} \xrightarrow{\text{Thompson 构造}} \text{NFA} \xrightarrow{\text{子集构造 + BFS}} \text{DFA} \xrightarrow{\text{Partition 细分合并}} \text{MDFA}

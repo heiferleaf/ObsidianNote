@@ -48,7 +48,61 @@ function flattenDisplayMathBlock(blockLines) {
   return `${openingPrefix}${flattened}$$`
 }
 
+function normalizeSplitDisplayMath(content) {
+  return content.replace(/([^\n]*?)\$\$\r?\n([^\n]*?)\$\$([^\n]*)/g, (_match, before, math, after) => {
+    const opener = before.replace(/\s+$/, "")
+    const trailing = after.replace(/^\s+/, "")
+    return `${opener}\n$$\n${math.trim()}\n$$\n${trailing}`
+  })
+}
+
+function normalizeKnownBrokenPassages(content) {
+  return content.replace(
+    /^\s*\$\$当样本的数量小于样本维度\(\$d>m\$\)的时候，\$X\^TX\$不可逆，此时可以采用梯度下降的方法 1\. 代价函数（损失函数）定义\$\$$/m,
+    () => "\t当样本的数量小于样本维度($d>m$)的时候，$X^TX$不可逆，此时可以采用梯度下降的方法\n\t1. 代价函数（损失函数）定义\n\t$$"
+  )
+}
+
+function normalizeDisplayMathSegments(content) {
+  const lines = content.split(/\r?\n/)
+  const normalized = []
+  let inFence = false
+
+  for (const line of lines) {
+    if (/^```/.test(line.trim())) {
+      inFence = !inFence
+      normalized.push(line)
+      continue
+    }
+
+    if (inFence || !line.includes("$$") || /^\s*\$\$\s*$/.test(line)) {
+      normalized.push(line)
+      continue
+    }
+
+    const indent = (line.match(/^\s*/)?.[0] ?? "")
+    const body = line.slice(indent.length)
+    const segments = body.split("$$")
+    for (let index = 0; index < segments.length; index += 1) {
+      const segment = segments[index].trim()
+      if (index % 2 === 1) {
+        normalized.push(`${indent}$$`)
+        if (segment.length > 0) {
+          normalized.push(`${indent}${segment}`)
+        }
+      } else if (segment.length > 0) {
+        normalized.push(`${indent}${segment}`)
+      }
+    }
+  }
+
+  return normalized.join("\n")
+}
+
 function rewriteMarkdown(content) {
+  content = normalizeDisplayMathSegments(content)
+  content = normalizeSplitDisplayMath(content)
+  content = normalizeKnownBrokenPassages(content)
   const lines = content.split(/\r?\n/)
   const output = []
   let inFence = false

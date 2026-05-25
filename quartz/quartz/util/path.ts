@@ -189,6 +189,19 @@ export function slugTag(tag: string) {
     .join("/")
 }
 
+export function normalizeDisplayName(name: string) {
+  return name.replace(/^\d+[-_]+\s*/, "").replaceAll("-", " ").trim()
+}
+
+export function isAttachmentPath(path: string) {
+  return stripSlashes(path)
+    .split("/")
+    .some((segment) => {
+      const normalized = normalizeDisplayName(segment).toLowerCase()
+      return normalized === "attachment" || normalized === "attachments" || normalized === "附件"
+    })
+}
+
 export function joinSegments(...args: string[]): string {
   if (args.length === 0) {
     return ""

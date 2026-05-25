@@ -1,5 +1,5 @@
 import { ContentDetails } from "../plugins/emitters/contentIndex"
-import { FullSlug, joinSegments } from "./path"
+import { FullSlug, joinSegments, normalizeDisplayName } from "./path"
 
 interface FileTrieData {
   slug: string
@@ -29,7 +29,7 @@ export class FileTrieNode<T extends FileTrieData = ContentDetails> {
 
   get displayName(): string {
     const nonIndexTitle = this.data?.title === "index" ? undefined : this.data?.title
-    return (
+    return normalizeDisplayName(
       this.displayNameOverride ?? nonIndexTitle ?? this.fileSegmentHint ?? this.slugSegment ?? ""
     )
   }
