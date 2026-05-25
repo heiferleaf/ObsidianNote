@@ -19,6 +19,17 @@ type FolderState = {
   collapsed: boolean
 }
 
+function normalizeDisplayName(name: string) {
+  return name.replace(/^\d+[-_]+\s*/, "").replaceAll("-", " ").trim()
+}
+
+function shouldFlattenTopLevelFolder(node: FileTrieNode) {
+  if (!node.isFolder) return false
+  return /^\d+[-_]?/.test(node.slugSegment) || ["attachments", "attachment", "附件"].includes(
+    normalizeDisplayName(node.slugSegment).toLowerCase(),
+  )
+}
+
 let currentExplorerState: Array<FolderState>
 function toggleExplorer(this: HTMLElement) {
   const nearestExplorer = this.closest(".explorer") as HTMLElement
@@ -86,7 +97,7 @@ function createFileNode(currentSlug: FullSlug, node: FileTrieNode): HTMLLIElemen
   const a = li.querySelector("a") as HTMLAnchorElement
   a.href = resolveRelative(currentSlug, node.slug)
   a.dataset.for = node.slug
-  a.textContent = node.displayName
+  a.textContent = normalizeDisplayName(node.displayName)
 
   if (currentSlug === node.slug) {
     a.classList.add("active")
@@ -122,11 +133,11 @@ function createFolderNode(
     a.href = resolveRelative(currentSlug, folderPath)
     a.dataset.for = folderPath
     a.className = "folder-title"
-    a.textContent = node.displayName
+    a.textContent = normalizeDisplayName(node.displayName)
     button.replaceWith(a)
   } else {
     const span = titleContainer.querySelector(".folder-title") as HTMLElement
-    span.textContent = node.displayName
+    span.textContent = normalizeDisplayName(node.displayName)
   }
 
   // if the saved state is collapsed or the default state is collapsed
@@ -209,9 +220,13 @@ async function setupExplorer(currentSlug: FullSlug) {
     const explorerUl = explorer.querySelector(".explorer-ul")
     if (!explorerUl) continue
 
+    const explorerRoots = trie.children.length === 1 && shouldFlattenTopLevelFolder(trie.children[0])
+      ? trie.children[0].children
+      : trie.children
+
     // Create and insert new content
     const fragment = document.createDocumentFragment()
-    for (const child of trie.children) {
+    for (const child of explorerRoots) {
       const node = child.isFolder
         ? createFolderNode(currentSlug, child, opts)
         : createFileNode(currentSlug, child)

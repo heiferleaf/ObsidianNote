@@ -1,0 +1,101 @@
+.topic-rail {
+  display: grid;
+  gap: 1rem;
+
+  .rail-panel {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid color-mix(in srgb, var(--dark) 10%, transparent);
+    background: linear-gradient(180deg, color-mix(in srgb, var(--light) 82%, transparent), color-mix(in srgb, var(--lightgray) 34%, transparent));
+    box-shadow: 0 12px 24px color-mix(in srgb, var(--dark) 8%, transparent);
+  }
+
+  .rail-title {
+    margin: 0 0 0.8rem 0;
+    font-size: 0.92rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+
+  .rail-summary {
+    margin: 0;
+    font-size: 0.94rem;
+    line-height: 1.6;
+    opacity: 0.74;
+  }
+
+  .topic-list {
+    display: grid;
+    gap: 0.45rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .topic-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.7rem 0.8rem;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    color: var(--dark);
+    background: color-mix(in srgb, var(--light) 72%, transparent);
+    border: 1px solid transparent;
+    transition:
+      transform 160ms ease,
+      border-color 160ms ease,
+      background 160ms ease;
+  }
+
+  .topic-link:hover {
+    transform: translateX(2px);
+    border-color: color-mix(in srgb, var(--tertiary) 26%, transparent);
+    background: color-mix(in srgb, var(--light) 90%, transparent);
+  }
+
+  .topic-name {
+    font-weight: 650;
+  }
+
+  .topic-count {
+    flex-shrink: 0;
+    font-size: 0.82rem;
+    opacity: 0.68;
+  }
+
+  .mini-list {
+    display: grid;
+    gap: 0.55rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .mini-item {
+    display: grid;
+    gap: 0.2rem;
+    padding: 0.7rem 0.8rem;
+    border-radius: 0.75rem;
+    background: color-mix(in srgb, var(--light) 74%, transparent);
+    border: 1px solid color-mix(in srgb, var(--dark) 8%, transparent);
+    text-decoration: none;
+    color: var(--dark);
+  }
+
+  .mini-item:hover {
+    border-color: color-mix(in srgb, var(--tertiary) 22%, transparent);
+  }
+
+  .mini-title {
+    font-size: 0.92rem;
+    font-weight: 650;
+  }
+
+  .mini-meta {
+    font-size: 0.78rem;
+    opacity: 0.64;
+  }
+}
