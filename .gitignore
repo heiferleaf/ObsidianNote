@@ -29,6 +29,33 @@ node_modules/
 !/003-Attachments/
 !/quartz/
 !/.github/
+!/AGENTS.md
+!/.codex/
+!/.knowledge-tools/
+!/.knowledge/
+
+# Persistent knowledge-base configuration; migration bodies and live snapshots stay local.
+/.knowledge/*
+!/.knowledge/state.json
+!/.knowledge/manifest.json
+!/.knowledge/threads.json
+!/.knowledge/attachments.json
+!/.knowledge/quartz-assets.json
+!/.knowledge/quartz-result.json
+!/.knowledge/page-format-equivalence.json
+!/.knowledge/routing.md
+!/.knowledge/workflow.md
+!/.knowledge/math-fixes.json
+!/.knowledge/migration-report.json
+!/.knowledge/display-policy.json
+!/.knowledge/publication.json
+!/.knowledge/catalog-view.json
+!/.knowledge/catalog-policy.json
+!/.knowledge/note-expert-index.csv
+/.knowledge-tools/__pycache__/
+/.codex/collaboration/tasks.json
+/.codex/collaboration/*.lock
+/.codex/collaboration/*.tmp
 
 # quartz 生成的临时文件
 quartz/node_modules/

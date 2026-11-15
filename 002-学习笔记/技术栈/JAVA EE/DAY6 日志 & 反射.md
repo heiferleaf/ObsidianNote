@@ -1,7 +1,7 @@
 ---
 title: DAY6 日志 & 反射
 created: 2025-12-05
-modified: 2026-01-09
+modified: 2026-07-25
 tags: [技术栈, JavaEE]
 subject: JavaEE
 ---
@@ -75,8 +75,7 @@ subject: JavaEE
     log4j.appender.R.MaxBackupIndex=10
     log4j.appender.R.layout=org.apache.log4j.PatternLayout
     log4j.appender.R.layout.ConversionPattern=%d{ISO8601} [%t] %-5p %c %x - %m%n
-```
-
+	```
 
 **5. SLF4J + Logback（现代首选组合）**
 

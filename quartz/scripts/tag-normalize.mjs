@@ -1,133 +1,127 @@
 #!/usr/bin/env node
-import { readdir, readFile, writeFile } from 'node:fs/promises'
-import path from 'node:path'
+import { mkdir, readdir, readFile, stat, utimes, writeFile } from "node:fs/promises"
+import path from "node:path"
+import yaml from "js-yaml"
+import { isMain, quartzRoot, tagReportPath } from "./site-paths.mjs"
 
-const contentRoot = path.resolve(process.cwd(), 'content')
-
-async function walkMarkdownFiles(dir) {
-  const entries = await readdir(dir, { withFileTypes: true })
+export async function walkMarkdownFiles(directory) {
+  const entries = await readdir(directory, { withFileTypes: true })
   const files = []
-  for (const e of entries) {
-    const full = path.join(dir, e.name)
-    if (e.isDirectory()) files.push(...(await walkMarkdownFiles(full)))
-    else if (e.isFile() && e.name.endsWith('.md')) files.push(full)
+  for (const entry of entries.sort((a, b) => a.name.localeCompare(b.name))) {
+    const fullPath = path.join(directory, entry.name)
+    if (entry.isDirectory()) files.push(...(await walkMarkdownFiles(fullPath)))
+    else if (entry.isFile() && entry.name.endsWith(".md")) files.push(fullPath)
   }
   return files
 }
 
-function slugify(s) {
-  return s
+export function slugify(value) {
+  return value
+    .normalize("NFKC")
     .toLowerCase()
-    .replace(/[\u4e00-\u9fff\s\/\\]+/g, ' ')
-    .replace(/[^a-z0-9\u4e00-\u9fff ]+/g, '')
-    .trim()
-    .replace(/\s+/g, '-')
+    .replace(/[^\p{L}\p{N}]+/gu, "-")
+    .replace(/^-+|-+$/g, "")
 }
 
-function stripNumericPrefix(name) {
-  // remove leading numeric prefixes like '002-' or '01_'
-  return name.replace(/^\d+[\-_.\s]*/,'')
-}
-
-function extractFrontmatter(text) {
-  if (!text.startsWith('---')) return null
-  const end = text.indexOf('\n---', 3)
-  if (end === -1) return null
-  const block = text.slice(3, end + 1) // include trailing newline
-  return { raw: block, start: 0, end: end + 4 }
-}
-
-function hasTags(front) {
-  return /(^|\n)tags\s*:/m.test(front)
-}
-
-function getTitleFromFront(front) {
-  const m = front.match(/(^|\n)title\s*:\s*(.+)/m)
-  if (m) return m[2].trim().replace(/^"|"$/g, '')
-  return null
-}
-
-function getFirstH1(content) {
-  const m = content.match(/^#\s+(.+)$/m)
-  return m ? m[1].trim() : null
-}
-
-function suggestTags(filePath, content, frontRaw) {
-  const rel = path.relative(contentRoot, filePath)
-  const parts = rel.split(/[\\\/]/).filter(Boolean)
-  const candidates = new Set()
-  // use folder names (normalize and strip numeric prefixes)
-  for (let i = 0; i < Math.min(parts.length, 3); i++) {
-    const raw = parts[i].replace(/\.[^/.]+$/, '')
-    const stripped = stripNumericPrefix(raw)
-    candidates.add(stripped)
+export function extractFrontmatter(text) {
+  const match = /^(?:\uFEFF)?---\r?\n([\s\S]*?)^---[ \t]*(?:\r?\n|$)/m.exec(text)
+  if (!match || match.index !== 0) return null
+  return {
+    raw: match[1],
+    end: match[0].length,
+    closing: match[0].lastIndexOf("---"),
+    data: yaml.load(match[1], { schema: yaml.JSON_SCHEMA }) ?? {},
   }
-
-  const title = getTitleFromFront(frontRaw) || getFirstH1(content) || path.basename(filePath, '.md')
-  // pick meaningful words from title
-  const words = (title || '')
-    .replace(/[\p{P}\p{S}]/gu, ' ')
-    .split(/\s+/)
-    .filter(w => w.length >= 2)
-    .slice(0, 4)
-  for (const w of words) candidates.add(w)
-
-  // normalize
-  const tags = [...candidates].map(t => slugify(t)).filter(Boolean)
-  // filter meaningless tags
-  const blacklist = new Set(['002','000','001'])
-  const mapped = tags.map(t => {
-    // mapping common chinese folder names to english tags
-    const map = {
-      '学习笔记':'study',
-      '课程学习':'course',
-      '技术栈':'tech',
-      '课程':'course',
-      '笔记':'notes'
-    }
-    if (map[t]) return map[t]
-    return t
-  }).filter(t => t && !blacklist.has(t) && !/^\d+$/.test(t))
-
-  // remove very short non-Chinese tags (e.g., single latin letter)
-  const final = mapped.filter(t => { if (/^[\u4e00-\u9fff]+$/.test(t)) return true; return t.length >= 2 })
-  return Array.from(new Set(final)).slice(0, 6)
 }
 
-async function run({ apply = false } = {}) {
+export function suggestTags(relativePath, text, frontmatter) {
+  const parts = relativePath.split(/[\\/]/)
+  const candidates = parts.slice(0, -1).filter((part) => part !== "002-学习笔记")
+  const title =
+    frontmatter?.data.title ?? text.match(/^#\s+(.+)$/m)?.[1] ?? path.basename(relativePath, ".md")
+  candidates.push(
+    ...String(title)
+      .split(/[\p{P}\p{S}\s]+/u)
+      .filter((word) => word.length >= 2)
+      .slice(0, 3),
+  )
+  return [...new Set(candidates.map((value) => slugify(value.replace(/^\d+[-_.\s]+/, ""))))]
+    .filter((value) => value.length >= 2 && !/^\d+$/.test(value) && value !== "笔记")
+    .slice(0, 6)
+}
+
+// Insert only the missing tags field; preserve other YAML lists and the body verbatim.
+export function withSuggestedTags(text, tags) {
+  const frontmatter = extractFrontmatter(text)
+  if (
+    frontmatter &&
+    (Object.hasOwn(frontmatter.data, "tags") || Object.hasOwn(frontmatter.data, "tag"))
+  )
+    return text
+  if (tags.length === 0) return text
+  const newline = text.includes("\r\n") ? "\r\n" : "\n"
+  const block = `tags:${newline}${tags.map((tag) => `  - ${JSON.stringify(tag)}`).join(newline)}${newline}`
+  if (!frontmatter) {
+    const bom = text.startsWith("\uFEFF") ? "\uFEFF" : ""
+    return `${bom}---${newline}${block}---${newline}${text.slice(bom.length)}`
+  }
+  return text.slice(0, frontmatter.closing) + block + text.slice(frontmatter.closing)
+}
+
+export async function normalizeTags({
+  contentRoot = path.join(quartzRoot, "content"),
+  apply = false,
+  reportPath = tagReportPath,
+} = {}) {
   const files = await walkMarkdownFiles(contentRoot)
-  const report = []
+  const items = []
   for (const file of files) {
-    const txt = await readFile(file, 'utf8')
-    const fm = extractFrontmatter(txt)
-    const frontRaw = fm ? fm.raw : ''
-    const existing = hasTags(frontRaw)
-    if (!existing) {
-      const suggested = suggestTags(file, txt, frontRaw)
-      report.push({ file: path.relative(process.cwd(), file), suggested })
-      if (apply) {
-        let updated
-        if (fm) {
-          const before = txt.slice(0, fm.start + 3)
-          const after = txt.slice(fm.end)
-          // insert tags before closing ---
-          const inserted = frontRaw.replace(/(\r?\n)$/, '') + '\n'
-          const tagsBlock = suggested.length ? 'tags:\n' + suggested.map(t=>`  - ${t}`).join('\n') + '\n' : ''
-          updated = before + inserted + tagsBlock + '---' + after
-        } else {
-          const tagsBlock = '---\ntags:\n' + suggested.map(t=>`  - ${t}`).join('\n') + '\n---\n' + txt
-          updated = tagsBlock
-        }
-        await writeFile(file, updated, 'utf8')
-      }
+    const relativePath = path.relative(contentRoot, file)
+    if (
+      relativePath === "index.md" ||
+      relativePath.startsWith("003-Attachments") ||
+      relativePath.endsWith(".excalidraw.md")
+    )
+      continue
+    const text = await readFile(file, "utf8")
+    const frontmatter = extractFrontmatter(text)
+    if (
+      frontmatter &&
+      (Object.hasOwn(frontmatter.data, "tags") || Object.hasOwn(frontmatter.data, "tag"))
+    )
+      continue
+    const suggested = suggestTags(relativePath, text, frontmatter)
+    items.push({ file: path.relative(quartzRoot, file).split(path.sep).join("/"), suggested })
+    const updated = withSuggestedTags(text, suggested)
+    if (apply && updated !== text) {
+      const originalStat = await stat(file)
+      await writeFile(file, updated)
+      await utimes(file, originalStat.atime, originalStat.mtime)
     }
   }
-  // write report
-  await writeFile(path.join(process.cwd(), 'quartz', '.tag-report.json'), JSON.stringify({ generatedAt: new Date().toISOString(), apply, items: report }, null, 2), 'utf8')
-  console.log(`tag-normalize: processed ${files.length} files, missing-tags: ${report.length}, apply=${apply}`)
+  const report = {
+    generatedAt: new Date().toISOString(),
+    apply,
+    contentRoot,
+    processed: files.length,
+    items,
+  }
+  await mkdir(path.dirname(reportPath), { recursive: true })
+  await writeFile(reportPath, JSON.stringify(report, null, 2))
+  console.log(
+    `tag-normalize: processed ${files.length} files, missing-tags: ${items.length}, apply=${apply}`,
+  )
+  return report
 }
 
-// CLI
-const args = process.argv.slice(2)
-const apply = args.includes('--apply') || args.includes('-a')
-run({ apply }).catch(err => { console.error(err); process.exit(1) })
+if (isMain(import.meta.url)) {
+  const args = process.argv.slice(2)
+  const directoryIndex = args.indexOf("--directory")
+  normalizeTags({
+    contentRoot: directoryIndex < 0 ? undefined : path.resolve(args[directoryIndex + 1]),
+    apply: args.includes("--apply") || args.includes("-a"),
+  }).catch((error) => {
+    console.error(error)
+    process.exitCode = 1
+  })
+}

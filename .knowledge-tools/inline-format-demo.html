@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<style>
+#inline-format-demo { color: var(--foreground); }
+#inline-format-demo p { margin: 0; }
+#inline-format-demo code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; color: var(--foreground); background: var(--muted); padding: 0.12em 0.3em; border-radius: 0.25em; }
+#inline-format-demo .katex { color: currentColor; }
+</style>
+<div id="inline-format-demo" role="group" aria-label="文字、数学公式与代码在同一段落中排版">
+  <p>当随机变量 <span data-math="X"></span> 非负时，<span data-math="P(X\ge a)\le\frac{\mathbb E[X]}{a}"></span>；在代码中，<code>threshold</code> 表示阈值。</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script>
+(() => {
+  const root = document.getElementById('inline-format-demo');
+  for (const element of root.querySelectorAll('[data-math]')) {
+    if (typeof katex === 'undefined') {
+      element.textContent = element.getAttribute('data-math');
+      continue;
+    }
+    katex.render(element.getAttribute('data-math'), element, { displayMode: false, throwOnError: true, output: 'htmlAndMathml' });
+  }
+})();
+</script>

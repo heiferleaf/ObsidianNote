@@ -1,0 +1,23 @@
+import fs from 'node:fs/promises'
+import path from 'node:path'
+import {root} from './inventory.mjs'
+const dir=path.join(root,'.knowledge'),state=JSON.parse((await fs.readFile(path.join(dir,'state.json'),'utf8')).replace(/^\uFEFF/,''))
+const rows=Object.entries(state.pages),link=p=>`[${p.title}](${p.url})`,byTitle=t=>rows.find(([k,p])=>p.kind==='note'&&p.title===t)?.[1]
+const categories={技术栈:'按长期技术主题组织基础概念、运行机制和参考笔记。',技术学习:'按学习专题和实践过程整理连续的学习记录。',课程学习:'保留课程、章节、作业与实验的学习上下文。',零碎知识笔记:'收录独立问题、工具使用方法和简短知识点。',面试准备:'按面试场景组织问答、常见误区和复习材料。'}
+const payloads=[]
+for(const [key,p] of rows.filter(([k,p])=>p.kind==='folder')){
+ const children=rows.filter(([k,c])=>c.parent_page_id===p.page_id),folders=children.filter(([k,c])=>c.kind==='folder'),notes=children.filter(([k,c])=>c.kind==='note')
+ const intro=key==='002-学习笔记'?'按技术主题、课程和学习场景浏览笔记。新内容先写入临时笔记，再由每周归纳员放入对应专题。':categories[p.title]??`收录与「${p.title}」相关的学习记录。`
+ const parts=[intro]
+ if(folders.length)parts.push('# 子专题',folders.map(([k,c])=>'- '+link(c)).join('\n'))
+ if(notes.length)parts.push('# 笔记',notes.map(([k,c])=>'- '+link(c)).join('\n'))
+ payloads.push({key,page_id:p.page_id,body:parts.join('\n\n')})
+}
+const inbox=state.pages['@inbox'],tasks=state.pages['@tasks'],guide=state.pages['@guide'],study=state.pages['002-学习笔记'],demo=state.pages['@inline-demo'],prob=byTitle('概率论'),linear=byTitle('线性代数')
+const todo=`- [ ] 补回${link(prob)}中的两张原图。\n- [ ] 补回${link(linear)}中的行列式示意图。`
+payloads.push({key:'@tasks',page_id:tasks.page_id,body:`在这里记录复习、练习和笔记返工事项。完成后可以直接勾选。\n\n# 待办\n\n${todo}\n\n原文件在仓库中缺失；相关笔记保留了文字说明。补齐后可继续上传并替换占位说明。\n\n# 原任务表中的完成记录\n\n- [x] 笔记网站整理\n- [x] 选课\n- [x] 完成 OpenClaw 部署文档\n- [x] 买票回家`})
+payloads.push({key:'@inbox',page_id:inbox.page_id,body:`新笔记先写在这里，内容形成后再归档到具体专题。无需在开始学习时决定目录。\n\n# 开始记录\n\n在 [Controller 学习知识库](codex://threads/${state.controller.threadId}) 中说明主题和笔记类型，例如「用实践模板记录 Docker 网络配置」。Controller 会创建这里的真实子页面，并关联适合的 Expert。\n\n# 每周整理\n\n归纳员在每周日北京时间 20:00 阅读本页直接子页面，按主题移动归档，保留页面链接。未写成内容或分类不明确的笔记继续留在这里。\n\n${link(guide)}`,instructions:'这是新学习笔记的收件箱。新模板页和从 Expert 总结的笔记先创建为本页的真实子页。每周只归档直接子页，使用同 Space 的真实 move_page 保留身份与历史；正文未形成或分类不明确的项留在这里。同步和发布遵循本地项目 AGENTS.md 与 knowledge-curator 技能。'})
+payloads.push({key:'@guide',page_id:guide.page_id,body:`用 Controller 创建、查找和修改笔记；用 Expert 持续学习；每周归纳员负责整理临时笔记并同步本地仓库。\n\n# 创建一篇笔记\n\n在 [Controller 学习知识库](codex://threads/${state.controller.threadId}) 中直接说明主题和类型。支持通用知识、课程、阅读、实践实验、面试和问题排查六类模板。\n\n> 用阅读模板创建一篇 RAG 论文笔记。\n\n新页面先成为${link(inbox)}的子页，先专注内容，之后再归档。\n\n# 从学习聊天整理笔记\n\n先让 Controller 创建相应领域的 Expert，然后在 Expert 中正常学习。结束后回到 Controller，指定聊天和总结范围。\n\n> 把 Expert Java 中关于 Bean 循环依赖的讨论整理成通用知识笔记，保留例子和还没解决的问题。\n\nExpert 使用自己的学习上下文创建笔记；Controller 验证后登记来源聊天和维持者。历史迁入笔记保留原有来源事实，不会被标成某个 Expert 的学习成果。\n\n# 找回和修改笔记\n\n可以按概念、例子或问题描述搜索，例如「找出解释虚拟线程和协程区别的那篇」。Controller 结合标题、别名、目录、正文及本地 Markdown 定位，再交给对应 Expert 局部修改。\n\n已有笔记说明接触过相关主题；掌握程度以明确的复习状态、练习结果和你的反馈为准。\n\n# 每周归纳与发布\n\n每周日北京时间 20:00，[归纳员 学习知识库](codex://threads/${state.curator.threadId}) 整理临时笔记，更新目录导航，再同步 Pages 与本地 Markdown。两边都修改过的内容保留并标记冲突。\n\n本地目录是 Quartz 的内容来源。相关检查和构建通过后，仅提交并推送本轮明确归属的文件，触发 GitHub Actions。定时任务在本机运行，应用与机器需保持可运行。\n\n# 公式与代码的显示\n\n普通正文和代码保留原生格式。按你选定的方案，包含数学公式的小节讲解使用段内排版嵌入，保留公式、文字和行内代码在同一句中的位置；对应 Markdown 和 LaTeX 源码保留，用于 AI 修改和反向同步。\n\n${demo?link(demo):''}\n\n嵌入段落通过 AI 维护。其余正文可直接编辑。查找嵌入中的内容时，Controller 同时检索本地 Markdown。\n\n# 图片与导航\n\n图片使用 Pages 的持久文件引用，本地原附件和新增导出备份保留。PDF 引用保留摘录图；Excalidraw 以静态 PNG 显示，原始绘图文件仍在本地。\n\n原双链转为页面链接，标题保留为原生大纲。页内引用保留章节名称；没有验证过的块级跳转不会生成猜测链接。\n\n# 学习待办\n\n在${link(tasks)}中勾选待办。首页显示其摘要，Controller 或每周归纳员在变更后同步更新摘要。\n\n# 维护聊天\n\n- [Controller 学习知识库](codex://threads/${state.controller.threadId})\n- [归纳员 学习知识库](codex://threads/${state.curator.threadId})\n- [Expert 知识库工程](codex://threads/${state.experts.engineering.threadId})\n- [Expert 笔记图文与格式](codex://threads/${state.experts.media.threadId})`})
+payloads.push({key:'@root',page_id:state.space.root_page_id,body:`这里保存学习笔记、学习待办和临时记录。通过 Controller 创建笔记、关联 Expert，并在每周整理后同步本地仓库。\n\n# 笔记入口\n\n- ${link(study)}\n- ${link(inbox)}\n- ${link(tasks)}\n- ${link(guide)}\n\n# 待办摘要\n\n- 补回${link(prob)}中的两张原图。\n- 补回${link(linear)}中的行列式示意图。\n\n在${link(tasks)}中管理完成状态。\n\n# 学习工作流\n\n[Controller 学习知识库](codex://threads/${state.controller.threadId}) 是建页、查找、总结 Expert 和修改笔记的入口。新笔记先放临时笔记，每周日北京时间 20:00 归纳整理。`,instructions:'维护这个学习知识库时，普通学习笔记先放临时笔记页。保留真实父子关系、已有页面身份和引用，按本地项目 AGENTS.md、知识库技能和归档规则工作。普通正文与代码保持原生；数学讲解按用户已选方案使用段内排版嵌入，并同步维护源 Markdown 与展示映射。学习待办页是待办状态的依据，变更后更新首页摘要。已有笔记不等于已掌握；个性化回答应结合明确学习状态和用户反馈。不要把日记、项目或其他根目录杂记纳入自动迁移。'})
+await fs.writeFile(path.join(dir,'system-page-payloads.json'),JSON.stringify(payloads,null,2))
+console.log(JSON.stringify({pages:payloads.length,folders:payloads.filter(p=>!p.key.startsWith('@')).length}))

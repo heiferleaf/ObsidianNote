@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-12T12:23:47.702Z",
+  "module": ".knowledge-tools/math-normalize.mjs",
+  "implementation": "quartz/scripts/math-normalize.mjs",
+  "exports": {
+    "normalizeMath": "单个公式的保义兼容规范化，未知语法不猜测。",
+    "normalizeMathMarkdown": "必须在提取公式前对原始笔记正文调用；保护代码并修复公式边界。"
+  },
+  "integration": [
+    "import { normalizeMathMarkdown, normalizeMath } from \"./math-normalize.mjs\"",
+    "先令 source = normalizeMathMarkdown(normalizeCodeFences(n.body))，再运行现有代码范围保护与公式提取。",
+    "对提取出的单个公式调用 normalizeMath(latex)；不可恢复的公式明确保留为 latex 代码，并记录问题。"
+  ],
+  "formulaRules": [
+    {
+      "from": "\\Q",
+      "to": "\\mathbb{Q}",
+      "reason": "源文中的有理数集合缩写。仅匹配独立控制序列。"
+    },
+    {
+      "from": "\\Z",
+      "to": "\\mathbb{Z}",
+      "reason": "源文中的整数集合缩写。仅匹配独立控制序列。"
+    },
+    {
+      "from": "(R$S)^{-1}",
+      "to": "(R{\\char\"24}S)^{-1}",
+      "reason": "原文说明 $ 代表集合运算；保留美元符号，避免作为公式定界符。"
+    },
+    {
+      "from": "\\$",
+      "to": "{\\char\"24}",
+      "reason": "保留字面美元符号，避免 Markdown 提前结束行内公式；分组阻止后续十六进制字符被吞入。"
+    },
+    {
+      "from": "U+200B",
+      "to": "",
+      "reason": "仅去除不可见零宽空格。"
+    }
+  ],
+  "markdownRules": [
+    {
+      "from": "$x^T$$x$",
+      "to": "$x^T$ $x$",
+      "source": "002-学习笔记/课程学习/数学基础/线性代数.md",
+      "reason": "相邻行内公式被误认成块公式开头，导致91个转换块被错切分。"
+    },
+    {
+      "from": "$$\\begin{aligned}...\\end{aligned}$$、正文紧贴$$、引用内的$$、偶数反斜杠后的$$",
+      "to": "保持公式原内容，将完整配对定界符置于独立行；只移除相应层数的引用前缀。",
+      "reason": "修复展示边界；不删除大于号、不改变换行矩阵行、索引或运算。"
+    },
+    {
+      "source": "002-学习笔记/技术栈/现代编程思想/Course6 函数式编程.md",
+      "from": "缩进的 ```JAVA 围栏包裹未缩进的 StreamClass$$Lambda$1 类",
+      "to": "对应围栏提升到独立代码块，保留 Java 代码内容。",
+      "reason": "防止代码中的 $$Lambda 被解释成数学。"
+    }
+  ],
+  "audits": {
+    "oldConverted": {
+      "notes": 228,
+      "mathFences": 2614,
+      "invalidMathFences": 93,
+      "invalidByNote": {
+        "002-学习笔记/课程学习/数学基础/线性代数.md": 91,
+        "002-学习笔记/课程学习/离散数学/离散数学笔记.md": 2
+      }
+    },
+    "v2": {
+      "directory": ".knowledge/converted-v2",
+      "notes": 228,
+      "mathFences": 2911,
+      "invalidMathFences": 0,
+      "modifiedByExpert": false
+    },
+    "normalizedSource": {
+      "notes": 228,
+      "expressions": 4261,
+      "invalid": 0
+    }
+  },
+  "imageCorrection": {
+    "initialBrokenReferences": 10,
+    "recoveredExistingImages": [
+      {
+        "syntax": "![Substitution Rules](./pictures/SubstitutionRules.png)",
+        "line": 131,
+        "path": "002-学习笔记/课程学习/离散数学/pictures/SubstitutionRules.png",
+        "bytes": 98159
+      },
+      {
+        "syntax": "![PackedSmartly](./pictures/PackedSmartly.png)",
+        "line": 400,
+        "path": "002-学习笔记/课程学习/离散数学/pictures/PackedSmartly.png",
+        "bytes": 119392
+      },
+      {
+        "syntax": "![PackedSmartly2](./pictures/PackedSmartly2.png)",
+        "line": 404,
+        "path": "002-学习笔记/课程学习/离散数学/pictures/PackedSmartly2.png",
+        "bytes": 89762
+      },
+      {
+        "syntax": "![RangeScaling](./pictures/RangeScaling.png)",
+        "line": 503,
+        "path": "002-学习笔记/课程学习/离散数学/pictures/RangeScaling.png",
+        "bytes": 207886
+      },
+      {
+        "syntax": "![RelationshipCompounding](./pictures/RelationshipCompounding.png)",
+        "line": 652,
+        "path": "002-学习笔记/课程学习/离散数学/pictures/RelationshipCompounding.png",
+        "bytes": 338413
+      },
+      {
+        "syntax": "![InductiveProof](./pictures/InductiveProof.png)",
+        "line": 1276,
+        "path": "002-学习笔记/课程学习/离散数学/pictures/InductiveProof.png",
+        "bytes": 152852
+      },
+      {
+        "syntax": "![UnitsProof](./pictures/UnitsProof.png)",
+        "line": 2107,
+        "path": "002-学习笔记/课程学习/离散数学/pictures/UnitsProof.png",
+        "bytes": 187920
+      }
+    ],
+    "explanation": "七张图确实存在，使用普通 Markdown 相对图片语法。plan.json 已把它们作为有效 assets，所以不在 unresolved；旧 Quartz shortest 路径处理错误地指向站点根目录 pictures/。已修复路径解析。",
+    "trulyMissing": [
+      {
+        "source": "002-学习笔记/课程学习/数学基础/概率论.md",
+        "original": "![](images/c89fd93c5d6dccce89762d57fcd66dac.png)",
+        "reference": "images/c89fd93c5d6dccce89762d57fcd66dac.png"
+      },
+      {
+        "source": "002-学习笔记/课程学习/数学基础/概率论.md",
+        "original": "![](images/b958c16cfdce9e6bd2b810b10d71416e.png)",
+        "reference": "images/b958c16cfdce9e6bd2b810b10d71416e.png"
+      },
+      {
+        "source": "002-学习笔记/课程学习/数学基础/线性代数.md",
+        "original": "![](images/fig1.png)",
+        "reference": "images/fig1.png"
+      }
+    ],
+    "action": "仅真正缺失的3张图显示文字说明并保留原引用；现有7张图继续显示原图。"
+  },
+  "quartzValidation": {
+    "indexedPages": 215,
+    "checkedLocalImages": 204,
+    "renderedFormulaErrors": 0,
+    "brokenLocalImages": 0,
+    "mappedEmbeds": 209,
+    "materializedEmbeds": 53,
+    "mappedDrawings": 7,
+    "latexCodeFallbacks": 0
+  },
+  "codeFidelity": {
+    "fix": "将 source.replace(brokenJava, repairedJava) 改为 source.replace(brokenJava, () => repairedJava)，保留替换内容中的所有美元符号。",
+    "order": "normalizeCodeFences -> normalizeMathMarkdown -> 公式及嵌入提取",
+    "sharedFenceHelper": ".knowledge-tools/fence-normalize.mjs",
+    "deploymentCopy": "quartz/scripts/fence-normalize.mjs",
+    "notes": 228,
+    "fencedCodeBlocks": 901,
+    "codeDifferences": 0,
+    "v2CodeChecks": {
+      "java": {
+        "doubleDollarIdentifier": true,
+        "methodDollars": true,
+        "singleDollarCorruption": false
+      },
+      "claude": {
+        "configuration": true,
+        "schema": true,
+        "treeDiagram": true
+      },
+      "riscv": {
+        "eofRemarks": true
+      }
+    },
+    "modifiedOriginalFenceHelper": false,
+    "modifiedMainConverter": false
+  }
+}

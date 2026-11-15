@@ -190,7 +190,10 @@ export function slugTag(tag: string) {
 }
 
 export function normalizeDisplayName(name: string) {
-  return name.replace(/^\d+[-_]+\s*/, "").replaceAll("-", " ").trim()
+  return name
+    .replace(/^\d+[-_]+\s*/, "")
+    .replaceAll("-", " ")
+    .trim()
 }
 
 export function isAttachmentPath(path: string) {
@@ -242,7 +245,7 @@ export interface TransformOptions {
 export function transformLink(src: FullSlug, target: string, opts: TransformOptions): RelativeURL {
   let targetSlug = transformInternalLink(target)
 
-  if (opts.strategy === "relative") {
+  if (opts.strategy === "relative" || /^\.\.?\//.test(target)) {
     return targetSlug as RelativeURL
   } else {
     const folderTail = isFolderPath(targetSlug) ? "/" : ""
@@ -250,6 +253,13 @@ export function transformLink(src: FullSlug, target: string, opts: TransformOpti
     let [targetCanonical, targetAnchor] = splitAnchor(canonicalSlug)
 
     if (opts.strategy === "shortest") {
+      const relativeCandidate = joinSegments(
+        src.split("/").slice(0, -1).join("/"),
+        targetCanonical,
+      ) as FullSlug
+      if (opts.allSlugs.includes(relativeCandidate)) {
+        return (resolveRelative(src, relativeCandidate) + targetAnchor + folderTail) as RelativeURL
+      }
       // if the file name is unique, then it's just the filename
       const matchingFileNames = opts.allSlugs.filter((slug) => {
         const parts = slug.split("/")

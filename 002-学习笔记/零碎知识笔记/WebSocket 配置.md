@@ -1,18 +1,15 @@
 ---
 created: 2026-02-20
 modified: 2026-02-20
+tags: ["零碎知识笔记"]
 ---
-
-
 # 🛠️ WebSocket 系统构建笔记
 
 ## 1. 核心依赖清单 (pom.xml)
 
 在开始写 Java 代码前，必须给 Maven 装备好“协议升级”的驱动。
 
-XML
-
-```
+```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-websocket</artifactId>
@@ -44,9 +41,7 @@ XML
 
 **为什么需要它？** 因为 Handler 只能处理建立连接的那一刻，我们需要一个全局的“盒子”把管子存起来。
 
-Java
-
-```
+```java
 @Component
 public class WsSessionManager {
     // 线程安全的 Map：Key=用户ID, Value=连接管子
@@ -62,9 +57,7 @@ public class WsSessionManager {
 
 **原理**：利用 HTTP 升级为 WS 之前的最后一次 GET 请求，把用户身份识别出来。
 
-Java
-
-```
+```java
 @Component
 public class WsHandshakeInterceptor implements HandshakeInterceptor {
     @Override
@@ -91,9 +84,9 @@ public class WsHandshakeInterceptor implements HandshakeInterceptor {
 
 **重点**：继承 `TextWebSocketHandler`。它处理的是连接建立后的**物理状态**。
 
-Java
 
-```
+
+```java
 @Component
 public class MyWsHandler extends TextWebSocketHandler {
     @Autowired private WsSessionManager sessionManager;
@@ -147,9 +140,7 @@ public class WebSocketConfig implements WebSocketConfigurer {
 ## 4. 关键知识点梳理
 
 1. **为什么不冲突？**：WS 握手是基于 HTTP 的，端口复用 8080，通过 `Upgrade` 头实现协议切换。
-    
-2. **物理管子 vs 逻辑状态**：`WebSocketSession`（物理管子）存内存；`userId` 在线状态存 Redis。
-    
-3. **解耦预留**：目前的 Handler 只能处理连接逻辑，后续广播功能通过 `WsSessionManager.get(userId)` 拿到管子后，在业务类中直接调用 `sendMessage()` 即可。
-    
 
+2. **物理管子 vs 逻辑状态**：`WebSocketSession`（物理管子）存内存；`userId` 在线状态存 Redis。
+
+3. **解耦预留**：目前的 Handler 只能处理连接逻辑，后续广播功能通过 `WsSessionManager.get(userId)` 拿到管子后，在业务类中直接调用 `sendMessage()` 即可。

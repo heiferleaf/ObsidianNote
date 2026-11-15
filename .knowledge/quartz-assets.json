@@ -1,0 +1,1507 @@
+{
+  "003-Attachments/convnext-t-two-level.png": {
+    "path": "003-Attachments/convnext-t-two-level.png",
+    "sha256": "e3e95ef3dcdbdfb319aade768f0d05e5b2abc2d7a69a2ee0ea275abae22ab8aa",
+    "source_path": null,
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/技术学习/AI Agent/Pasted image 20250723195852.jpg": {
+    "path": "002-学习笔记/技术学习/AI Agent/Pasted image 20250723195852.jpg",
+    "sha256": "777db24e5844d6a63742e444cabbd57147412f73154e1a877e519a49c0612edc",
+    "source_path": "002-学习笔记/技术学习/AI Agent/Pasted image 20250723195852.jpg",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/技术学习/AI Agent/AutoregressionSchema.gif": {
+    "path": "002-学习笔记/技术学习/AI Agent/AutoregressionSchema.gif",
+    "sha256": "53a020cfddcd2f7b93c048b98335f38535a398caf2c7b3c97a7c1c1bcf96e13d",
+    "source_path": "002-学习笔记/技术学习/AI Agent/AutoregressionSchema.gif",
+    "fragment": null,
+    "is_image": true
+  },
+  "https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/weather.jpg": {
+    "path": "003-Attachments/pages-import/4c44f1765f6833b03359d2e8.png",
+    "sha256": "4c44f1765f6833b03359d2e80c03a8353b486c7057172529c435ca79d4d2aaff",
+    "source_path": null,
+    "fragment": null,
+    "is_image": true
+  },
+  "https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/Agent_system_prompt.png": {
+    "path": "003-Attachments/pages-import/b6a978b2b6fab41493a8c602.png",
+    "sha256": "b6a978b2b6fab41493a8c6027a92a0151513d9e6cdfe0a1f7856cbce9c47018f",
+    "source_path": null,
+    "fragment": null,
+    "is_image": true
+  },
+  "https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/Agent_system_prompt_tools.png": {
+    "path": "003-Attachments/pages-import/367047667690b01b07e48554.png",
+    "sha256": "367047667690b01b07e48554aee6f9f4af1deaa038dbfca4f1c05b5e410ef4b5",
+    "source_path": null,
+    "fragment": null,
+    "is_image": true
+  },
+  "https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/AgentCycle.gif": {
+    "path": "003-Attachments/pages-import/e68b4937832d21efb24c3354.gif",
+    "sha256": "e68b4937832d21efb24c335453abce1f759dc27e1c4d4b770cfba6ed0fb53f5b",
+    "source_path": null,
+    "fragment": null,
+    "is_image": true
+  },
+  "https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/whiteboard-check-2.jpg": {
+    "path": "003-Attachments/pages-import/e72af765029a6d31374c0c6b.png",
+    "sha256": "e72af765029a6d31374c0c6b19704a60e52df44b2a7c8326d51ff90fb840b057",
+    "source_path": null,
+    "fragment": null,
+    "is_image": true
+  },
+  "https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/system_prompt_cycle.png": {
+    "path": "003-Attachments/pages-import/b58539c7c545119077364949.png",
+    "sha256": "b58539c7c5451190773649498f46263ca06c8effaa4ac08e6c57ce00027fea51",
+    "source_path": null,
+    "fragment": null,
+    "is_image": true
+  },
+  "https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/alfred-agent.jpg": {
+    "path": "003-Attachments/pages-import/f4cecc7e7e0ef72c64ce5520.png",
+    "sha256": "f4cecc7e7e0ef72c64ce552064777d23b5ffadb1031fb8b3fda28817c61c55f5",
+    "source_path": null,
+    "fragment": null,
+    "is_image": true
+  },
+  "https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/alfred-agent-1.jpg": {
+    "path": "003-Attachments/pages-import/58ea3d78d3db3eef7ac9a991.png",
+    "sha256": "58ea3d78d3db3eef7ac9a99190d63d473eba18cefb3d48db18c27f4a063e5c40",
+    "source_path": null,
+    "fragment": null,
+    "is_image": true
+  },
+  "https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/alfred-agent-2.jpg": {
+    "path": "003-Attachments/pages-import/94dd49e0d26dc3c99a651ff9.png",
+    "sha256": "94dd49e0d26dc3c99a651ff96dc868d6fc021b6c76577f08f11de23464fb6d93",
+    "source_path": null,
+    "fragment": null,
+    "is_image": true
+  },
+  "https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/alfred-agent-3.jpg": {
+    "path": "003-Attachments/pages-import/7538bb8c2bc655e136af477f.png",
+    "sha256": "7538bb8c2bc655e136af477fda8af028aa2f180e1f0b49fb1a37a78ea5dd5e1e",
+    "source_path": null,
+    "fragment": null,
+    "is_image": true
+  },
+  "https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/alfred-agent-4.jpg": {
+    "path": "003-Attachments/pages-import/2babbae81eb06576a6344282.png",
+    "sha256": "2babbae81eb06576a634428294196699cbcca8ebb9a841fdf55ffedd0fa7b7f8",
+    "source_path": null,
+    "fragment": null,
+    "is_image": true
+  },
+  "https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/alfred-agent-5.jpg": {
+    "path": "003-Attachments/pages-import/aaa15dcf7c37948d612a92e2.png",
+    "sha256": "aaa15dcf7c37948d612a92e24f7eac2fbac35592c428481685fa014097a5f6c7",
+    "source_path": null,
+    "fragment": null,
+    "is_image": true
+  },
+  "https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/ReAct.png": {
+    "path": "003-Attachments/pages-import/620562f1b5520895134f875d.png",
+    "sha256": "620562f1b5520895134f875df70a82d2d2399257ebbeaa56d41b890e93bf2131",
+    "source_path": null,
+    "fragment": null,
+    "is_image": true
+  },
+  "https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/code-vs-json-actions.png": {
+    "path": "003-Attachments/pages-import/f0e7144ea0be14457e773405.png",
+    "sha256": "f0e7144ea0be14457e77340512920a7a7be6b03c9a9f31dd3eafd527f9eba11a",
+    "source_path": null,
+    "fragment": null,
+    "is_image": true
+  },
+  "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/transformers/Agent_ManimCE.gif": {
+    "path": "003-Attachments/pages-import/445679be1266aa1df3cb0ee7.gif",
+    "sha256": "445679be1266aa1df3cb0ee708d0737348828e871f3d840685e0ce4ed3feee3a",
+    "source_path": null,
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1769496699115.png": {
+    "path": "003-Attachments/QQ_1769496699115.png",
+    "sha256": "0fa99ad8a2077ef97b959e38df07f28d7ae11094d8158cffb23c0c67ba7f0447",
+    "source_path": "003-Attachments/QQ_1769496699115.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1769496801228.png": {
+    "path": "003-Attachments/QQ_1769496801228.png",
+    "sha256": "010b1ac62ea05b2885aac84b7845628434d75f443ef00a3b636b04f9da52ea90",
+    "source_path": "003-Attachments/QQ_1769496801228.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1769496917095.png": {
+    "path": "003-Attachments/QQ_1769496917095.png",
+    "sha256": "a525517624638db207dbb3e04753c76c5cdb2fba0324a9f5c3767d7baf38aabf",
+    "source_path": "003-Attachments/QQ_1769496917095.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1769496940317.png": {
+    "path": "003-Attachments/QQ_1769496940317.png",
+    "sha256": "ea3eecb42fc4e384015c01cd323e072d5e58cd54a405f08a2fbcf368d0fbe0b6",
+    "source_path": "003-Attachments/QQ_1769496940317.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1769497120923.png": {
+    "path": "003-Attachments/QQ_1769497120923.png",
+    "sha256": "0b44fe56cfbc74bcf7e4aa71e92db3bd05b4f5eee788578586eeb1a24ed5e733",
+    "source_path": "003-Attachments/QQ_1769497120923.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1769497441175.png": {
+    "path": "003-Attachments/QQ_1769497441175.png",
+    "sha256": "98fd33c174ea7d8acae8e33bf565e1fa49ae2fb7205324e48aac94e5c6135df8",
+    "source_path": "003-Attachments/QQ_1769497441175.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1769497604863.png": {
+    "path": "003-Attachments/QQ_1769497604863.png",
+    "sha256": "dde0d08a346fba1561bbb48eef2795971e6b90e2c05d063ee233f23e9f798645",
+    "source_path": "003-Attachments/QQ_1769497604863.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1769501805856.png": {
+    "path": "003-Attachments/QQ_1769501805856.png",
+    "sha256": "3126f2ef617b43381c78946d77e5416ef75073a2380256d23cd9e59f2967faf5",
+    "source_path": "003-Attachments/QQ_1769501805856.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1767513056595.png": {
+    "path": "003-Attachments/QQ_1767513056595.png",
+    "sha256": "14b5778116719cab35a8d74223e31a7a05c531c87959e00b22a461dd63fc954a",
+    "source_path": "003-Attachments/QQ_1767513056595.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1767513312636.png": {
+    "path": "003-Attachments/QQ_1767513312636.png",
+    "sha256": "2784634497812a11ef0d66272390e34f3d875b6b404ee31716ca7d0782411f76",
+    "source_path": "003-Attachments/QQ_1767513312636.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1767513455238.png": {
+    "path": "003-Attachments/QQ_1767513455238.png",
+    "sha256": "8e8d8261bd964ff87d9d294372bceb2a52a2329001a6e5322f402abe85d6d269",
+    "source_path": "003-Attachments/QQ_1767513455238.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1767514422444.png": {
+    "path": "003-Attachments/QQ_1767514422444.png",
+    "sha256": "75c54dd46485fe99828fd282d6651825d4f0bc5e08ce4436b9499620c79982a2",
+    "source_path": "003-Attachments/QQ_1767514422444.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1767515155120.png": {
+    "path": "003-Attachments/QQ_1767515155120.png",
+    "sha256": "faa7df62df51fafddf77ee7b94b532c5fb325eda57c4e87f5e992ac7c12e69c1",
+    "source_path": "003-Attachments/QQ_1767515155120.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1767517201142.png": {
+    "path": "003-Attachments/QQ_1767517201142.png",
+    "sha256": "362055bf7c456848c254fe5d85194fa3068f419f14569753496e077a538af98a",
+    "source_path": "003-Attachments/QQ_1767517201142.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1767517183158.png": {
+    "path": "003-Attachments/QQ_1767517183158.png",
+    "sha256": "46e31554ae94daa16e3149d04c24b657b13f9292dd8549d8133402c423e7c9f0",
+    "source_path": "003-Attachments/QQ_1767517183158.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1767519298709.png": {
+    "path": "003-Attachments/QQ_1767519298709.png",
+    "sha256": "22f963cddec2ab7ab6e475acc05fcd37171d6b20ab7a4ea4cb514466f329fc3b",
+    "source_path": "003-Attachments/QQ_1767519298709.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/设计模式/课件/设计模式-day04.pdf#page=4&selection=17,0,53,29&color=yellow": {
+    "path": "003-Attachments/pages-import/81e60312694eadd49af16d28.png",
+    "sha256": "81e60312694eadd49af16d28e4a9d5d0b28c535ce1e73ada2e20772c5ce0cda2",
+    "source_path": "002-学习笔记/技术栈/设计模式/课件/设计模式-day04.pdf",
+    "fragment": "page=4&selection=17,0,53,29&color=yellow",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/设计模式/课件/设计模式-day04.pdf#page=8&selection=11,0,28,25&color=note": {
+    "path": "003-Attachments/pages-import/bbea4c6a97573ae19dde30f7.png",
+    "sha256": "bbea4c6a97573ae19dde30f765346c95273f96335b39563c3d21b6b432dd3d1d",
+    "source_path": "002-学习笔记/技术栈/设计模式/课件/设计模式-day04.pdf",
+    "fragment": "page=8&selection=11,0,28,25&color=note",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/设计模式/课件/设计模式-day04.pdf#page=14&rect=56,48,548,653&color=note": {
+    "path": "003-Attachments/pages-import/5c8b56547224e92c8344a234.png",
+    "sha256": "5c8b56547224e92c8344a234ac036e041f39f681fbb801859b6dae92bda8b552",
+    "source_path": "002-学习笔记/技术栈/设计模式/课件/设计模式-day04.pdf",
+    "fragment": "page=14&rect=56,48,548,653&color=note",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/设计模式/课件/设计模式-day05.pdf#page=23&rect=56,150,556,600": {
+    "path": "003-Attachments/pages-import/7347756d47312def1f801c26.png",
+    "sha256": "7347756d47312def1f801c268eace6f6afa35a736e157db8dad53c9df0e51ecc",
+    "source_path": "002-学习笔记/技术栈/设计模式/课件/设计模式-day05.pdf",
+    "fragment": "page=23&rect=56,150,556,600",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/JAVA EE/Java教程-廖雪峰-2025-06-16.pdf#page=966&rect=19,456,182,589": {
+    "path": "003-Attachments/pages-import/e5a533ca1dca60301c220374.png",
+    "sha256": "e5a533ca1dca60301c22037487b70acc3bd2924d6f76d1219352f818995c7b73",
+    "source_path": "002-学习笔记/技术栈/JAVA EE/Java教程-廖雪峰-2025-06-16.pdf",
+    "fragment": "page=966&rect=19,456,182,589",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/JAVA EE/Java教程-廖雪峰-2025-06-16.pdf#page=978&rect=39,334,411,450&color=note": {
+    "path": "003-Attachments/pages-import/6015958a901f791a540485b3.png",
+    "sha256": "6015958a901f791a540485b3bdbd9c1e84474b58e228f91bf5624e36863d4405",
+    "source_path": "002-学习笔记/技术栈/JAVA EE/Java教程-廖雪峰-2025-06-16.pdf",
+    "fragment": "page=978&rect=39,334,411,450&color=note",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/JAVA EE/Java教程-廖雪峰-2025-06-16.pdf#page=983&selection=15,0,29,9&color=note": {
+    "path": "003-Attachments/pages-import/3b6f13540717cdb7ea1ed123.png",
+    "sha256": "3b6f13540717cdb7ea1ed123627eee766c1dba6c9c703d769bcbb6a555508367",
+    "source_path": "002-学习笔记/技术栈/JAVA EE/Java教程-廖雪峰-2025-06-16.pdf",
+    "fragment": "page=983&selection=15,0,29,9&color=note",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/JAVA EE/Java教程-廖雪峰-2025-06-16.pdf#page=1016&selection=21,0,25,34": {
+    "path": "003-Attachments/pages-import/61529b832fa94791b242eed1.png",
+    "sha256": "61529b832fa94791b242eed16a2269d61d6c23d69f5d14a004c958064e77708c",
+    "source_path": "002-学习笔记/技术栈/JAVA EE/Java教程-廖雪峰-2025-06-16.pdf",
+    "fragment": "page=1016&selection=21,0,25,34",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/JAVA EE/Java教程-廖雪峰-2025-06-16.pdf#page=1018&rect=30,572,448,799": {
+    "path": "003-Attachments/pages-import/5961729927055320194cfa70.png",
+    "sha256": "5961729927055320194cfa705ec6d3e7bc7b7584971a01f052ae63939eabb7c2",
+    "source_path": "002-学习笔记/技术栈/JAVA EE/Java教程-廖雪峰-2025-06-16.pdf",
+    "fragment": "page=1018&rect=30,572,448,799",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/JAVA EE/Java教程-廖雪峰-2025-06-16.pdf#page=1044&rect=29,69,525,215": {
+    "path": "003-Attachments/pages-import/91193f5ed55f786eb2aa67a7.png",
+    "sha256": "91193f5ed55f786eb2aa67a778c85d1283cb0c3d17f9da7a082bacf881bf91d7",
+    "source_path": "002-学习笔记/技术栈/JAVA EE/Java教程-廖雪峰-2025-06-16.pdf",
+    "fragment": "page=1044&rect=29,69,525,215",
+    "is_image": true
+  },
+  "003-Attachments/Java IO 2026-03-21 20.56.51.excalidraw.md": {
+    "path": "003-Attachments/pages-import/c10d95c1e25817af31f67dd0.png",
+    "sha256": "c10d95c1e25817af31f67dd01dbb1975410a7241ee284a533d9fbc2e1990f4f5",
+    "source_path": "003-Attachments/Java IO 2026-03-21 20.56.51.excalidraw.md",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1770557349765.png": {
+    "path": "003-Attachments/QQ_1770557349765.png",
+    "sha256": "7324e5c742057e327dad60893253c1dc2ac80b1323eb1e6dd63fb0460917ff08",
+    "source_path": "003-Attachments/QQ_1770557349765.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1771742083481.png": {
+    "path": "003-Attachments/QQ_1771742083481.png",
+    "sha256": "91f0bfcbd26312c4109de2a73c9475dcc9d1d7768e2c4c12db5ae9e53b3ec385",
+    "source_path": "003-Attachments/QQ_1771742083481.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1771745645105.png": {
+    "path": "003-Attachments/QQ_1771745645105.png",
+    "sha256": "2d06135b6ce4957ec6c926fb5d6ca3cf3b3b4a0715a3f77bd0dbe0b492b9be42",
+    "source_path": "003-Attachments/QQ_1771745645105.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1772350398431.png": {
+    "path": "003-Attachments/QQ_1772350398431.png",
+    "sha256": "1f939a5d5360ab933a15425f6eafd7ce78896aa3bf383ff271a594edc721d724",
+    "source_path": "003-Attachments/QQ_1772350398431.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1772351288181.png": {
+    "path": "003-Attachments/QQ_1772351288181.png",
+    "sha256": "5dc4e7268f914b4a1307e96fcfdbcdac84b6fc0f5b9dbdb164f72c213c72ccd5",
+    "source_path": "003-Attachments/QQ_1772351288181.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1772351374140.png": {
+    "path": "003-Attachments/QQ_1772351374140.png",
+    "sha256": "f2bed46a950e8445bc45cfb43fe43a46d1ed95c9ba90647bb46fc79d2f56c7fd",
+    "source_path": "003-Attachments/QQ_1772351374140.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1769621173646.png": {
+    "path": "003-Attachments/QQ_1769621173646.png",
+    "sha256": "6a830bcc5a82bfa2d0b076096b965eb19366ab7169877485ee7cc8d57327e9c3",
+    "source_path": "003-Attachments/QQ_1769621173646.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "009-电子书籍/咕泡学院Java架构师成长丛书 Spring 5核心原理与30个类手写实战 (（中国）谭勇德, 谭勇德 (Tom)) (Z-Library).pdf#page=128&rect=17,263,576,598": {
+    "path": "003-Attachments/pages-import/aaadd6ee8f31d6148848af14.png",
+    "sha256": "aaadd6ee8f31d6148848af14665f3d5a263e2494a923c0965067caf12c60bb4a",
+    "source_path": "009-电子书籍/咕泡学院Java架构师成长丛书 Spring 5核心原理与30个类手写实战 (（中国）谭勇德, 谭勇德 (Tom)) (Z-Library).pdf",
+    "fragment": "page=128&rect=17,263,576,598",
+    "is_image": true
+  },
+  "009-电子书籍/咕泡学院Java架构师成长丛书 Spring 5核心原理与30个类手写实战 (（中国）谭勇德, 谭勇德 (Tom)) (Z-Library).pdf#page=198&rect=25,56,590,275": {
+    "path": "003-Attachments/pages-import/5f6080fb6fdbaffb34321c49.png",
+    "sha256": "5f6080fb6fdbaffb34321c49d2f5a4e522389dfcf1c4fd0ab207097beb448b9a",
+    "source_path": "009-电子书籍/咕泡学院Java架构师成长丛书 Spring 5核心原理与30个类手写实战 (（中国）谭勇德, 谭勇德 (Tom)) (Z-Library).pdf",
+    "fragment": "page=198&rect=25,56,590,275",
+    "is_image": true
+  },
+  "009-电子书籍/咕泡学院Java架构师成长丛书 Spring 5核心原理与30个类手写实战 (（中国）谭勇德, 谭勇德 (Tom)) (Z-Library).pdf#page=203&rect=11,270,562,487": {
+    "path": "003-Attachments/pages-import/6fb11739700de827024f99af.png",
+    "sha256": "6fb11739700de827024f99af2cfcba07b869b6d94dce36564204b261d0df36a3",
+    "source_path": "009-电子书籍/咕泡学院Java架构师成长丛书 Spring 5核心原理与30个类手写实战 (（中国）谭勇德, 谭勇德 (Tom)) (Z-Library).pdf",
+    "fragment": "page=203&rect=11,270,562,487",
+    "is_image": true
+  },
+  "009-电子书籍/咕泡学院Java架构师成长丛书 Spring 5核心原理与30个类手写实战 (（中国）谭勇德, 谭勇德 (Tom)) (Z-Library).pdf#page=210&rect=25,608,582,671": {
+    "path": "003-Attachments/pages-import/88429862140edafcdbffcae5.png",
+    "sha256": "88429862140edafcdbffcae597f93fba1eb1e20e76ef33019937e6ec57af99af",
+    "source_path": "009-电子书籍/咕泡学院Java架构师成长丛书 Spring 5核心原理与30个类手写实战 (（中国）谭勇德, 谭勇德 (Tom)) (Z-Library).pdf",
+    "fragment": "page=210&rect=25,608,582,671",
+    "is_image": true
+  },
+  "009-电子书籍/咕泡学院Java架构师成长丛书 Spring 5核心原理与30个类手写实战 (（中国）谭勇德, 谭勇德 (Tom)) (Z-Library).pdf#page=211&rect=98,86,462,363": {
+    "path": "003-Attachments/pages-import/df21fe3fe4edba49a2230987.png",
+    "sha256": "df21fe3fe4edba49a223098711bb317719707ddecffb3b8067ede05c49ee59cf",
+    "source_path": "009-电子书籍/咕泡学院Java架构师成长丛书 Spring 5核心原理与30个类手写实战 (（中国）谭勇德, 谭勇德 (Tom)) (Z-Library).pdf",
+    "fragment": "page=211&rect=98,86,462,363",
+    "is_image": true
+  },
+  "009-电子书籍/咕泡学院Java架构师成长丛书 Spring 5核心原理与30个类手写实战 (（中国）谭勇德, 谭勇德 (Tom)) (Z-Library).pdf#page=218&rect=19,362,583,758": {
+    "path": "003-Attachments/pages-import/6e905ce30ad9a67f22d185ce.png",
+    "sha256": "6e905ce30ad9a67f22d185ce2748614600eeb0a3392619f3248097e0bfc6d9f5",
+    "source_path": "009-电子书籍/咕泡学院Java架构师成长丛书 Spring 5核心原理与30个类手写实战 (（中国）谭勇德, 谭勇德 (Tom)) (Z-Library).pdf",
+    "fragment": "page=218&rect=19,362,583,758",
+    "is_image": true
+  },
+  "009-电子书籍/咕泡学院Java架构师成长丛书 Spring 5核心原理与30个类手写实战 (（中国）谭勇德, 谭勇德 (Tom)) (Z-Library).pdf#page=218&rect=12,68,587,307": {
+    "path": "003-Attachments/pages-import/ed12c5ec7f086a66b87a5cf2.png",
+    "sha256": "ed12c5ec7f086a66b87a5cf2f351fa1e81b238efea5f6cc18deed8b3411ad7c2",
+    "source_path": "009-电子书籍/咕泡学院Java架构师成长丛书 Spring 5核心原理与30个类手写实战 (（中国）谭勇德, 谭勇德 (Tom)) (Z-Library).pdf",
+    "fragment": "page=218&rect=12,68,587,307",
+    "is_image": true
+  },
+  "003-Attachments/QQ_1777267136625.png": {
+    "path": "003-Attachments/QQ_1777267136625.png",
+    "sha256": "1c526293147820912db2dc3fbe847abf5653d2374a095448bd70d51f24d33ebd",
+    "source_path": "003-Attachments/QQ_1777267136625.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1772623788208.png": {
+    "path": "003-Attachments/QQ_1772623788208.png",
+    "sha256": "f4ca80917f47807725fbe301576031ab73b364a42cd657be64a2ff7bb59f094a",
+    "source_path": "003-Attachments/QQ_1772623788208.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1772454714901.png": {
+    "path": "003-Attachments/QQ_1772454714901.png",
+    "sha256": "c5e8a817caa60bdbdd76f7e35b7897e19d29bd875f330a45f4e4ae8d3f643961",
+    "source_path": "003-Attachments/QQ_1772454714901.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/分布式软件/资料/第一讲 分布式软件概述.pdf#page=29&rect=52,60,930,425": {
+    "path": "003-Attachments/pages-import/8738b7e2f2d439db5eb8c7cf.png",
+    "sha256": "8738b7e2f2d439db5eb8c7cf91977f069cc7456b9d1c09b08dd7a3c3a778209b",
+    "source_path": "002-学习笔记/技术栈/分布式软件/资料/第一讲 分布式软件概述.pdf",
+    "fragment": "page=29&rect=52,60,930,425",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/分布式软件/资料/第二讲 高并发设计（1）.pdf#page=11&rect=467,13,924,472": {
+    "path": "003-Attachments/pages-import/fb71a4cf1d7c35c390a1a1d4.png",
+    "sha256": "fb71a4cf1d7c35c390a1a1d4d26aec7bc323355d6c9aab265c20f99b4ac7d558",
+    "source_path": "002-学习笔记/技术栈/分布式软件/资料/第二讲 高并发设计（1）.pdf",
+    "fragment": "page=11&rect=467,13,924,472",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/分布式软件/资料/第二讲 高并发设计（1）.pdf#page=14&rect=120,14,909,447": {
+    "path": "003-Attachments/pages-import/4de9c248bc8470bb17bde33a.png",
+    "sha256": "4de9c248bc8470bb17bde33ab7231d33e47965fb13ec67d066817cf46b48013d",
+    "source_path": "002-学习笔记/技术栈/分布式软件/资料/第二讲 高并发设计（1）.pdf",
+    "fragment": "page=14&rect=120,14,909,447",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/分布式软件/资料/第二讲 高并发设计（1）.pdf#page=17&rect=119,28,923,430": {
+    "path": "003-Attachments/pages-import/23974fb3bcc430d0db89cea7.png",
+    "sha256": "23974fb3bcc430d0db89cea704aee0eb6a168984f1556b33e1fc6b6424bf2b9c",
+    "source_path": "002-学习笔记/技术栈/分布式软件/资料/第二讲 高并发设计（1）.pdf",
+    "fragment": "page=17&rect=119,28,923,430",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/分布式软件/资料/第三讲 高并发设计(2).pdf#page=5&rect=13,8,942,441": {
+    "path": "003-Attachments/pages-import/82702071b7e5d691512bca19.png",
+    "sha256": "82702071b7e5d691512bca1925ec045f0d3115a47951c3783105e91cfd014000",
+    "source_path": "002-学习笔记/技术栈/分布式软件/资料/第三讲 高并发设计(2).pdf",
+    "fragment": "page=5&rect=13,8,942,441",
+    "is_image": true
+  },
+  "003-Attachments/Pasted image 20260318144831.png": {
+    "path": "003-Attachments/Pasted image 20260318144831.png",
+    "sha256": "8450871319984a1b147b629d27d19f72d020b302a0efb71ce22fe53a5d6f425a",
+    "source_path": "003-Attachments/Pasted image 20260318144831.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/Pasted image 20260318144756.png": {
+    "path": "003-Attachments/Pasted image 20260318144756.png",
+    "sha256": "023daa7f70175ed5a9ab1ced258515dd11f6e066d158906c8c99f74cc613b42c",
+    "source_path": "003-Attachments/Pasted image 20260318144756.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/Pasted image 20260318144840.png": {
+    "path": "003-Attachments/Pasted image 20260318144840.png",
+    "sha256": "6e2fe4d397af211855f7cccf0a00092c5481cd7580fb974b76d26a45ed26b591",
+    "source_path": "003-Attachments/Pasted image 20260318144840.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/分布式软件/资料/第三讲 高并发设计(2).pdf#page=44&rect=20,13,877,536": {
+    "path": "003-Attachments/pages-import/cc21360a4a32b75948994675.png",
+    "sha256": "cc21360a4a32b759489946758643717fb6ce798a0ae66c6203954cb8b9e88826",
+    "source_path": "002-学习笔记/技术栈/分布式软件/资料/第三讲 高并发设计(2).pdf",
+    "fragment": "page=44&rect=20,13,877,536",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/分布式软件/资料/第四讲 高并发设计(3).pdf#page=6&rect=483,18,933,427": {
+    "path": "003-Attachments/pages-import/091ba0483e8021eea72a400e.png",
+    "sha256": "091ba0483e8021eea72a400edd31f7d5cd6792a5e01a031c79c6518a77afffa2",
+    "source_path": "002-学习笔记/技术栈/分布式软件/资料/第四讲 高并发设计(3).pdf",
+    "fragment": "page=6&rect=483,18,933,427",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/分布式软件/资料/第五讲 分布式事务.pdf#page=24&rect=26,51,939,433": {
+    "path": "003-Attachments/pages-import/5602dcbbba1071f1a1482ce0.png",
+    "sha256": "5602dcbbba1071f1a1482ce0a4c5f1285f984d9ad6db96aaeaab9b036b6dedc4",
+    "source_path": "002-学习笔记/技术栈/分布式软件/资料/第五讲 分布式事务.pdf",
+    "fragment": "page=24&rect=26,51,939,433",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/分布式软件/资料/第七讲 服务治理（1）.pdf#page=25&rect=95,18,805,354": {
+    "path": "003-Attachments/pages-import/faff954fafd1f01b321d794a.png",
+    "sha256": "faff954fafd1f01b321d794a59a43abd89e04befe3652c661e2e37aeb6ef8c9a",
+    "source_path": "002-学习笔记/技术栈/分布式软件/资料/第七讲 服务治理（1）.pdf",
+    "fragment": "page=25&rect=95,18,805,354",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/分布式软件/资料/第八讲 服务治理(2).pdf#page=8&rect=91,15,924,464": {
+    "path": "003-Attachments/pages-import/c91c7d5d479a1b760b46ca60.png",
+    "sha256": "c91c7d5d479a1b760b46ca6004700cd01cad4523a7aee204d163dc869d3dd637",
+    "source_path": "002-学习笔记/技术栈/分布式软件/资料/第八讲 服务治理(2).pdf",
+    "fragment": "page=8&rect=91,15,924,464",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/分布式软件/资料/第八讲 服务治理(2).pdf#page=18&rect=99,30,809,426": {
+    "path": "003-Attachments/pages-import/308448d77a27d8c4c2411d3e.png",
+    "sha256": "308448d77a27d8c4c2411d3eb93d4cd93c605b072368ef750c1882e48722e8a8",
+    "source_path": "002-学习笔记/技术栈/分布式软件/资料/第八讲 服务治理(2).pdf",
+    "fragment": "page=18&rect=99,30,809,426",
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/分布式软件/资料/第八讲 服务治理(2).pdf#page=27&rect=31,53,930,424": {
+    "path": "003-Attachments/pages-import/a817e3a2ff6a9d72548a5b62.png",
+    "sha256": "a817e3a2ff6a9d72548a5b626bd6a8c9bbee36ace7ba29a8e568b94827695d86",
+    "source_path": "002-学习笔记/技术栈/分布式软件/资料/第八讲 服务治理(2).pdf",
+    "fragment": "page=27&rect=31,53,930,424",
+    "is_image": true
+  },
+  "003-Attachments/QQ_1780401960835.png": {
+    "path": "003-Attachments/QQ_1780401960835.png",
+    "sha256": "980730ce662094a45815a07a6908ced39062badb881b48479b8a037c98403b9d",
+    "source_path": "003-Attachments/QQ_1780401960835.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1780403088331.png": {
+    "path": "003-Attachments/QQ_1780403088331.png",
+    "sha256": "93309a22211aad65f885f228d6b1ea3047ed43fe4f258f8e65a6d484cee927fc",
+    "source_path": "003-Attachments/QQ_1780403088331.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/Pasted image 20260614172524.png": {
+    "path": "003-Attachments/Pasted image 20260614172524.png",
+    "sha256": "01ae0f1a3e84c9e4ab32a56f2882b05e38e53b7d9816b38b4fc3445cf5a36485",
+    "source_path": "003-Attachments/Pasted image 20260614172524.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "009-电子书籍/数据结构教程（C++语言描述）（第2版·微课视频版） (李春葆, 匡志强, 蒋林) _9787302585329.pdf#page=194&rect=53,157,475,212": {
+    "path": "003-Attachments/pages-import/4c99b52a7e0c27d11c0c929e.png",
+    "sha256": "4c99b52a7e0c27d11c0c929ee3d6c4b01b30c80f85623438fe9660ac4b94a192",
+    "source_path": "009-电子书籍/数据结构教程（C++语言描述）（第2版·微课视频版） (李春葆, 匡志强, 蒋林) _9787302585329.pdf",
+    "fragment": "page=194&rect=53,157,475,212",
+    "is_image": true
+  },
+  "009-电子书籍/数据结构教程（C++语言描述）（第2版·微课视频版） (李春葆, 匡志强, 蒋林) _9787302585329.pdf#page=197&rect=52,251,400,377": {
+    "path": "003-Attachments/pages-import/a15f99694fa36e9cf43c1418.png",
+    "sha256": "a15f99694fa36e9cf43c141875259a1f1152f8969067ffe03d32eb62da7b995a",
+    "source_path": "009-电子书籍/数据结构教程（C++语言描述）（第2版·微课视频版） (李春葆, 匡志强, 蒋林) _9787302585329.pdf",
+    "fragment": "page=197&rect=52,251,400,377",
+    "is_image": true
+  },
+  "003-Attachments/QQ_1769938510761.png": {
+    "path": "003-Attachments/QQ_1769938510761.png",
+    "sha256": "04eb1df3c22e1c4d8e0b9282ff42694a6a61a0a585a4a08da30356cc75521764",
+    "source_path": "003-Attachments/QQ_1769938510761.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "009-电子书籍/数据结构教程（C++语言描述）（第2版·微课视频版） (李春葆, 匡志强, 蒋林) _9787302585329.pdf#page=201&rect=75,260,441,504": {
+    "path": "003-Attachments/pages-import/fbe39865172c84d78f2488a5.png",
+    "sha256": "fbe39865172c84d78f2488a55cb9bd8c8cd49ce743bd50fe6bf43fa8170bec43",
+    "source_path": "009-电子书籍/数据结构教程（C++语言描述）（第2版·微课视频版） (李春葆, 匡志强, 蒋林) _9787302585329.pdf",
+    "fragment": "page=201&rect=75,260,441,504",
+    "is_image": true
+  },
+  "003-Attachments/树 2026-01-24 19.35.57.excalidraw.md": {
+    "path": "003-Attachments/pages-import/f2ec878b6e39e876463c6135.png",
+    "sha256": "f2ec878b6e39e876463c6135e5120718f209fcc892b179316c7320dc8b1e65e2",
+    "source_path": "003-Attachments/树 2026-01-24 19.35.57.excalidraw.md",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/树 2026-01-24 19.41.32.excalidraw.md": {
+    "path": "003-Attachments/pages-import/391088096e291475782613a9.png",
+    "sha256": "391088096e291475782613a91b22cdc7fe96a222fdc3a078e64594bdc0a549eb",
+    "source_path": "003-Attachments/树 2026-01-24 19.41.32.excalidraw.md",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/树 2026-01-24 20.27.37.excalidraw.md": {
+    "path": "003-Attachments/pages-import/70bc87b392a76715b55f668d.png",
+    "sha256": "70bc87b392a76715b55f668d33075ebc2c74194fdd096119d58f73755e965b58",
+    "source_path": "003-Attachments/树 2026-01-24 20.27.37.excalidraw.md",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1769336096693.png": {
+    "path": "003-Attachments/QQ_1769336096693.png",
+    "sha256": "88269a9021a8b71a9270df80a66aa9470ea61f2b878e1ba408b63bd7bf7130f0",
+    "source_path": "003-Attachments/QQ_1769336096693.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/树 2026-01-25 14.39.25.excalidraw.md": {
+    "path": "003-Attachments/pages-import/eeec04a2ef38e377656d75a1.png",
+    "sha256": "eeec04a2ef38e377656d75a1614c53b3bd29d15ae80201386aacffda31027c99",
+    "source_path": "003-Attachments/树 2026-01-25 14.39.25.excalidraw.md",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1769335916894.png": {
+    "path": "003-Attachments/QQ_1769335916894.png",
+    "sha256": "07a885fc2b74ef98405e095784ca855c5d8f3c71b677691e71b1066367e311ad",
+    "source_path": "003-Attachments/QQ_1769335916894.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1778432019280.png": {
+    "path": "003-Attachments/QQ_1778432019280.png",
+    "sha256": "777c6d4276a21dd3ec72f206f98a393cabb34bc5be478bbb80cdc22946cff742",
+    "source_path": "003-Attachments/QQ_1778432019280.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1778432609585.png": {
+    "path": "003-Attachments/QQ_1778432609585.png",
+    "sha256": "3eb341b07b483f6862c562eb12f881a35e555e76997b121ba19046546a90fce1",
+    "source_path": "003-Attachments/QQ_1778432609585.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/Pasted image 20260508163008.png": {
+    "path": "003-Attachments/Pasted image 20260508163008.png",
+    "sha256": "e9034883b1e058ebc13d0f26542cefd4931dc1e96a2d94eabd3c8147ebfde56e",
+    "source_path": "003-Attachments/Pasted image 20260508163008.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/Pasted image 20260508165434.png": {
+    "path": "003-Attachments/Pasted image 20260508165434.png",
+    "sha256": "29823529bc5b6bd483a89faeec3cfacc6e1550143409348e86500b62fbb0ca35",
+    "source_path": "003-Attachments/Pasted image 20260508165434.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/Pasted image 20260508170233.png": {
+    "path": "003-Attachments/Pasted image 20260508170233.png",
+    "sha256": "ea669edbccf9b9d8f884d02282e7fa9de36586ee27e4260f8332d63520365122",
+    "source_path": "003-Attachments/Pasted image 20260508170233.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1767851478010.png": {
+    "path": "003-Attachments/QQ_1767851478010.png",
+    "sha256": "4c3d3af2b0ab6a3affb573069c9b81a491b455efb1e4f73b22ff14859a5d161b",
+    "source_path": "003-Attachments/QQ_1767851478010.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/技术栈/设计模式/课件/设计模式-day03.pdf#page=6&rect=78,9,539,829": {
+    "path": "003-Attachments/pages-import/5777e4120d4d86c1a50eff91.png",
+    "sha256": "5777e4120d4d86c1a50eff91a228883d6dfa14e6695cb523324fa7d756841af9",
+    "source_path": "002-学习笔记/技术栈/设计模式/课件/设计模式-day03.pdf",
+    "fragment": "page=6&rect=78,9,539,829",
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/操作系统实践/图片/QQ_1757501764338.png": {
+    "path": "002-学习笔记/课程学习/操作系统实践/图片/QQ_1757501764338.png",
+    "sha256": "af20839d0a26d06b2edcb36abc793d1719f94a10a1d318741179431f230f4cb6",
+    "source_path": "002-学习笔记/课程学习/操作系统实践/图片/QQ_1757501764338.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/操作系统实践/图片/QQ_1757501597681.png": {
+    "path": "002-学习笔记/课程学习/操作系统实践/图片/QQ_1757501597681.png",
+    "sha256": "701f3a78d2cd52d70703e6261b0bb4a89d550c79d9e242841b0417f77a94024d",
+    "source_path": "002-学习笔记/课程学习/操作系统实践/图片/QQ_1757501597681.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/操作系统实践/图片/QQ_1757501812038.png": {
+    "path": "002-学习笔记/课程学习/操作系统实践/图片/QQ_1757501812038.png",
+    "sha256": "dd8723e8396ffaf9ea8bbb092e335e55fe2c042221c77498dceb2243ba0134e0",
+    "source_path": "002-学习笔记/课程学习/操作系统实践/图片/QQ_1757501812038.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/操作系统实践/图片/系统架构设计.png": {
+    "path": "002-学习笔记/课程学习/操作系统实践/图片/系统架构设计.png",
+    "sha256": "8149024cb07a9349b94f2fb606e6cc89afa81b88883e9f50983f7c6ea0812ae3",
+    "source_path": "002-学习笔记/课程学习/操作系统实践/图片/系统架构设计.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/操作系统实践/图片/测试结果正常.png": {
+    "path": "002-学习笔记/课程学习/操作系统实践/图片/测试结果正常.png",
+    "sha256": "7e2a3be8218a4c4fdac0f5c11146759f5554a4013bd894bb252a9673a2fb917e",
+    "source_path": "002-学习笔记/课程学习/操作系统实践/图片/测试结果正常.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/操作系统实践/图片/QQ_1764938857049.png": {
+    "path": "002-学习笔记/课程学习/操作系统实践/图片/QQ_1764938857049.png",
+    "sha256": "216d0d41ce7324dae103c41bef4377979adff09c1eec65f02f974110d4bd34c6",
+    "source_path": "002-学习笔记/课程学习/操作系统实践/图片/QQ_1764938857049.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/操作系统实践/图片/QQ_1764938936865.png": {
+    "path": "002-学习笔记/课程学习/操作系统实践/图片/QQ_1764938936865.png",
+    "sha256": "302a01fcc07de1272cc306ea73bece08d17b4caca23045f28f3c541c2c0610b0",
+    "source_path": "002-学习笔记/课程学习/操作系统实践/图片/QQ_1764938936865.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/操作系统实践/图片/QQ_1764939274660.png": {
+    "path": "002-学习笔记/课程学习/操作系统实践/图片/QQ_1764939274660.png",
+    "sha256": "7fcb3f87f065e95c45ee2cb7046aa3249bec67e548d74e0f477b37e847fed72d",
+    "source_path": "002-学习笔记/课程学习/操作系统实践/图片/QQ_1764939274660.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/操作系统实践/图片/QQ_1764939957750.png": {
+    "path": "002-学习笔记/课程学习/操作系统实践/图片/QQ_1764939957750.png",
+    "sha256": "b089cacd6e2ee50ea86a107d19161e3491faf4390b547962aefbf4cf48e80160",
+    "source_path": "002-学习笔记/课程学习/操作系统实践/图片/QQ_1764939957750.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/操作系统实践/图片/QQ_1764940313049.png": {
+    "path": "002-学习笔记/课程学习/操作系统实践/图片/QQ_1764940313049.png",
+    "sha256": "38d7fa88c8090589c0a14f821b1a08a3e01bd1a1402ae59ab0c2e30444b282a2",
+    "source_path": "002-学习笔记/课程学习/操作系统实践/图片/QQ_1764940313049.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/数据库系统/图片/QQ_1761401365809.png": {
+    "path": "002-学习笔记/课程学习/数据库系统/图片/QQ_1761401365809.png",
+    "sha256": "735b1bc33e1c21e4cf0e0aa248a191fe106d477c4df5cbee93e64259ab10a310",
+    "source_path": "002-学习笔记/课程学习/数据库系统/图片/QQ_1761401365809.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/数据库系统/图片/QQ_1761403257949.png": {
+    "path": "002-学习笔记/课程学习/数据库系统/图片/QQ_1761403257949.png",
+    "sha256": "fb45d62af4c1ef39012f94cf559aae9a20e9cdb11853eef643889860e52bc6fc",
+    "source_path": "002-学习笔记/课程学习/数据库系统/图片/QQ_1761403257949.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "005-Excalidraw/作业记录 2025-11-08 13.08.26.excalidraw.md": {
+    "path": "003-Attachments/pages-import/5331ffb3089931fe421177e5.png",
+    "sha256": "5331ffb3089931fe421177e5a3d5917bb004745a46f4deeff365789d71ea8527",
+    "source_path": "005-Excalidraw/作业记录 2025-11-08 13.08.26.excalidraw.md",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/数据库系统/图片/QQ_1764128865481.png": {
+    "path": "002-学习笔记/课程学习/数据库系统/图片/QQ_1764128865481.png",
+    "sha256": "3deb3ee1f2e64963d96761b05877ce910e2bf1e8a0da2a4ae903dfaef4878e07",
+    "source_path": "002-学习笔记/课程学习/数据库系统/图片/QQ_1764128865481.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/数据库系统/图片/QQ_1764129000958.png": {
+    "path": "002-学习笔记/课程学习/数据库系统/图片/QQ_1764129000958.png",
+    "sha256": "8e851ddcb49932881b61c39fdd2e1211630ea51a3533feca291c5efbb2cb15d3",
+    "source_path": "002-学习笔记/课程学习/数据库系统/图片/QQ_1764129000958.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1767614228093.png": {
+    "path": "003-Attachments/QQ_1767614228093.png",
+    "sha256": "7433fa51c8025e2e1d53ecf11d79191380e72bb48ea3458b9495e2b5716db61a",
+    "source_path": "003-Attachments/QQ_1767614228093.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/数据库系统/图片/数据库系统层次图.png": {
+    "path": "002-学习笔记/课程学习/数据库系统/图片/数据库系统层次图.png",
+    "sha256": "315dde597140955522a345af66dbdd3ecc321e1f913560fd6cfaf84a9e1e8f45",
+    "source_path": "002-学习笔记/课程学习/数据库系统/图片/数据库系统层次图.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/数据库系统/图片/SQL标准数据结构.png": {
+    "path": "002-学习笔记/课程学习/数据库系统/图片/SQL标准数据结构.png",
+    "sha256": "76e6345358812372c2810f776c068dc63fce858c56c0dcd25c95f80c8379f035",
+    "source_path": "002-学习笔记/课程学习/数据库系统/图片/SQL标准数据结构.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/数据库系统/图片/安全级别划分.png": {
+    "path": "002-学习笔记/课程学习/数据库系统/图片/安全级别划分.png",
+    "sha256": "b6c72ddc17411d570b50dcbd6c3b62f40a8b93a0df8a7bd7f77ad873b3bc3c26",
+    "source_path": "002-学习笔记/课程学习/数据库系统/图片/安全级别划分.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/数据库系统/图片/我国CC安全标准.png": {
+    "path": "002-学习笔记/课程学习/数据库系统/图片/我国CC安全标准.png",
+    "sha256": "69c6adea69f42b8d46ebea65cfcd08fa6f8bcebf2fc2a0db4d5029dbcee439f4",
+    "source_path": "002-学习笔记/课程学习/数据库系统/图片/我国CC安全标准.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/数据库系统/图片/破坏参照完整性的处理方案.png": {
+    "path": "002-学习笔记/课程学习/数据库系统/图片/破坏参照完整性的处理方案.png",
+    "sha256": "19059f5515c80b83305b5b187e889fb163d5a7ec36f8cf794623de5abc5f1263",
+    "source_path": "002-学习笔记/课程学习/数据库系统/图片/破坏参照完整性的处理方案.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/数据库系统/图片/数据库设计的基本步骤.png": {
+    "path": "002-学习笔记/课程学习/数据库系统/图片/数据库设计的基本步骤.png",
+    "sha256": "21f368e84dc7a424332063aae24a0374faad245c93adc18ad4b843f866db79cb",
+    "source_path": "002-学习笔记/课程学习/数据库系统/图片/数据库设计的基本步骤.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/数据库系统/图片/数据库的各级模式.png": {
+    "path": "002-学习笔记/课程学习/数据库系统/图片/数据库的各级模式.png",
+    "sha256": "da7343180185de0680699abbc27da72f450c853cd0b9369587eccda3f68d6b28",
+    "source_path": "002-学习笔记/课程学习/数据库系统/图片/数据库的各级模式.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/数据库系统/图片/事务隔离级别和数据不一致性的关系.png": {
+    "path": "002-学习笔记/课程学习/数据库系统/图片/事务隔离级别和数据不一致性的关系.png",
+    "sha256": "53200e8573d91c9bc085edb4573e73e0de8423ee66b10b7adc943ebb405cd278",
+    "source_path": "002-学习笔记/课程学习/数据库系统/图片/事务隔离级别和数据不一致性的关系.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/数据库系统/图片/三级粒度树.png": {
+    "path": "002-学习笔记/课程学习/数据库系统/图片/三级粒度树.png",
+    "sha256": "6fd94f432474215b8d6c1b8e9a5a6bf6c5a37903326c491558d30e57893ce383",
+    "source_path": "002-学习笔记/课程学习/数据库系统/图片/三级粒度树.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/数据库系统/图片/意向锁的相容矩阵和强度偏序关系.png": {
+    "path": "002-学习笔记/课程学习/数据库系统/图片/意向锁的相容矩阵和强度偏序关系.png",
+    "sha256": "2a03c69d5775a11c5b0caa02d1450761cc1315eed2fc8c57bf967bdd46814f81",
+    "source_path": "002-学习笔记/课程学习/数据库系统/图片/意向锁的相容矩阵和强度偏序关系.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "https://www.runoob.com/wp-content/uploads/2024/12/1__D5ZvufDS38WkhK9rK32hQ.jpg": {
+    "path": "003-Attachments/pages-import/0c387c0771b82fb7c1ade827.png",
+    "sha256": "0c387c0771b82fb7c1ade827291e4b38f209fd0dfda348abe2767fa12631731d",
+    "source_path": null,
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/第三次作业 2026-01-15 17.12.46.excalidraw.md": {
+    "path": "003-Attachments/pages-import/7878243478f88fe329393af4.png",
+    "sha256": "7878243478f88fe329393af448999ba657ed701c1757374a2117df5d8adaff0f",
+    "source_path": "003-Attachments/第三次作业 2026-01-15 17.12.46.excalidraw.md",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/离散数学/pictures/SubstitutionRules.png": {
+    "path": "002-学习笔记/课程学习/离散数学/pictures/SubstitutionRules.png",
+    "sha256": "4c01dc4a0c1c962d11e6109f34f6ed3412c31eea3adfe3bc9e97d6eddb78156f",
+    "source_path": "002-学习笔记/课程学习/离散数学/pictures/SubstitutionRules.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/离散数学/pictures/PackedSmartly.png": {
+    "path": "002-学习笔记/课程学习/离散数学/pictures/PackedSmartly.png",
+    "sha256": "eb1a509bfeb00cac85e6e2690d2783baa0f336f482b07c3608218ba63488c36e",
+    "source_path": "002-学习笔记/课程学习/离散数学/pictures/PackedSmartly.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/离散数学/pictures/PackedSmartly2.png": {
+    "path": "002-学习笔记/课程学习/离散数学/pictures/PackedSmartly2.png",
+    "sha256": "f7532ff2055782e0b77431fc41853b595074288e7b333f34eacaf2c1bc6b58d2",
+    "source_path": "002-学习笔记/课程学习/离散数学/pictures/PackedSmartly2.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/离散数学/pictures/RangeScaling.png": {
+    "path": "002-学习笔记/课程学习/离散数学/pictures/RangeScaling.png",
+    "sha256": "b9b4967fe2b070b32034e7241d72eed0dbfa253f478e7ab6ee48669e871f5809",
+    "source_path": "002-学习笔记/课程学习/离散数学/pictures/RangeScaling.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/离散数学/pictures/RelationshipCompounding.png": {
+    "path": "002-学习笔记/课程学习/离散数学/pictures/RelationshipCompounding.png",
+    "sha256": "773c1b584853440bbcfaead8f6d149eab03a5fd23750448939c8ff1a67e94e77",
+    "source_path": "002-学习笔记/课程学习/离散数学/pictures/RelationshipCompounding.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/离散数学/pictures/InductiveProof.png": {
+    "path": "002-学习笔记/课程学习/离散数学/pictures/InductiveProof.png",
+    "sha256": "b3ecf999ca2591601e4b11947c4fbfc4a064eb3bd28f5956d000440f7c0cf416",
+    "source_path": "002-学习笔记/课程学习/离散数学/pictures/InductiveProof.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/离散数学/pictures/UnitsProof.png": {
+    "path": "002-学习笔记/课程学习/离散数学/pictures/UnitsProof.png",
+    "sha256": "0c5e4b3c4a559bd6e548a2970c3aee6a16ff89a6583bc4006a771964b464d359",
+    "source_path": "002-学习笔记/课程学习/离散数学/pictures/UnitsProof.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773229846282.png": {
+    "path": "003-Attachments/QQ_1773229846282.png",
+    "sha256": "270f4be6567f84665e4d8b14caa8dd57fd82990b1227bafa69776d8b95563018",
+    "source_path": "003-Attachments/QQ_1773229846282.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773229858546.png": {
+    "path": "003-Attachments/QQ_1773229858546.png",
+    "sha256": "7b735158fb1dbcfa27ea50af13a41eab29368871f1519abc8085c05a158621a1",
+    "source_path": "003-Attachments/QQ_1773229858546.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773230540723.png": {
+    "path": "003-Attachments/QQ_1773230540723.png",
+    "sha256": "4517f22fb867853c7bef3c5b1da5f969eac76dfc91e6edb107a074d6cb7fddd9",
+    "source_path": "003-Attachments/QQ_1773230540723.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773553105985.png": {
+    "path": "003-Attachments/QQ_1773553105985.png",
+    "sha256": "7bdef7476de6de4a06447a6e68c0097db058440efb3d599891799c76134cada3",
+    "source_path": "003-Attachments/QQ_1773553105985.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773230567833.png": {
+    "path": "003-Attachments/QQ_1773230567833.png",
+    "sha256": "944d959fae7c7b51ae145a0c700b9285d9fa203176c69477467bfb05194798f6",
+    "source_path": "003-Attachments/QQ_1773230567833.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773230727041.png": {
+    "path": "003-Attachments/QQ_1773230727041.png",
+    "sha256": "7d7de41266f42a32efa613b869dc66611a3b60299b79d7686b52a234fcd0b7ec",
+    "source_path": "003-Attachments/QQ_1773230727041.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773230902849.png": {
+    "path": "003-Attachments/QQ_1773230902849.png",
+    "sha256": "7e3c0ecd378facfdf8fd534ca5b6c1c8d42c91744f2b9795d2ad144acd8e7286",
+    "source_path": "003-Attachments/QQ_1773230902849.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773231120691.png": {
+    "path": "003-Attachments/QQ_1773231120691.png",
+    "sha256": "d8dabb118029cf81faf5f729f0186f02bd884179000ff60f23fce7bc81375d93",
+    "source_path": "003-Attachments/QQ_1773231120691.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773231266499.png": {
+    "path": "003-Attachments/QQ_1773231266499.png",
+    "sha256": "f6ac3c86836416aad55271d431d3497d15ca25f6a8328f3df1ae8281da3991e6",
+    "source_path": "003-Attachments/QQ_1773231266499.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/编译原理/编译原理(龙书) 第二版.pdf#page=17&rect=397,755,455,822": {
+    "path": "003-Attachments/pages-import/3abffd7486d8c4d41b8b26d7.png",
+    "sha256": "3abffd7486d8c4d41b8b26d7c1891281277907384ab15eadaae47cb9a8e0c38c",
+    "source_path": "002-学习笔记/课程学习/编译原理/编译原理(龙书) 第二版.pdf",
+    "fragment": "page=17&rect=397,755,455,822",
+    "is_image": true
+  },
+  "003-Attachments/QQ_1774420069047.png": {
+    "path": "003-Attachments/QQ_1774420069047.png",
+    "sha256": "08e43e253e8a240741ab2e4a4814af4d51476c6ee05c296f3f81f8b204d6a2c6",
+    "source_path": "003-Attachments/QQ_1774420069047.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1777338763697.png": {
+    "path": "003-Attachments/QQ_1777338763697.png",
+    "sha256": "a25374da7166747298cc5479407b82821670b8958e9227dfa32fbd186bef4e78",
+    "source_path": "003-Attachments/QQ_1777338763697.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/作业/QQ_1760000527224.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/作业/QQ_1760000527224.png",
+    "sha256": "88fce2e083c0e920a8fa5403d46e64edaa41f1a95a134dd45b9aba81cb96c3d5",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/作业/QQ_1760000527224.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/作业/QQ_1760001301829.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/作业/QQ_1760001301829.png",
+    "sha256": "e8e7c549a5618647a63b587911fccf78625607691218d92bee4f3cddfb8cb55e",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/作业/QQ_1760001301829.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/作业/QQ_1762747945488.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/作业/QQ_1762747945488.png",
+    "sha256": "93c0c77169acbe0d2cf23593e495d2ceea7140f03a06a76ba51a698b84bd5e09",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/作业/QQ_1762747945488.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第三章/隐蔽站问题.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第三章/隐蔽站问题.png",
+    "sha256": "42892f5acb793a72eccdd8635944f5eb31f79cf251819b8ee4729de234b1b0d4",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第三章/隐蔽站问题.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第三章/暴露站问题.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第三章/暴露站问题.png",
+    "sha256": "d9bc389b1e293a527bed81cf035e785866eb8fdc379ee1294518be8d57dbd27d",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第三章/暴露站问题.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第一章/电话网拓扑图.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第一章/电话网拓扑图.png",
+    "sha256": "be615f6e93da7ede06bd61ff2d5040b8612eff5791fd804d6c64b8d75e375dee",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第一章/电话网拓扑图.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第一章/以分组为单位在网络中传输.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第一章/以分组为单位在网络中传输.png",
+    "sha256": "5464c4010fba8384a4734a72fefcc153cd31f06793bf0d9e1d87564603600e29",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第一章/以分组为单位在网络中传输.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第一章/VC入口出口表.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第一章/VC入口出口表.png",
+    "sha256": "22ec026689eeeb13ede0cf80b9be9e3aa42181697c2a0b359852e4b5a95142b3",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第一章/VC入口出口表.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第一章/TCPIP协议族.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第一章/TCPIP协议族.png",
+    "sha256": "9e18b84f014c86ece07449c1da5dea99ca4a078bdbedbd4439d5e6f7cb78ad63",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第一章/TCPIP协议族.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第一章/数据通信系统模型.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第一章/数据通信系统模型.png",
+    "sha256": "c93abaa242363b248a7c97204e73216df808fb67a9e3adcecd476491d09f4511",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第一章/数据通信系统模型.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第一章/数字信号常用编码.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第一章/数字信号常用编码.png",
+    "sha256": "3facc6db8d33e15585665782c9c96553210a4be84377ae36d3ccfd4f59e52092",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第一章/数字信号常用编码.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第一章/最基本的三种带通调制方法.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第一章/最基本的三种带通调制方法.png",
+    "sha256": "7a5d07c22c80e86680487a6a56d29ac3a78b99b6225ed5d89715396e2a5c9f5f",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第一章/最基本的三种带通调制方法.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第一章/信道容量示例.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第一章/信道容量示例.png",
+    "sha256": "378894eeb1d7b54c3d74247394235cbc43c2bdd329602347981d89b0fe164197",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第一章/信道容量示例.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第三章/主机H1和主机H2通信.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第三章/主机H1和主机H2通信.png",
+    "sha256": "805541fb82d746207782d499ea7e52a98fd9d06356bcc089ad76c1b98b4cbf86",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第三章/主机H1和主机H2通信.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第三章/字符填充解决透明传输问题.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第三章/字符填充解决透明传输问题.png",
+    "sha256": "9c18ef8717eabb5d97956e836399444ccda3d49dac0e704e10a7c3e08c565f0a",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第三章/字符填充解决透明传输问题.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第三章/局域网的拓扑.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第三章/局域网的拓扑.png",
+    "sha256": "02931a924d5e9a89080c771324cc5d7cc2c399199d33d5f716c60e90a90ec636",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第三章/局域网的拓扑.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第三章/802.1Q帧.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第三章/802.1Q帧.png",
+    "sha256": "4a5f3e4db973cf958a57fbc23cf111125d3f754518691558534938f3e9110168",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第三章/802.1Q帧.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第三章/计算机-适配器-局域网.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第三章/计算机-适配器-局域网.png",
+    "sha256": "a92d846c17a5b961cf769f151795882ceec56c7ebe97977246185e6c18997c77",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第三章/计算机-适配器-局域网.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第四章/网络层两种服务对比.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第四章/网络层两种服务对比.png",
+    "sha256": "b7768d9177fbd8353f145ab972c5b777acf2eca7040ad602b8d4867e29483165",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第四章/网络层两种服务对比.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第四章/虚拟IP网.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第四章/虚拟IP网.png",
+    "sha256": "bb6e16b18022243ecbb71bfab88c0ff024be18261ae9b10b7fd637d04cb60819",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第四章/虚拟IP网.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第四章/IP地址和MAC地址的区别.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第四章/IP地址和MAC地址的区别.png",
+    "sha256": "2c24f94a22d379d206150e502e133e2d3325056b995f50672622153853ee747e",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第四章/IP地址和MAC地址的区别.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第四章/ARP协议在IP层中的位置.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第四章/ARP协议在IP层中的位置.png",
+    "sha256": "66797d2e88dc1f35fe2b016949307c3b2b03f9ca479969e53565065b1d94a85c",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第四章/ARP协议在IP层中的位置.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第四章/ARP协议的使用.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第四章/ARP协议的使用.png",
+    "sha256": "9b92bfcbb73f5fd0df592f935cf662f98ee6910d3490756c30226915fd1633f8",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第四章/ARP协议的使用.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第四章/IP数据报的格式.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第四章/IP数据报的格式.png",
+    "sha256": "8f22594c6d8928c8f67270fa1047ec182ce902df4e7c606fcbf1b9b4ad239c8a",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第四章/IP数据报的格式.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第四章/ICMP 报文的格式.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第四章/ICMP 报文的格式.png",
+    "sha256": "010d720320afeb399d5133c7325770a4d9aca79427246160941a948fe89e0944",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第四章/ICMP 报文的格式.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第四章/IPv6数据报格式1.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第四章/IPv6数据报格式1.png",
+    "sha256": "2196fc93b5c673594ca97c13fab34f5b542575f25544b58a46c5b66aa5881366",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第四章/IPv6数据报格式1.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第四章/常用的ICMP报文类型.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第四章/常用的ICMP报文类型.png",
+    "sha256": "51531f88fe5ae49af7cd9880e3565cea69d34abf61efd328431313739da420b8",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第四章/常用的ICMP报文类型.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第四章/IPv6数据报格式2.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第四章/IPv6数据报格式2.png",
+    "sha256": "d9c7f977e1a5c344c7af2979966422e47e44a18542541aac0fa6e25a5592b218",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第四章/IPv6数据报格式2.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第四章/IPv6常用地址分类.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第四章/IPv6常用地址分类.png",
+    "sha256": "464f5602494c87e75c6906bd7b49849acd3c437610f7afb0ed8f84aa0ce64865",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第四章/IPv6常用地址分类.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第四章/隧道技术.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第四章/隧道技术.png",
+    "sha256": "9c083c35c9619179436a6f6737b407072e0e4ed125cb004478b178ee271597c8",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第四章/隧道技术.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第四章/经典的路由器结构.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第四章/经典的路由器结构.png",
+    "sha256": "bf2528edb03551d74956f32c0dbce70d9ee0d4d0d7b0f969a9c3fb9535160818",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第四章/经典的路由器结构.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第四章/路由器的三种交换方式.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第四章/路由器的三种交换方式.png",
+    "sha256": "c59af5704eb1a783e31b66cb9051d7730ff43d8ec0106c8cf0973669629b1529",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第四章/路由器的三种交换方式.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第四章/多播地址在MAC地址和IP地址的转换.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第四章/多播地址在MAC地址和IP地址的转换.png",
+    "sha256": "1134cb9b3edd56dda4c588cd9589fbde279fd829157443f4d347c857ee1bdfdb",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第四章/多播地址在MAC地址和IP地址的转换.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第五章/一些应用程序使用的运输层协议.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第五章/一些应用程序使用的运输层协议.png",
+    "sha256": "8c53745bbca2456d0d2b59445f051c783588f3ba98720e4a54822522b8c8d34c",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第五章/一些应用程序使用的运输层协议.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第五章/常用的熟知端口号.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第五章/常用的熟知端口号.png",
+    "sha256": "5c24106e7ae8a2fa834703cd3dedc2266394b7d065fa3bba4ae1abed58e4492a",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第五章/常用的熟知端口号.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第五章/QQ_1762152558386.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第五章/QQ_1762152558386.png",
+    "sha256": "250e8b20d0e8682bd7f2d8bf8915e43cb298258ee727b5806599f5ad3fa46d1f",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第五章/QQ_1762152558386.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第五章/TCP报文段的首部格式.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第五章/TCP报文段的首部格式.png",
+    "sha256": "9ff540e6812adfa8a6c0e28e34fa064c8e5e0c640886713a2fc23c539672e03e",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第五章/TCP报文段的首部格式.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第五章/QQ_1762162205197.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第五章/QQ_1762162205197.png",
+    "sha256": "cf5f3cc0965283512e5e63aa3a515dae5cd07529aae2a5c5a3dde07e64d7892a",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第五章/QQ_1762162205197.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第五章/QQ_1762162354565.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第五章/QQ_1762162354565.png",
+    "sha256": "923d9e85b3d7fdbdd89ab8e0b001646afd4c45419f9734b25c13fd8d97afdd54",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第五章/QQ_1762162354565.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第五章/拥塞控制起的作用.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第五章/拥塞控制起的作用.png",
+    "sha256": "a26ccb042b21ade72f3cee415154ef6a2e0ac7b1047f37fed632292e27c35f32",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第五章/拥塞控制起的作用.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第五章/TCP拥塞控制的流程图.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第五章/TCP拥塞控制的流程图.png",
+    "sha256": "407e2e93ca25244fff5194d74693ab4d70b57359dbb4bb643be73e4860aff483",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第五章/TCP拥塞控制的流程图.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第五章/TCP 建立连接的三次握手.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第五章/TCP 建立连接的三次握手.png",
+    "sha256": "17df956d1100f1999f94ee2a4ee8b3b7991d9ae5cffbb114e4e485fc1255b3ef",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第五章/TCP 建立连接的三次握手.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第五章/TCP的连接释放.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第五章/TCP的连接释放.png",
+    "sha256": "327f291a62fb84283b5053afca1f56b2ec7bd1812e050b767a3c8bce2b3e6e89",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第五章/TCP的连接释放.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第五章/TCP的状态机.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第五章/TCP的状态机.png",
+    "sha256": "d4460416ccb620dc7060983c2f7f73ca5cb3ec3f4eb8b108e3413b1c7a3da653",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第五章/TCP的状态机.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第五章/互联网的域名空间.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第五章/互联网的域名空间.png",
+    "sha256": "727389a48b1a2fec20d4da505f82d416d0557051bd29327745d6734eb05b35fc",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第五章/互联网的域名空间.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "002-学习笔记/课程学习/计算机网络/图片/第六章/QQ_1763105155733.png": {
+    "path": "002-学习笔记/课程学习/计算机网络/图片/第六章/QQ_1763105155733.png",
+    "sha256": "c0d8599f47118db294dd7504600a089dafae3f15f3d0e1257484c14e9b88603d",
+    "source_path": "002-学习笔记/课程学习/计算机网络/图片/第六章/QQ_1763105155733.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773548012931.png": {
+    "path": "003-Attachments/QQ_1773548012931.png",
+    "sha256": "4b54f3cd32ab0cdc28f2269c53dae9bb79b1ce52374a12c108800236b20e38ce",
+    "source_path": "003-Attachments/QQ_1773548012931.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773548306923.png": {
+    "path": "003-Attachments/QQ_1773548306923.png",
+    "sha256": "e4fbba9fb7db70a7a8db1ae13c8da780b20af021f751a938e8e05fbef943837d",
+    "source_path": "003-Attachments/QQ_1773548306923.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773549668008.png": {
+    "path": "003-Attachments/QQ_1773549668008.png",
+    "sha256": "0f583d44bc7604bc817501ceeab22b5ed2d69198501a0a6adbf43d5ee5e18a6b",
+    "source_path": "003-Attachments/QQ_1773549668008.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773549433661.png": {
+    "path": "003-Attachments/QQ_1773549433661.png",
+    "sha256": "dd0c067ec492ccc0fbdb8d4fda19c2895179fcb6d0cde73448f427f98eb8c04e",
+    "source_path": "003-Attachments/QQ_1773549433661.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1781327901791.png": {
+    "path": "003-Attachments/QQ_1781327901791.png",
+    "sha256": "26974eabda74207fb80e971489d1c9a933d7b45c8472dee3caddd4a63c4da07c",
+    "source_path": "003-Attachments/QQ_1781327901791.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/Pasted image 20260613142536.png": {
+    "path": "003-Attachments/Pasted image 20260613142536.png",
+    "sha256": "5762dbae5f86e1e6486e85029de7a1bf4f95bca56e1744026ada0011b23ce433",
+    "source_path": "003-Attachments/Pasted image 20260613142536.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1781340120766.png": {
+    "path": "003-Attachments/QQ_1781340120766.png",
+    "sha256": "fcec6295c825f27414ac3ddea31158e1aebf288cee6d9c26df8f23fbe4bf2496",
+    "source_path": "003-Attachments/QQ_1781340120766.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1781350969467.png": {
+    "path": "003-Attachments/QQ_1781350969467.png",
+    "sha256": "2364d10c6efe423db7ebd7d75ad8f538a6d326dce0424ca69df03025dc29042a",
+    "source_path": "003-Attachments/QQ_1781350969467.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1781351206083.png": {
+    "path": "003-Attachments/QQ_1781351206083.png",
+    "sha256": "9946e3dbdaa854228f23cf42143ac64559bc47d11309fa93cbc1344413d360ff",
+    "source_path": "003-Attachments/QQ_1781351206083.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1781353327982.png": {
+    "path": "003-Attachments/QQ_1781353327982.png",
+    "sha256": "34432717195c97ce9c6f2cb92fb1273983911593571781c9eb26e272d404b73a",
+    "source_path": "003-Attachments/QQ_1781353327982.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1781445101527.png": {
+    "path": "003-Attachments/QQ_1781445101527.png",
+    "sha256": "dce86b1819a1d32a2ce93951a38926374f4ee674004d865a432b0a53f8119e7b",
+    "source_path": "003-Attachments/QQ_1781445101527.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1781446108000.png": {
+    "path": "003-Attachments/QQ_1781446108000.png",
+    "sha256": "3b626853b35102bff5618322c447e841c6e0c01568b99764bef3d28800814a6b",
+    "source_path": "003-Attachments/QQ_1781446108000.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1781495517248.png": {
+    "path": "003-Attachments/QQ_1781495517248.png",
+    "sha256": "afa0925cd3ea44d78f4a439ef09c07e519f5f7f30630de21ad4227d1559ef53d",
+    "source_path": "003-Attachments/QQ_1781495517248.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1769580765205.png": {
+    "path": "003-Attachments/QQ_1769580765205.png",
+    "sha256": "e833b5938b4c6eff018c72518c514058022a19ef0a697d523ff50d89a637a0ac",
+    "source_path": "003-Attachments/QQ_1769580765205.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1777379212861.png": {
+    "path": "003-Attachments/QQ_1777379212861.png",
+    "sha256": "73897ac6ac8b22885e88fc24d9984b989d556802b73470cc62a475cf7da6f240",
+    "source_path": "003-Attachments/QQ_1777379212861.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1777381923940.png": {
+    "path": "003-Attachments/QQ_1777381923940.png",
+    "sha256": "5e1b1b98b5b2ae97c6568e2d64ae3e80406086cec8546393597ccc18af53ccc8",
+    "source_path": "003-Attachments/QQ_1777381923940.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1777394968345.png": {
+    "path": "003-Attachments/QQ_1777394968345.png",
+    "sha256": "5691c1dc5264bc892a45303cc5d5ccd83bc9cb7e560287fea30eb4f441f9c67f",
+    "source_path": "003-Attachments/QQ_1777394968345.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773054807385.png": {
+    "path": "003-Attachments/QQ_1773054807385.png",
+    "sha256": "50ee0f680b95fdb5aa64eb503405de3406e966782a6c41302b13c31a36c80f2e",
+    "source_path": "003-Attachments/QQ_1773054807385.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773055465312.png": {
+    "path": "003-Attachments/QQ_1773055465312.png",
+    "sha256": "1759fb0a98704457704229678859c85468fc34cf83dd71eeef46de15a16e1885",
+    "source_path": "003-Attachments/QQ_1773055465312.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773055205499.png": {
+    "path": "003-Attachments/QQ_1773055205499.png",
+    "sha256": "3758d75096c929578cd3c37560b60cfa030b86f1aef74cf741804f22bb381fca",
+    "source_path": "003-Attachments/QQ_1773055205499.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773059867630.png": {
+    "path": "003-Attachments/QQ_1773059867630.png",
+    "sha256": "f207c7bedef8c6a62244a39985299fb67e93c54239639e155ba695f7a80eaca0",
+    "source_path": "003-Attachments/QQ_1773059867630.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1773060926152.png": {
+    "path": "003-Attachments/QQ_1773060926152.png",
+    "sha256": "e6a86002ca9075b78eac4030c2db153778bf06a0bbbf8f5e206b2a2f5a7dd9bd",
+    "source_path": "003-Attachments/QQ_1773060926152.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "003-Attachments/QQ_1786206842915.png": {
+    "path": "003-Attachments/QQ_1786206842915.png",
+    "sha256": "b12d5fb106e93015290187ad0166781690d41e5b90aa37653f113da39fec8f45",
+    "source_path": "003-Attachments/QQ_1786206842915.png",
+    "fragment": null,
+    "is_image": true
+  },
+  "009-电子书籍/[沙特]M. H. Alsuwaiyel - 算法设计技巧与分析-电子工业出版社 (2004).pdf#page=64&rect=189,1487,1395,2064": {
+    "path": "003-Attachments/pages-import/3190a058c6cf5c81297b5217.png",
+    "sha256": "3190a058c6cf5c81297b5217bbcbbd4f7ab7e74ce9c39046a025e7fe8aad6e7a",
+    "source_path": "009-电子书籍/[沙特]M. H. Alsuwaiyel - 算法设计技巧与分析-电子工业出版社 (2004).pdf",
+    "fragment": "page=64&rect=189,1487,1395,2064",
+    "is_image": true
+  },
+  "009-电子书籍/[沙特]M. H. Alsuwaiyel - 算法设计技巧与分析-电子工业出版社 (2004).pdf#page=67&rect=161,1445,1495,1942": {
+    "path": "003-Attachments/pages-import/c9453893a25a54bdbd42825e.png",
+    "sha256": "c9453893a25a54bdbd42825ebe9052e75e8a1afb9f6fcfba759e5c402c04d41d",
+    "source_path": "009-电子书籍/[沙特]M. H. Alsuwaiyel - 算法设计技巧与分析-电子工业出版社 (2004).pdf",
+    "fragment": "page=67&rect=161,1445,1495,1942",
+    "is_image": true
+  }
+}

@@ -1,0 +1,591 @@
+{
+  "schemaVersion": 3,
+  "status": "completed",
+  "completedAt": "2026-11-14T10:48:15.116Z",
+  "role": "Expert: Quartz 知识库网站工程",
+  "siteUrl": "https://heiferleaf.github.io/ObsidianNote/",
+  "summary": "2026-11-14：完成 MotionSites 参考的纸感与书架视觉重设计，包含深色分组导航、真实专题入口、首页搜索与筛选、明暗主题和移动端阅读布局。最终构建验证215索引页、59首页导航、207本地图片，零katex-error；浏览器复核五种视口、交互及公式长文。尚未提交、推送或部署。此前缺图修复与验收记录保留。",
+  "changes": [
+    {
+      "area": "部署",
+      "files": [
+        ".github/workflows/deploy.yml",
+        "quartz/package.json"
+      ],
+      "result": "本地与 CI 共用 build:site；安装依赖后运行回归测试；仅 main 和手动运行触发正式部署，去除 Dashboard 回退及构建后删页步骤。"
+    },
+    {
+      "area": "站点配置",
+      "files": [
+        "quartz/quartz.config.ts"
+      ],
+      "result": "baseUrl 改为 heiferleaf.github.io/ObsidianNote；练习、作业和 Excalidraw 在解析前排除，使索引与输出一致；提高明暗主题辅助文字对比度。"
+    },
+    {
+      "area": "同步构建",
+      "files": [
+        "quartz/scripts/site-paths.mjs",
+        "quartz/scripts/sync-content.mjs",
+        "quartz/scripts/build-site.mjs",
+        "quartz/quartz/util/glob.ts"
+      ],
+      "result": "从原始 002-学习笔记 和 003-Attachments 创建独立且 Git 忽略的构建副本，完整保留目录路径。Windows CLI 路径转正斜杠；隔离副本扫描使用显式发布规则。验证每个索引页面及首页导航目标、sitemap，并创建 .nojekyll。现有 quartz/content 不会被覆盖。"
+    },
+    {
+      "area": "标签",
+      "files": [
+        "quartz/scripts/tag-normalize.mjs",
+        "quartz/scripts/apply-sample-tags.mjs",
+        "quartz/scripts/generate-tag-patch.mjs"
+      ],
+      "result": "保留中文与其他 Unicode 标签；固定报告到 quartz/.quartz-cache/tag-report.json，摆脱 cwd 嵌套路径错误；保留已有 tags/tag、空列表、其他 YAML 列表、正文及时间戳；补丁格式可通过 git apply --check。"
+    },
+    {
+      "area": "日期",
+      "files": [
+        "quartz/quartz/plugins/transformers/lastmod.ts"
+      ],
+      "result": "sourceRoot 让副本中的页面读取原笔记的 Git 历史与文件时间，避免复制或补标签导致最近更新排序失真。"
+    },
+    {
+      "area": "专题与布局",
+      "files": [
+        "quartz/quartz/components/topicData.ts",
+        "quartz/quartz/components/HomePage.tsx",
+        "quartz/quartz/components/TopicRail.tsx",
+        "quartz/quartz/components/scripts/topicRail.inline.ts",
+        "quartz/quartz/components/styles/homePage.scss",
+        "quartz/quartz/components/styles/topicRail.scss",
+        "quartz/quartz/styles/custom.scss",
+        "quartz/quartz.layout.ts"
+      ],
+      "result": "按类别下的主题生成 27 个入口；计数仅包含已发布笔记。首页展示真实笔记总数与更新日期，移除重复标题及空关系图；桌面滚动导航、手机可折叠导航、当前位置指示、键盘焦点及减少动画支持。保留原有简介，页脚指向本仓库。"
+    },
+    {
+      "area": "预览和维护",
+      "files": [
+        "quartz/scripts/preview-site.mjs",
+        "quartz/MAINTENANCE.md"
+      ],
+      "result": "提供 /ObsidianNote/ 子路径预览，修正静态服务重定向丢失前缀的问题；记录维护入口、发布规则与已知限制。"
+    },
+    {
+      "area": "回归测试",
+      "files": [
+        "quartz/scripts/site.test.mjs",
+        "quartz/quartz/components/topicData.test.ts"
+      ],
+      "result": "覆盖中文标签、YAML/CRLF/正文保留、重复执行、时间戳、源文件及旧副本保护、Dashboard 排除、专题计数与稳定路径。"
+    },
+    {
+      "area": "公式与媒体兼容性（第二阶段）",
+      "files": [
+        ".knowledge-tools/math-normalize.mjs",
+        ".knowledge/math-fixes.json",
+        "quartz/scripts/math-normalize.mjs",
+        "quartz/scripts/normalize-content.mjs",
+        "quartz/scripts/build-site.mjs",
+        "quartz/scripts/site.test.mjs",
+        "quartz/site-assets.json",
+        "quartz/quartz/util/path.ts",
+        "quartz/quartz/util/path.test.ts",
+        "quartz/quartz/styles/custom.scss",
+        "quartz/MAINTENANCE.md"
+      ],
+      "result": "独立构建副本内修复公式定界符、明确的LaTeX兼容写法及一个破损Java围栏；保护代码、矩阵换行和大于号。AST及受保护范围只改真实图片/嵌入，保留普通PDF链接及精确fragment；可选读取迁移映射，另提供跟踪的site-assets.json快照支持CI。恢复现有相对图片，真正缺图仅显示原引用说明；长公式在文章内滚动。输出验证新增检查所有本地图片和katex-error。"
+    },
+    {
+      "area": "代码围栏与美元符号保真（第三阶段）",
+      "files": [
+        "quartz/scripts/math-normalize.mjs",
+        "quartz/scripts/fence-normalize.mjs",
+        "quartz/scripts/normalize-content.mjs",
+        "quartz/scripts/site.test.mjs",
+        "quartz/MAINTENANCE.md"
+      ],
+      "result": "source.replace(brokenJava, () => repairedJava) 使用回调，避免JS替换字符串语法将$$折叠成$。代码围栏先经Controller同一实现的部署副本处理，再做公式与嵌入规范化。围栏修复只移除Markdown结构前缀，保留代码字符及相应缩进，补足EOF闭合；回归覆盖Java标识符、配置中的$schema与$value、ASCII示意图及后续正文。未修改共享fence原文件或主converter。"
+    },
+    {
+      "area": "合法方括号PDF引用与缩进说明插图（2026-11-14）",
+      "files": [
+        ".knowledge-tools/prepare.mjs",
+        ".knowledge-tools/convert.mjs",
+        "quartz/scripts/normalize-content.mjs",
+        "quartz/scripts/site.test.mjs",
+        "quartz/site-assets.json",
+        ".knowledge/quartz-assets.json",
+        ".knowledge-tools/repair-assets.py",
+        ".knowledge-tools/repair-recursion.mjs",
+        ".knowledge/page-format-equivalence.json",
+        ".knowledge-tools/wiki-reference.mjs"
+      ],
+      "result": "wiki引用仅在单行非贪婪读取到真正]]，支持文件名的单独[]且不越过code保护。只在Quartz构建副本将网络读书笔记1已观测VC图片脱离误代码缩进，周围讲解与代码示例保留；2个PDF摘录和VC均在实际构建报告映射成功。未重跑迁移prepare/convert或覆盖计划，未改原始笔记。 带方括号alias改为原生Markdown图片，避免下游wiki解析二次失败；共享纯helper保护裸数值矩阵，targets/backlinks与转换保持一致，未重跑迁移缓存。最终public中2个PDF img和VC img均有实际PNG文件。"
+    },
+    {
+      "area": "MotionSites 参考的知识库视觉重设计",
+      "files": [
+        "quartz/quartz/components/HomePage.tsx",
+        "quartz/quartz/components/scripts/homePage.inline.ts",
+        "quartz/quartz/components/TopicRail.tsx",
+        "quartz/quartz/components/PageTitle.tsx",
+        "quartz/quartz/components/styles/homePage.scss",
+        "quartz/quartz/components/styles/topicRail.scss",
+        "quartz/quartz/styles/custom.scss",
+        "quartz/quartz.layout.ts",
+        "quartz/quartz.config.ts",
+        "quartz/MAINTENANCE.md"
+      ],
+      "result": "纸色正文、森林绿导航、陶土色强调和 CSS 书架；27专题按学习场景分组；最近更新用真实日期；首页入口复用原生搜索。筛选和搜索事件随 Quartz 页面导航清理。字体带中文系统回退，长公式独立滚动；手机折叠菜单、明暗主题、焦点与减少动画样式保留。"
+    }
+  ],
+  "validation": {
+    "build": {
+      "command": "npm --prefix quartz run build:site",
+      "exitCode": 0,
+      "indexedPages": 215,
+      "checkedNavigationLinks": 62,
+      "checkedLocalImages": 207,
+      "renderedMathErrors": 0,
+      "missingLocalImages": 0,
+      "emittedFiles": 1051,
+      "completedAt": "2026-11-14T09:39:26.832Z",
+      "source": "Actual site-build.json and Controller-observed final build session 96429 exit 0; final-migration-build.log"
+    },
+    "tests": [
+      {
+        "command": "npm --prefix quartz run test:site",
+        "passed": 13,
+        "failed": 0,
+        "nodeTests": 12,
+        "topicTests": 1,
+        "date": "2026-11-14"
+      },
+      {
+        "command": "node --check .knowledge-tools/prepare.mjs; node --check .knowledge-tools/convert.mjs",
+        "exitCode": 0,
+        "date": "2026-11-14"
+      },
+      {
+        "command": "node .knowledge-tools/wiki-reference.mjs self-test",
+        "exitCode": 0,
+        "date": "2026-11-14"
+      }
+    ],
+    "browser": {
+      "tool": "Playwright",
+      "previewUrl": "http://127.0.0.1:8096/ObsidianNote/",
+      "serverStopped": true,
+      "checkedWidths": [
+        320,
+        390,
+        1029,
+        1440
+      ],
+      "horizontalOverflow": false,
+      "checks": [
+        "62 navigation links fetched successfully and remained under /ObsidianNote/",
+        "Mobile menu expands and collapses; defaults closed after SPA navigation",
+        "JAVA EE topic navigation and active-location indicator",
+        "TCP search returned 8 results and opened a result article",
+        "Light/dark mode toggle",
+        "Chinese tag page 技术学习 rendered 17 notes",
+        "开营仪式 article loaded 8 local attachment images successfully",
+        "Homepage has one h1 and 27 topic cards",
+        "离散数学笔记的7个原图均成功加载，1093个KaTeX节点且零katex-error",
+        "树页面4张恢复绘图均成功加载；DAY20设计模式PDF摘录成功加载",
+        "线性代数与叶海峰期末总复习在320px、390px均无页面横向溢出，长公式可在容器内滚动且未发现左端截断",
+        "1440px长篇数学页面无横向溢出或公式错误",
+        "Course6页面的StreamClass$$Lambda$1及lambda$test0$0完整，未出现单美元类名",
+        "ClaudeCode页面17个代码块，environmentVariables、$schema与your-project目录示意图保留，后续标题仍是标题",
+        "riscv工具箱末尾备注代码正常呈现；Java、ClaudeCode、riscv页面均零公式错误及横向溢出",
+        "320px ClaudeCode页面无横向溢出"
+      ],
+      "finalConsoleErrors": 0,
+      "localAnalyticsWarningsPresent": true,
+      "screenshots": [
+        "quartz/.quartz-cache/desktop-wide.png",
+        "quartz/.quartz-cache/mobile.png",
+        "quartz/.quartz-cache/article-dark.png",
+        "quartz/.quartz-cache/math-mobile.png",
+        "quartz/.quartz-cache/drawing-restored.png"
+      ],
+      "qaDate": "2026-11-12",
+      "recheckedOn2026_11_14": false
+    },
+    "preservation": {
+      "protectedFiles": 1034,
+      "sha256Mismatches": 0,
+      "roots": [
+        "002-学习笔记",
+        "003-Attachments",
+        "quartz/content"
+      ],
+      "notes": "原笔记、附件及现有 quartz/content 所有基线文件内容均未变。原有 README.md 和 CODE_OF_CONDUCT.md 删除状态未处理。"
+    },
+    "git": {
+      "committed": false,
+      "pushed": false,
+      "deployed": false
+    },
+    "pagesV2": {
+      "directory": ".knowledge/converted-v2",
+      "index": ".knowledge/converted-v2-index.json",
+      "notes": 228,
+      "mathFences": 2911,
+      "invalid": 0,
+      "modifiedByExpert": false
+    },
+    "normalizedSourceMath": {
+      "notes": 228,
+      "expressions": 4261,
+      "invalid": 0
+    },
+    "contentNormalization": {
+      "changedStagedNotes": 141,
+      "mappedEmbeds": 212,
+      "materializedEmbeds": 55,
+      "mappedDrawings": 7,
+      "missingImageTextPlaceholders": 3,
+      "latexCodeFallbacks": 0,
+      "assetManifestKeys": 215,
+      "missingImages": [
+        {
+          "source": "002-学习笔记/课程学习/数学基础/概率论.md",
+          "original": "![](images/c89fd93c5d6dccce89762d57fcd66dac.png)",
+          "reference": "images/c89fd93c5d6dccce89762d57fcd66dac.png"
+        },
+        {
+          "source": "002-学习笔记/课程学习/数学基础/概率论.md",
+          "original": "![](images/b958c16cfdce9e6bd2b810b10d71416e.png)",
+          "reference": "images/b958c16cfdce9e6bd2b810b10d71416e.png"
+        },
+        {
+          "source": "002-学习笔记/课程学习/数学基础/线性代数.md",
+          "original": "![](images/fig1.png)",
+          "reference": "images/fig1.png"
+        }
+      ]
+    },
+    "codeFidelity": {
+      "notes": 228,
+      "fencedCodeBlocks": 901,
+      "differences": [],
+      "sharedFenceHelperOutputMatches": true,
+      "rawJavaDollarRegressionPassed": true,
+      "v2CodeChecks": {
+        "java": {
+          "doubleDollarIdentifier": true,
+          "methodDollars": true,
+          "singleDollarCorruption": false
+        },
+        "claude": {
+          "configuration": true,
+          "schema": true,
+          "treeDiagram": true
+        },
+        "riscv": {
+          "eofRemarks": true
+        }
+      },
+      "checkedDate": "2026-11-12"
+    },
+    "historicalBuilds": [
+      {
+        "command": "npm --prefix quartz run build:site",
+        "exitCode": 0,
+        "indexedPages": 215,
+        "notes": 214,
+        "topics": 27,
+        "checkedNavigationLinks": 62,
+        "emittedFiles": 1049,
+        "parseAndEmitSeconds": 35,
+        "completedAt": "2026-11-12T12:19:24.819Z",
+        "checkedLocalImages": 204,
+        "renderedMathErrors": 0,
+        "missingLocalImages": 0
+      },
+      {
+        "command": "npm --prefix quartz run build:site",
+        "exitCode": 0,
+        "indexedPages": 215,
+        "checkedNavigationLinks": 62,
+        "checkedLocalImages": 205,
+        "renderedMathErrors": 0,
+        "missingLocalImages": 0,
+        "emittedFiles": 1051,
+        "completedAt": "2026-11-14T09:30:15.770Z",
+        "source": "Actual site-build.json plus Controller-observed session 98891 exit 0 and 1051 emitted files"
+      }
+    ],
+    "historicalTests": [
+      {
+        "date": "2026-11-12",
+        "tests": [
+          {
+            "command": "npm --prefix quartz run test:site",
+            "passed": 10,
+            "failed": 0
+          },
+          {
+            "command": "npm --prefix quartz test",
+            "passed": 80,
+            "failed": 0
+          },
+          {
+            "command": "npx tsc --noEmit (cwd=quartz)",
+            "exitCode": 0
+          },
+          {
+            "command": "git apply --check quartz/.quartz-cache/tag-apply.patch",
+            "exitCode": 0,
+            "patches": 83,
+            "mode": "dry run; no patch applied"
+          },
+          {
+            "command": "git diff --check (only modified authorized source paths)",
+            "exitCode": 0
+          },
+          {
+            "command": "Parse deploy.yml with js-yaml and inspect triggers/build command",
+            "exitCode": 0
+          }
+        ]
+      }
+    ],
+    "latestRecovery": {
+      "date": "2026-11-14",
+      "build_session": 96429,
+      "build_exit_code": 0,
+      "completed_at": "2026-11-14T09:39:26.832Z",
+      "indexed_pages": 215,
+      "emitted_files": 1051,
+      "checked_navigation_links": 62,
+      "checked_local_images": 207,
+      "rendered_math_errors": 0,
+      "normalization": {
+        "changed_notes": 141,
+        "mapped_embeds": 212,
+        "missing_source_image_placeholders": 3,
+        "latex_fallbacks": 0
+      },
+      "recognized_recovered_pdf_excerpts": 2,
+      "recognized_vc_image": 1,
+      "test_site": {
+        "command": "npm --prefix quartz run test:site",
+        "node_tests": 12,
+        "topic_tests": 1,
+        "passed": 13,
+        "failed": 0
+      },
+      "browser_rechecked": false,
+      "math_warning_note": "Chinese math strict-mode warnings are nonfatal warnings, not katex-error; actual renderedMathErrors=0.",
+      "publicOutputCheck": {
+        "checked_at": "2026-11-14T09:40:44.017Z",
+        "verified_actual_imgs": 3,
+        "pdf_imgs": 2,
+        "vc_img": true,
+        "all_files_exist": true,
+        "all_png_signatures_valid": true,
+        "images": [
+          {
+            "page": "002-学习笔记/技术栈/数据结构与算法/笔记/递归程序.html",
+            "actual_img": true,
+            "src": "../../../../003-Attachments/pages-import/3190a058c6cf5c81297b5217.png",
+            "public_file": "quartz/public/003-Attachments/pages-import/3190a058c6cf5c81297b5217.png",
+            "bytes": 174570,
+            "sha256": "3190a058c6cf5c81297b5217bbcbbd4f7ab7e74ce9c39046a025e7fe8aad6e7a"
+          },
+          {
+            "page": "002-学习笔记/技术栈/数据结构与算法/笔记/递归程序.html",
+            "actual_img": true,
+            "src": "../../../../003-Attachments/pages-import/c9453893a25a54bdbd42825e.png",
+            "public_file": "quartz/public/003-Attachments/pages-import/c9453893a25a54bdbd42825e.png",
+            "bytes": 119586,
+            "sha256": "c9453893a25a54bdbd42825ebe9052e75e8a1afb9f6fcfba759e5c402c04d41d"
+          },
+          {
+            "page": "002-学习笔记/课程学习/计算机网络/读书笔记/读书笔记1.html",
+            "actual_img": true,
+            "src": "../../../../002-学习笔记/课程学习/计算机网络/图片/第一章/VC入口出口表.png",
+            "public_file": "quartz/public/002-学习笔记/课程学习/计算机网络/图片/第一章/VC入口出口表.png",
+            "bytes": 157779,
+            "sha256": "22ec026689eeeb13ede0cf80b9be9e3aa42181697c2a0b359852e4b5a95142b3"
+          }
+        ]
+      },
+      "numeric_matrix_guard": {
+        "helper": ".knowledge-tools/wiki-reference.mjs",
+        "self_test_passed": true,
+        "protected": "Bare JSON numeric >=2x2 equal-length matrices are data; real year/file links and ! embeds remain references."
+      }
+    },
+    "uiRedesign": {
+      "checked_at": "2026-11-14T10:53:51.029Z",
+      "references": [
+        "https://motionsites.ai/",
+        "https://motionsites.ai/?prompt=book-shelf"
+      ],
+      "reference_scope": "公开画廊和书架构图参考；未购买或复制付费模板，无新增 UI 依赖。",
+      "preview": "http://127.0.0.1:8088/ObsidianNote/",
+      "build": {
+        "completedAt": "2026-11-14T10:48:15.116Z",
+        "sourceRoot": "C:\\Users\\20443\\Documents\\Obsidian Vault",
+        "directory": "C:\\Users\\20443\\Documents\\Obsidian Vault\\quartz\\.quartz-cache\\site-content-9b9h59",
+        "paths": [
+          "002-学习笔记",
+          "003-Attachments"
+        ],
+        "homepage": "quartz/content/index.md",
+        "indexedPages": 215,
+        "checkedNavigationLinks": 59,
+        "checkedLocalImages": 207,
+        "renderedMathErrors": 0
+      },
+      "checks": {
+        "typescript": "npx tsc --noEmit: passed",
+        "site_tests": {
+          "passed": 13,
+          "failed": 0
+        },
+        "browser_console_errors": 0
+      },
+      "browser": {
+        "engine": "Playwright connected browser, resized viewports; not physical-device testing",
+        "widths": [
+          {
+            "width": 320,
+            "document_scroll_width": 305,
+            "overflow": false
+          },
+          {
+            "width": 390,
+            "document_scroll_width": 375,
+            "overflow": false
+          },
+          {
+            "width": 768,
+            "document_scroll_width": 753,
+            "overflow": false
+          },
+          {
+            "width": 1029,
+            "document_scroll_width": 1014,
+            "overflow": false
+          },
+          {
+            "width": 1440,
+            "document_scroll_width": 1425,
+            "overflow": false
+          }
+        ],
+        "topics": {
+          "all": 27,
+          "course_filter": 9,
+          "restored": 27
+        },
+        "search": {
+          "from_home": true,
+          "after_article_navigation": true,
+          "tcp_results": 8,
+          "escape_closes": true
+        },
+        "mobile_menu": {
+          "expanded": true,
+          "collapsed": true,
+          "desktop_restored": true
+        },
+        "themes": [
+          "light",
+          "dark"
+        ],
+        "narrow_book_titles": {
+          "viewport": 320,
+          "font_px": 16,
+          "all_three_within_cover": true
+        },
+        "article": {
+          "title": "JVM 内存空间管理",
+          "desktop_width": 1440,
+          "overflow": false
+        },
+        "math_article": {
+          "title": "线性代数",
+          "viewport": 390,
+          "document_scroll_width": 375,
+          "math_elements": 753,
+          "rendered_math_errors": 0,
+          "broken_actual_images": 0,
+          "independently_scrollable_wide_displays": 34
+        }
+      },
+      "screenshots": [
+        "quartz/.quartz-cache/ui-desktop.png",
+        "quartz/.quartz-cache/ui-mobile.png",
+        "quartz/.quartz-cache/ui-mobile-320.png",
+        "quartz/.quartz-cache/ui-dark.png",
+        "quartz/.quartz-cache/ui-article.png",
+        "quartz/.quartz-cache/ui-article-mobile.png"
+      ],
+      "note_fidelity": {
+        "original_notes": 228,
+        "sha256_unchanged": true
+      },
+      "publication": "Local preview and pending publication ledger only; no stage, commit, push or deployment."
+    }
+  },
+  "remainingFindings": {
+    "renderedFormulaErrorCount": 0,
+    "missingLocalImageReferences": 0,
+    "sourceImagesUnavailable": [
+      {
+        "source": "002-学习笔记/课程学习/数学基础/概率论.md",
+        "original": "![](images/c89fd93c5d6dccce89762d57fcd66dac.png)",
+        "reference": "images/c89fd93c5d6dccce89762d57fcd66dac.png"
+      },
+      {
+        "source": "002-学习笔记/课程学习/数学基础/概率论.md",
+        "original": "![](images/b958c16cfdce9e6bd2b810b10d71416e.png)",
+        "reference": "images/b958c16cfdce9e6bd2b810b10d71416e.png"
+      },
+      {
+        "source": "002-学习笔记/课程学习/数学基础/线性代数.md",
+        "original": "![](images/fig1.png)",
+        "reference": "images/fig1.png"
+      }
+    ],
+    "notes": [
+      "3张确实不存在的数学基础图片已在构建副本中替换为明确文字说明，保留完整原始引用，没有编造图片。",
+      "原先10个破图中的7个离散数学图片实际存在；plan.json已将它们列为assets，因此不在unresolved。原语法为普通Markdown相对图片，问题来自旧Quartz shortest路径处理，现已修复并实测加载。",
+      "中文数学模式兼容警告本身不作为语法错误；未改数学含义，没有公式被静默删除。本次数据没有需要代码回退的公式。",
+      "Pages V2已实际验证228篇2911个math fence有效；旧converted未修改。",
+      "迁移映射本地读取 .knowledge/quartz-assets.json；部署备用快照为 quartz/site-assets.json，需与003-Attachments/pages-import一起保留。",
+      "现有CustomOgImages和外部字体仍需要可用网络；尚未提交、推送或部署。",
+      "2026-11-14实际构建：两处[沙特]PDF摘录与VC真实图片已映射；3个确实缺失的原始图片继续以原引用文字说明，不计为未加载的本地img。中文math strict warning不是katex-error。"
+    ]
+  },
+  "reproduce": [
+    "npm --prefix quartz ci",
+    "npm --prefix quartz run test:site",
+    "npm --prefix quartz run build:site",
+    "npm --prefix quartz run preview:site"
+  ],
+  "artifacts": {
+    "buildLog": "quartz/.quartz-cache/build-site.log",
+    "testLog": "quartz/.quartz-cache/test-all.log",
+    "buildManifest": "quartz/.quartz-cache/site-build.json",
+    "contentIssues": "quartz/.quartz-cache/content-issues.json",
+    "guide": "quartz/MAINTENANCE.md",
+    "mathFixes": ".knowledge/math-fixes.json",
+    "normalizationReport": "quartz/.quartz-cache/content-normalization.json",
+    "pagesV2MathAudit": "quartz/.quartz-cache/pages-math-v2-check.json",
+    "sharedNormalizer": ".knowledge-tools/math-normalize.mjs",
+    "codeFidelityAudit": "quartz/.quartz-cache/code-fidelity-audit.json"
+  },
+  "references": [
+    "https://quartz.jzhao.xyz/configuration",
+    "https://quartz.jzhao.xyz/hosting",
+    "https://motionsites.ai/",
+    "https://motionsites.ai/?prompt=book-shelf"
+  ],
+  "followup": "本 Expert 聊天保持为 Quartz 部署、构建、导航与布局的返工入口。"
+}

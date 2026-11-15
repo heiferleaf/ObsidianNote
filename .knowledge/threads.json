@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "threads": {
+    "01a1cf78-a31d-7541-9deb-28bde445a168": {
+      "threadId": "01a1cf78-a31d-7541-9deb-28bde445a168",
+      "role": "router",
+      "title": "Router 学习知识库",
+      "aliases": [
+        "Controller",
+        "控制器",
+        "Controller 学习知识库",
+        "Router"
+      ],
+      "topics": [
+        "学习知识库入口"
+      ],
+      "revision": 2,
+      "updated_at": "2026-11-15T06:18:47.655952+00:00",
+      "role_ref": ".codex/docs/roles/router.md",
+      "specialty": "router",
+      "evidence": "2026-11-15 用户要求 Controller/Expert 改为 Router/Worker 并建立持久协作；本轮 live list_threads 核实实际聊天和本项目 cwd，set_thread_title 已返回上述新标题。"
+    },
+    "01a1cf87-561b-7e40-91e9-246b0d676f85": {
+      "threadId": "01a1cf87-561b-7e40-91e9-246b0d676f85",
+      "role": "worker",
+      "title": "Worker 每周归纳",
+      "aliases": [
+        "归纳员",
+        "每周归纳",
+        "学习知识库归纳员",
+        "归纳员 学习知识库",
+        "Worker 每周归纳"
+      ],
+      "topics": [
+        "临时笔记归档",
+        "Markdown同步",
+        "Quartz发布"
+      ],
+      "revision": 2,
+      "updated_at": "2026-11-15T06:18:47.659963+00:00",
+      "role_ref": ".codex/docs/roles/curator.md",
+      "specialty": "curator",
+      "evidence": "2026-11-15 用户要求 Controller/Expert 改为 Router/Worker 并建立持久协作；本轮 live list_threads 核实实际聊天和本项目 cwd，set_thread_title 已返回上述新标题。"
+    },
+    "01a1cf7f-14a4-7752-8fb7-fb1b00522a45": {
+      "threadId": "01a1cf7f-14a4-7752-8fb7-fb1b00522a45",
+      "title": "Worker 知识库工程",
+      "role": "worker",
+      "aliases": [
+        "工程专家",
+        "Expert 知识库工程",
+        "Worker 知识库工程"
+      ],
+      "topics": [
+        "Quartz",
+        "站点部署",
+        "GitHub Actions"
+      ],
+      "revision": 2,
+      "updated_at": "2026-11-15T06:18:47.674088+00:00",
+      "role_ref": ".codex/docs/roles/engineering.md",
+      "specialty": "engineering",
+      "evidence": "2026-11-15 用户要求 Controller/Expert 改为 Router/Worker 并建立持久协作；本轮 live list_threads 核实实际聊天和本项目 cwd，set_thread_title 已返回上述新标题。"
+    },
+    "01a1cf85-fb15-71c3-ac4b-34ca1f7dbc9a": {
+      "threadId": "01a1cf85-fb15-71c3-ac4b-34ca1f7dbc9a",
+      "title": "Worker 笔记图文与格式",
+      "role": "worker",
+      "aliases": [
+        "格式专家",
+        "Expert 笔记图文与格式",
+        "Worker 笔记图文与格式"
+      ],
+      "topics": [
+        "公式",
+        "图片",
+        "Markdown格式",
+        "笔记排版"
+      ],
+      "revision": 2,
+      "updated_at": "2026-11-15T06:18:47.684203+00:00",
+      "role_ref": ".codex/docs/roles/media.md",
+      "specialty": "media",
+      "evidence": "2026-11-15 用户要求 Controller/Expert 改为 Router/Worker 并建立持久协作；本轮 live list_threads 核实实际聊天和本项目 cwd，set_thread_title 已返回上述新标题。"
+    }
+  },
+  "pages": {}
+}

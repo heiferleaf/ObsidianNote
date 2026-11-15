@@ -6,6 +6,8 @@ import { styleText } from "util"
 
 export interface Options {
   priority: ("frontmatter" | "git" | "filesystem")[]
+  /** Original vault root when building from a copied content directory, relative to cwd. */
+  sourceRoot?: string
 }
 
 const defaultOptions: Options = {
@@ -67,7 +69,9 @@ export const CreatedModifiedDate: QuartzTransformerPlugin<Partial<Options>> = (u
             let published: MaybeDate = undefined
 
             const fp = file.data.relativePath!
-            const fullFp = file.data.filePath!
+            const stagedFp = file.data.filePath!
+            const sourceFp = opts.sourceRoot ? path.resolve(opts.sourceRoot, fp) : stagedFp
+            const fullFp = fs.existsSync(sourceFp) ? sourceFp : stagedFp
             for (const source of opts.priority) {
               if (source === "filesystem") {
                 const st = await fs.promises.stat(fullFp)

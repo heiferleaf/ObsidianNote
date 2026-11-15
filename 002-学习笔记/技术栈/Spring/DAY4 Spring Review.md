@@ -1,6 +1,6 @@
 ---
 created: 2026-04-23
-modified: 2026-05-03
+modified: 2026-09-07
 title: DAY4 Spring Review
 tags:
   - 技术栈
@@ -35,19 +35,19 @@ subject: Spring
 
 ### 1.2 类的创建
 
-|模式|说明|
-|---|---|
-|单例模式|容器默认以单例管理 Bean，也可配置为原型（Prototype）|
-|建造者模式|复杂 Bean 的创建借助 Builder 逐步构造|
-|工厂模式|封装 Bean 的创建过程，对外隐藏实现细节|
+| 模式    | 说明                                |
+| ----- | --------------------------------- |
+| 单例模式  | 容器默认以单例管理 Bean，也可配置为原型（Prototype） |
+| 建造者模式 | 复杂 Bean 的创建借助 Builder 逐步构造        |
+| 工厂模式  | 封装 Bean 的创建过程，对外隐藏实现细节            |
 
 ### 1.3 类对象之间的协作
 
-|模式|在 Spring 中的体现|
-|---|---|
-|观察者模式|事件发布订阅机制（ApplicationEvent / EventListener）|
-|责任链模式|HandlerMapping 执行传递；多个 AOP 通知对同一方法的串联执行|
-|策略模式|不同参数解析器（ArgumentResolver）的选择与执行|
+| 模式    | 在 Spring 中的体现                              |
+| ----- | ------------------------------------------ |
+| 观察者模式 | 事件发布订阅机制（ApplicationEvent / EventListener） |
+| 责任链模式 | HandlerMapping 执行传递；多个 AOP 通知对同一方法的串联执行    |
+| 策略模式  | 不同参数解析器（ArgumentResolver）的选择与执行            |
 
 ---
 

@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "status": "completed",
+  "completed_at": "2026-11-14T09:41:49.762Z",
+  "scope": {
+    "source": "002-学习笔记",
+    "notes": 228,
+    "folders": 54,
+    "total_pages_including_space_root": 287
+  },
+  "entry": {
+    "space_id": "page_space_a6662ccb6edc8191beb11ac75487e14b",
+    "page_id": "page_6af5a1168c7c8191acc0c435f00e18e2",
+    "url": "https://chatgpt.com/space/page_6af5a1168c7c8191acc0c435f00e18e2",
+    "inbox": "https://chatgpt.com/space/page_6cad6566818c8191bba69abf62e2b9ef",
+    "guide": "https://chatgpt.com/space/page_315d46fa88308191b4aca477c390936a",
+    "tasks": "https://chatgpt.com/space/page_8a7ef51deb74819192c8b8ed7911a547"
+  },
+  "verification": {
+    "verified_notes": 228,
+    "source_note_bytes_unchanged": true,
+    "parent_mismatches": 0,
+    "missing_pages": 0,
+    "extra_pages": 0,
+    "comparison_methods": {
+      "semantic_ast": 208,
+      "page_specific_reviewed_blank_prose": 3,
+      "page_specific_reviewed_math_boundaries": 1,
+      "page_whitespace_with_exact_code": 16
+    },
+    "reviewed_format_pages": [
+      "002-学习笔记/技术栈/计算机系统基础/操作系统/进程和线程.md",
+      "002-学习笔记/课程学习/机器学习/叶海峰期末总复习.md",
+      "002-学习笔记/技术栈/分布式软件/分布式软件理论.md",
+      "002-学习笔记/课程学习/离散数学/离散数学笔记.md"
+    ],
+    "page_client_visual_inspection": "Not performed for every Page; complete API readback, content/source checks and KaTeX compilation performed. Website browser checks are recorded separately in quartz-result.json."
+  },
+  "display": {
+    "ordinary_prose": "native",
+    "inline_code": "native",
+    "mathematical_paragraphs": "guarded HTML math_region embeds with editable Markdown sources",
+    "active_math_regions": 538,
+    "headings": "native outline; Unicode or adjacent formula for mathematical headings",
+    "links": "real Page links and explicit backlinks; unverified block anchors were not invented"
+  },
+  "assets": {
+    "native_references": 216,
+    "quartz_source_keys": 215,
+    "generated_media_backup_files": 59,
+    "missing_original_images": [
+      {
+        "source": "002-学习笔记/课程学习/数学基础/概率论.md",
+        "key": "images/c89fd93c5d6dccce89762d57fcd66dac.png",
+        "reason": "attachment-not-uploaded"
+      },
+      {
+        "source": "002-学习笔记/课程学习/数学基础/概率论.md",
+        "key": "images/b958c16cfdce9e6bd2b810b10d71416e.png",
+        "reason": "attachment-not-uploaded"
+      },
+      {
+        "source": "002-学习笔记/课程学习/数学基础/线性代数.md",
+        "key": "images/fig1.png",
+        "reason": "attachment-not-uploaded"
+      }
+    ],
+    "excalidraw": "static render; original drawing files retained",
+    "pdf_selection_fallback": "Four selection-only excerpts use full-page images; rectangle excerpts are cropped"
+  },
+  "chats": [
+    {
+      "role": "controller",
+      "title": "Controller 学习知识库",
+      "threadId": "01a1cf78-a31d-7541-9deb-28bde445a168",
+      "hostId": "local",
+      "url": "codex://threads/01a1cf78-a31d-7541-9deb-28bde445a168"
+    },
+    {
+      "role": "curator",
+      "title": "归纳员 学习知识库",
+      "threadId": "01a1cf87-561b-7e40-91e9-246b0d676f85",
+      "hostId": "local",
+      "url": "codex://threads/01a1cf87-561b-7e40-91e9-246b0d676f85"
+    },
+    {
+      "role": "expert",
+      "title": "Expert 知识库工程",
+      "threadId": "01a1cf7f-14a4-7752-8fb7-fb1b00522a45",
+      "hostId": "local",
+      "url": "codex://threads/01a1cf7f-14a4-7752-8fb7-fb1b00522a45"
+    },
+    {
+      "role": "expert",
+      "title": "Expert 笔记图文与格式",
+      "threadId": "01a1cf85-fb15-71c3-ac4b-34ca1f7dbc9a",
+      "hostId": "local",
+      "url": "codex://threads/01a1cf85-fb15-71c3-ac4b-34ca1f7dbc9a"
+    }
+  ],
+  "schedule": {
+    "automation_id": "automation",
+    "status": "ACTIVE",
+    "weekday": "Sunday",
+    "hour": 20,
+    "minute": 0,
+    "timezone": "Asia/Shanghai",
+    "execution": "local heartbeat attached to curator chat; requires machine and app available"
+  },
+  "website": {
+    "url": "https://heiferleaf.github.io/ObsidianNote/",
+    "build": "passed",
+    "build_completed_at": "2026-11-14T09:39:26.832Z",
+    "indexed_pages": 215,
+    "checked_navigation_links": 62,
+    "checked_local_images": 207,
+    "rendered_math_errors": 0,
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "publication_queue": ".knowledge/publication.json"
+  },
+  "maintenance": {
+    "controller_skill": ".codex/skills/knowledge-controller/SKILL.md",
+    "curator_skill": ".codex/skills/knowledge-curator/SKILL.md",
+    "manifest": ".knowledge/manifest.json",
+    "registry": ".knowledge/threads.json",
+    "original_sources": "preserved",
+    "missing_image_followup": "Two unchecked tasks on the learning tasks Page cover the three unavailable original images"
+  }
+}

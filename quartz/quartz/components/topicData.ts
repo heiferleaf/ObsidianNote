@@ -1,9 +1,10 @@
 import { QuartzPluginData } from "../plugins/vfile"
-import { FullSlug, normalizeDisplayName } from "../util/path"
+import { FullSlug, isAttachmentPath, normalizeDisplayName } from "../util/path"
 
 export interface TopicEntry {
   key: string
   title: string
+  category: string
   slug: FullSlug
   count: number
   latestModified?: Date
@@ -28,7 +29,13 @@ function getPageTitle(file: QuartzPluginData): string {
 }
 
 function isContentPage(slug: string): boolean {
-  return slug !== "index" && slug !== "404" && !slug.startsWith("tags/") && !slug.endsWith("/index")
+  return slug.startsWith("002-学习笔记/") && !isAttachmentPath(slug) && !slug.endsWith("/index")
+}
+
+function topicParts(slug: string): string[] {
+  const folders = slug.split("/").slice(1, -1)
+  // Group by subject below the vault's category, while keeping its full URL intact.
+  return folders.slice(0, Math.min(2, folders.length))
 }
 
 export function buildTopicEntries(allFiles: QuartzPluginData[]): TopicEntry[] {
@@ -38,12 +45,14 @@ export function buildTopicEntries(allFiles: QuartzPluginData[]): TopicEntry[] {
     const slug = file.slug
     if (!slug || !isContentPage(slug)) continue
 
-    const topicKey = slug.split("/")[0]
+    const parts = topicParts(slug)
+    const topicKey = ["002-学习笔记", ...parts].join("/")
     if (!topicKey) continue
 
     const current = topics.get(topicKey) ?? {
       key: topicKey,
-      title: normalizeDisplayName(topicKey),
+      title: normalizeDisplayName(parts.at(-1) ?? "学习笔记"),
+      category: parts.length > 1 ? normalizeDisplayName(parts[0]) : "学习笔记",
       slug: `${topicKey}/index` as FullSlug,
       count: 0,
     }
@@ -72,17 +81,20 @@ export function buildRecentEntries(allFiles: QuartzPluginData[]): RecentEntry[] 
     .map((file) => {
       const slug = file.slug as FullSlug
       const slugParts = slug.split("/")
-      const topicPath = slugParts.slice(0, -1).join(" / ")
+      const topicPath = slugParts.slice(1, -1).map(normalizeDisplayName).join(" · ")
       return {
         slug,
         title: getPageTitle(file),
         modified: getModifiedDate(file),
-        topicPath: topicPath ? topicPath.split("/").map(normalizeDisplayName).join(" · ") : "",
+        topicPath,
       }
     })
     .sort((a, b) => {
       const leftTime = a.modified?.getTime() ?? 0
       const rightTime = b.modified?.getTime() ?? 0
-      return rightTime - leftTime || a.title.localeCompare(b.title, undefined, { numeric: true, sensitivity: "base" })
+      return (
+        rightTime - leftTime ||
+        a.title.localeCompare(b.title, undefined, { numeric: true, sensitivity: "base" })
+      )
     })
 }

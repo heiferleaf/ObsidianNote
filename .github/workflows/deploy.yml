@@ -2,7 +2,8 @@ name: Deploy Quartz to GitHub Pages
 
 on:
   push:
-    branches: [main, auto/tag-apply]
+    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -28,56 +29,17 @@ jobs:
           cache: npm
           cache-dependency-path: quartz/package-lock.json
 
-      - name: Sync notes into Quartz content
-        shell: bash
-        run: |
-          rm -rf quartz/content/*
-          mkdir -p quartz/content
-          cp -a "002-学习笔记" "quartz/content/"
-          cp -a "003-Attachments" "quartz/content/"
-
-          # Ensure home page exists for Quartz deployments.
-          if [ -f "index.md" ]; then
-            cp "index.md" "quartz/content/index.md"
-          elif [ -f "000-Dashboard.md" ]; then
-            cp "000-Dashboard.md" "quartz/content/index.md"
-          else
-            printf '%s\n' '---' 'title: 首页' '---' '' '欢迎来到我的学习笔记网站。' > "quartz/content/index.md"
-          fi
-
-      - name: Apply Quartz tag suggestions
-        working-directory: quartz
-        run: node ./scripts/tag-normalize.mjs --apply
-
-      - name: Normalize Quartz LaTeX
-        working-directory: quartz
-        run: npm run fix:latex
-
       - name: Install dependencies
         working-directory: quartz
         run: npm ci
 
-      - name: Build Quartz
+      - name: Test site preparation and navigation
         working-directory: quartz
-        run: node ./quartz/bootstrap-cli.mjs build
+        run: npm run test:site
 
-      - name: Clean up generated files
-        run: |
-          # 删除所有 RSS/Feed 文件
-          find quartz/public -name 'index.xml' -delete 2>/dev/null || true
-          find quartz/public -name 'feed.xml' -delete 2>/dev/null || true
-          find quartz/public -name 'feed.rss' -delete 2>/dev/null || true
-          find quartz/public -name '*.rss' -delete 2>/dev/null || true
-          find quartz/public -type d \( -name '*练习*' -o -name '*作业*' \) -exec rm -rf {} + 2>/dev/null || true
-          find quartz/public -type f -name '*.excalidraw.md' -delete 2>/dev/null || true          
-          # 创建 .nojekyll 文件禁用 Jekyll 处理
-          touch quartz/public/.nojekyll
-
-          # 验证首页存在
-          if [ ! -f quartz/public/index.html ]; then
-            echo "ERROR: index.html not found"
-            exit 1
-          fi
+      - name: Sync vault, build, and validate Quartz
+        working-directory: quartz
+        run: npm run build:site
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

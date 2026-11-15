@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "inline_math": "formula-regions",
+  "inline_code": "native-markdown",
+  "ordinary_prose": "native",
+  "formula_region_source": "manifest.visualizations",
+  "chosen_at": "2026-11-12",
+  "demo_page_id": "page_7708f2b5219c8191830d9951e2283249",
+  "weekly_schedule": {
+    "weekday": "Sunday",
+    "hour": 20,
+    "minute": 0,
+    "timezone": "Asia/Shanghai",
+    "automation_id": "automation"
+  }
+}

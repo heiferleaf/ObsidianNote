@@ -1,3 +1,196 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Paper, ink and a quiet reading rhythm. CJK fallbacks are explicit on Windows.
+html:root {
+  --bodyFont: "Inter", "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+  --headerFont: "Manrope", "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+  --titleFont: var(--headerFont);
+}
+
+// Keep navigation compact and give the reading column a predictable width.
+html {
+  width: 100%;
+  text-size-adjust: 100%;
+}
+// Long formulas scroll inside the article instead of widening the mobile page.
+article .katex-display {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-block: 0.4em;
+}
+article .katex:not(.katex-display .katex) {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  vertical-align: middle;
+  padding-block: 0.25em;
+}
+.page {
+  max-width: 1500px;
+}
+.page > #quartz-body {
+  grid-template-columns: 260px minmax(0, 1fr) 260px;
+  .sidebar {
+    padding: 3rem 1.5rem 1.5rem;
+  }
+  .page-header {
+    margin-top: 3rem;
+  }
+  .center {
+    min-width: 0;
+    width: 100%;
+  }
+  .sidebar > .flex-component {
+    flex-shrink: 0;
+  }
+}
+body[data-slug="index"] .page > #quartz-body {
+  grid-template-columns: 260px minmax(0, 1fr);
+  grid-template-areas: "grid-sidebar-left grid-header" "grid-sidebar-left grid-center" "grid-sidebar-left grid-footer";
+  .right.sidebar {
+    display: none;
+  }
+  .center {
+    max-width: 1040px;
+    padding-inline: 2rem;
+    box-sizing: border-box;
+  }
+  .center > hr,
+  .center > article:empty,
+  .page-footer {
+    display: none;
+  }
+}
+a:focus-visible,
+summary:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 3px;
+}
+@media (min-width: 801px) and (max-width: 1200px) {
+  .page > #quartz-body {
+    grid-template-columns: 240px minmax(0, 1fr);
+  }
+  body[data-slug="index"] .page > #quartz-body {
+    grid-template-columns: 240px minmax(0, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .page > #quartz-body,
+  body[data-slug="index"] .page > #quartz-body {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "grid-sidebar-left" "grid-header" "grid-center" "grid-sidebar-right" "grid-footer";
+    padding-inline: 1.25rem;
+    .sidebar.left {
+      padding: 1.25rem 0 0;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .sidebar.left > .page-title {
+      margin: 0;
+      font-size: 1.25rem;
+    }
+    .sidebar.left > .spacer {
+      display: none;
+    }
+    .sidebar.left > .flex-component {
+      margin-left: auto;
+    }
+    .page-header {
+      margin-top: 1.25rem;
+    }
+    .center {
+      padding-inline: 0;
+    }
+    .sidebar.right {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+  .page-listing .section > .desc {
+    min-width: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.page { max-width: 1600px; }
+.page > #quartz-body {
+  grid-template-columns: 224px minmax(0, 1fr) 230px;
+  column-gap: 0;
+  .sidebar.left {
+    --light: #19211d; --lightgray: #354139; --gray: #9baa9d;
+    --darkgray: #c4cfc2; --dark: #f0f1e5; --secondary: #e5e5d2;
+    --tertiary: #e1b48e; --highlight: #303d32;
+    padding: 2.3rem 1.1rem 1.5rem;
+    background: #19211d;
+    border-right: 1px solid #111a15;
+    gap: 1.25rem;
+    .page-title { font-size: 1.4rem; padding-inline: .6rem; }
+    .page-title a { display: flex; align-items: center; gap: .7rem; }
+    .site-monogram { display: grid; place-items: center; width: 33px; height: 38px; border: 1px solid #65725e; border-radius: 7px; color: #e5e8d8; font: 500 1.7rem Georgia,serif; transform: rotate(-5deg); }
+    .site-wordmark { font: 600 1.55rem var(--headerFont); letter-spacing: -.06em; color: #f0f1e5; small { display: block; font: 400 .59rem var(--bodyFont); letter-spacing: .13em; margin-top: .2rem; color: #9baa9d; } }
+    .site-dot { color: #dbac80; }
+    > .flex-component { gap: .3rem; align-items: center; }
+    .search { min-width: 0; max-width: none; .search-button { height: 2.1rem; padding: 0 .25rem; border-color: #3d4a40; border-radius: 6px; font-size: .7rem; p { color: #a2afa3; } } }
+    .darkmode,.readermode { min-width: 23px; width: 23px; height: 24px; }
+  }
+  .sidebar.right { padding: 3.2rem 1.3rem 1.5rem; border-left: 1px solid var(--lightgray); gap: 2rem; h3 { font-size: .77rem; font-weight: 500; } .toc-content li a { font-size: .72rem; line-height: 1.7; font-weight: 400; } }
+  .center { padding: 0 2.5rem; box-sizing: border-box; }
+  .page-header { margin-top: 3.1rem; }
+}
+body[data-slug="index"] .page > #quartz-body {
+  grid-template-columns: 224px minmax(0,1fr);
+  .center { max-width: none; padding: 2.2rem 3.6rem 0; }
+  .page-header { margin-top: 0; }
+}
+.breadcrumbs { font-size: .72rem; opacity: .8; margin-bottom: 1.8rem; }
+.article-title { font-size: clamp(1.7rem,3vw,2.5rem); line-height: 1.4; letter-spacing: -.04em; font-weight: 600; margin: .8rem 0; }
+.content-meta { font-size: .72rem; line-height: 1.8; color: var(--gray); }
+ul.tags { gap: .4rem; margin-block: .8rem 1.8rem; a.internal.tag-link { background: transparent; border: 1px solid var(--lightgray); border-radius: 4px; padding: .15rem .45rem; font-size: .65rem; font-weight: 400; } }
+.page .center article {
+  font-size: .95rem; line-height: 1.95; padding-top: .8rem;
+  h1,h2,h3,h4 { line-height: 1.55; letter-spacing: -.025em; font-weight: 600; }
+  h2 { margin-top: 2.6rem; padding-bottom: .6rem; border-bottom: 1px solid var(--lightgray); font-size: 1.4rem; }
+  h3 { margin-top: 2rem; font-size: 1.1rem; }
+  p { margin: 1.15rem 0; }
+  blockquote { border-left: 2px solid var(--secondary); background: var(--highlight); margin: 1.4rem 0; padding: .65rem 1.1rem; border-radius: 0 7px 7px 0; p { margin: .3rem 0; } }
+  pre { border: 1px solid var(--lightgray); border-radius: 9px; background: color-mix(in srgb,var(--light) 65%,var(--lightgray)); padding: 1.15rem; line-height: 1.75; }
+  pre code { font-size: .78rem; }
+  :not(pre) > code { padding: .15rem .35rem; background: var(--highlight); border-radius: 4px; font-size: .83em; }
+  img { border-radius: 7px; }
+  th { font-weight: 600; background: var(--highlight); }
+  td,th { padding: .6rem .85rem; font-size: .85rem; }
+}
+.page > #quartz-body footer { box-sizing: border-box; min-width: 0; width: 100%; padding: 1.5rem 2.5rem 2rem; p,a { font-size: .7rem; } }
+@media (min-width:801px) and (max-width:1200px) {
+  .page > #quartz-body,body[data-slug="index"] .page > #quartz-body { grid-template-columns: 210px minmax(0,1fr); }
+  .page > #quartz-body .sidebar.right { border: 0; padding: 1.5rem 2.5rem; }
+  body[data-slug="index"] .page > #quartz-body .center { padding-inline: 2.4rem; }
+}
+@media (max-width:800px) {
+  .page > #quartz-body,body[data-slug="index"] .page > #quartz-body {
+    grid-template-columns: minmax(0,1fr); padding: .8rem 1.2rem 0;
+    .sidebar.left { position: relative; height: auto; padding: 1rem 1.1rem .2rem; border: 0; border-radius: 12px; gap: .8rem; flex-wrap: wrap; flex-direction: row; margin-bottom: .7rem; .page-title { padding: 0; } .site-wordmark { font-size: 1.3rem; small { font-size: .6rem; } } .site-monogram { width: 26px; height: 30px; font-size: 1.4rem; } > .flex-component { margin-left: auto; } .darkmode,.readermode { width: 44px; min-width: 44px; height: 44px; } .search-button { width: 44px; height: 44px; border: 0; padding: 0; p { display: none; } svg { margin: 0 .65rem; } } }
+    .center { padding: 0; }
+    .page-header { margin-top: 1.5rem; }
+    .sidebar.right { border: 0; padding: 1rem 0; }
+    footer { padding-inline: 0; }
+  }
+  body[data-slug="index"] .page > #quartz-body { .center { padding-top: 1rem; } .page-header { margin-top: 0; } }
+  .page .center article { font-size: .91rem; }
+  .breadcrumbs { font-size: .64rem; margin-bottom: 1.3rem; }
+}

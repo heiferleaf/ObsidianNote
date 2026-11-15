@@ -1,0 +1,2586 @@
+{
+  "version": 1,
+  "space": {
+    "id": "page_space_a6662ccb6edc8191beb11ac75487e14b",
+    "backing_type": "drive",
+    "root_directory_id": "FileDrive_b3f6a7801bb481918a512e3a7ded2724",
+    "root_page_id": "page_6af5a1168c7c8191acc0c435f00e18e2",
+    "symbol": null,
+    "name": "学习知识库",
+    "created_at": "2026-11-12T11:20:55.420510Z",
+    "updated_at": "2026-11-12T11:20:55.462044Z",
+    "deleted_at": null,
+    "appearance": {
+      "emoji": null,
+      "theme": null
+    },
+    "can_edit_appearance": true,
+    "can_edit": true,
+    "can_create_chat": false,
+    "interaction_mode": "default"
+  },
+  "pages": {
+    "002-学习笔记": {
+      "page_id": "page_5a3902a652248191b9cad33f0487f21a",
+      "title": "学习笔记",
+      "url": "https://chatgpt.com/space/page_5a3902a652248191b9cad33f0487f21a",
+      "parent_page_id": "page_6af5a1168c7c8191acc0c435f00e18e2",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术学习": {
+      "page_id": "page_05766cbcdcf8819193a672f58697616c",
+      "title": "技术学习",
+      "url": "https://chatgpt.com/space/page_05766cbcdcf8819193a672f58697616c",
+      "parent_page_id": "page_5a3902a652248191b9cad33f0487f21a",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈": {
+      "page_id": "page_70943d7c773881918d37a1ffd3f877f4",
+      "title": "技术栈",
+      "url": "https://chatgpt.com/space/page_70943d7c773881918d37a1ffd3f877f4",
+      "parent_page_id": "page_5a3902a652248191b9cad33f0487f21a",
+      "kind": "folder"
+    },
+    "002-学习笔记/课程学习": {
+      "page_id": "page_5976306c20488191aae3d3cf1172f3fd",
+      "title": "课程学习",
+      "url": "https://chatgpt.com/space/page_5976306c20488191aae3d3cf1172f3fd",
+      "parent_page_id": "page_5a3902a652248191b9cad33f0487f21a",
+      "kind": "folder"
+    },
+    "002-学习笔记/零碎知识笔记": {
+      "page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "title": "零碎知识笔记",
+      "url": "https://chatgpt.com/space/page_73c8e56be75c8191868f2d698e9e02e2",
+      "parent_page_id": "page_5a3902a652248191b9cad33f0487f21a",
+      "kind": "folder"
+    },
+    "002-学习笔记/面试准备": {
+      "page_id": "page_12c166602c0c8191a9b76e170d97b262",
+      "title": "面试准备",
+      "url": "https://chatgpt.com/space/page_12c166602c0c8191a9b76e170d97b262",
+      "parent_page_id": "page_5a3902a652248191b9cad33f0487f21a",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术学习/思特奇实训": {
+      "page_id": "page_d0ad6930f5348191aa524e1712137102",
+      "title": "思特奇实训",
+      "url": "https://chatgpt.com/space/page_d0ad6930f5348191aa524e1712137102",
+      "parent_page_id": "page_05766cbcdcf8819193a672f58697616c",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术学习/AI Agent": {
+      "page_id": "page_e7a6f13b18f4819197969552c130de4c",
+      "title": "AI Agent",
+      "url": "https://chatgpt.com/space/page_e7a6f13b18f4819197969552c130de4c",
+      "parent_page_id": "page_05766cbcdcf8819193a672f58697616c",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术学习/LLM": {
+      "page_id": "page_1026a571c33c8191b52138f688ac9494",
+      "title": "LLM",
+      "url": "https://chatgpt.com/space/page_1026a571c33c8191b52138f688ac9494",
+      "parent_page_id": "page_05766cbcdcf8819193a672f58697616c",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术学习/RAG": {
+      "page_id": "page_2e5c31feb8b881918849d0ef32ed28c6",
+      "title": "RAG",
+      "url": "https://chatgpt.com/space/page_2e5c31feb8b881918849d0ef32ed28c6",
+      "parent_page_id": "page_05766cbcdcf8819193a672f58697616c",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/大数据存储处理": {
+      "page_id": "page_ce0ef9281be08191b277bd52a912c9b1",
+      "title": "大数据存储处理",
+      "url": "https://chatgpt.com/space/page_ce0ef9281be08191b277bd52a912c9b1",
+      "parent_page_id": "page_70943d7c773881918d37a1ffd3f877f4",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/分布式软件": {
+      "page_id": "page_b9f0c5f89a1c8191a4cf68909a5b2d39",
+      "title": "分布式软件",
+      "url": "https://chatgpt.com/space/page_b9f0c5f89a1c8191a4cf68909a5b2d39",
+      "parent_page_id": "page_70943d7c773881918d37a1ffd3f877f4",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/计算机系统基础": {
+      "page_id": "page_201e6d1d07a48191bc4781233570ae01",
+      "title": "计算机系统基础",
+      "url": "https://chatgpt.com/space/page_201e6d1d07a48191bc4781233570ae01",
+      "parent_page_id": "page_70943d7c773881918d37a1ffd3f877f4",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/设计模式": {
+      "page_id": "page_b164d3cedad881919143c5ce4712367a",
+      "title": "设计模式",
+      "url": "https://chatgpt.com/space/page_b164d3cedad881919143c5ce4712367a",
+      "parent_page_id": "page_70943d7c773881918d37a1ffd3f877f4",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/数据结构与算法": {
+      "page_id": "page_365f8a3de8d08191bc2f025d8228598d",
+      "title": "数据结构与算法",
+      "url": "https://chatgpt.com/space/page_365f8a3de8d08191bc2f025d8228598d",
+      "parent_page_id": "page_70943d7c773881918d37a1ffd3f877f4",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/现代编程思想": {
+      "page_id": "page_19411066aba88191ad069254e314c460",
+      "title": "现代编程思想",
+      "url": "https://chatgpt.com/space/page_19411066aba88191ad069254e314c460",
+      "parent_page_id": "page_70943d7c773881918d37a1ffd3f877f4",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/云计算平台与技术": {
+      "page_id": "page_2e747f6d9cf481919cd3ee5f0c132f48",
+      "title": "云计算平台与技术",
+      "url": "https://chatgpt.com/space/page_2e747f6d9cf481919cd3ee5f0c132f48",
+      "parent_page_id": "page_70943d7c773881918d37a1ffd3f877f4",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/JAVA EE": {
+      "page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "title": "JAVA EE",
+      "url": "https://chatgpt.com/space/page_21ce2be92d78819182e5b9a5b69954ef",
+      "parent_page_id": "page_70943d7c773881918d37a1ffd3f877f4",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/JVM": {
+      "page_id": "page_0f3ffe2dfadc8191939b195c2c91c88a",
+      "title": "JVM",
+      "url": "https://chatgpt.com/space/page_0f3ffe2dfadc8191939b195c2c91c88a",
+      "parent_page_id": "page_70943d7c773881918d37a1ffd3f877f4",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/LangChain": {
+      "page_id": "page_38bd7d7357d881918990d0f925f45d4a",
+      "title": "LangChain",
+      "url": "https://chatgpt.com/space/page_38bd7d7357d881918990d0f925f45d4a",
+      "parent_page_id": "page_70943d7c773881918d37a1ffd3f877f4",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/Spring": {
+      "page_id": "page_3eea5db4ebf08191b1531311f4b7a116",
+      "title": "Spring",
+      "url": "https://chatgpt.com/space/page_3eea5db4ebf08191b1531311f4b7a116",
+      "parent_page_id": "page_70943d7c773881918d37a1ffd3f877f4",
+      "kind": "folder"
+    },
+    "002-学习笔记/课程学习/编译原理": {
+      "page_id": "page_55476665523c819186d42c397953f07f",
+      "title": "编译原理",
+      "url": "https://chatgpt.com/space/page_55476665523c819186d42c397953f07f",
+      "parent_page_id": "page_5976306c20488191aae3d3cf1172f3fd",
+      "kind": "folder"
+    },
+    "002-学习笔记/课程学习/操作系统实践": {
+      "page_id": "page_66bc41f94a508191b06b5c5e1d6e695b",
+      "title": "操作系统实践",
+      "url": "https://chatgpt.com/space/page_66bc41f94a508191b06b5c5e1d6e695b",
+      "parent_page_id": "page_5976306c20488191aae3d3cf1172f3fd",
+      "kind": "folder"
+    },
+    "002-学习笔记/课程学习/机器学习": {
+      "page_id": "page_cda099a9f2588191a679d618105b6744",
+      "title": "机器学习",
+      "url": "https://chatgpt.com/space/page_cda099a9f2588191a679d618105b6744",
+      "parent_page_id": "page_5976306c20488191aae3d3cf1172f3fd",
+      "kind": "folder"
+    },
+    "002-学习笔记/课程学习/计算机网络": {
+      "page_id": "page_abc02b9bcf9881919e507241bfeab332",
+      "title": "计算机网络",
+      "url": "https://chatgpt.com/space/page_abc02b9bcf9881919e507241bfeab332",
+      "parent_page_id": "page_5976306c20488191aae3d3cf1172f3fd",
+      "kind": "folder"
+    },
+    "002-学习笔记/课程学习/离散数学": {
+      "page_id": "page_1ccdbdcd32208191a21347e469f477bc",
+      "title": "离散数学",
+      "url": "https://chatgpt.com/space/page_1ccdbdcd32208191a21347e469f477bc",
+      "parent_page_id": "page_5976306c20488191aae3d3cf1172f3fd",
+      "kind": "folder"
+    },
+    "002-学习笔记/课程学习/软件安全": {
+      "page_id": "page_d778182e95c88191907e658bd28e2a67",
+      "title": "软件安全",
+      "url": "https://chatgpt.com/space/page_d778182e95c88191907e658bd28e2a67",
+      "parent_page_id": "page_5976306c20488191aae3d3cf1172f3fd",
+      "kind": "folder"
+    },
+    "@inbox": {
+      "page_id": "page_6cad6566818c8191bba69abf62e2b9ef",
+      "title": "临时笔记",
+      "url": "https://chatgpt.com/space/page_6cad6566818c8191bba69abf62e2b9ef",
+      "parent_page_id": "page_6af5a1168c7c8191acc0c435f00e18e2",
+      "kind": "system"
+    },
+    "@tasks": {
+      "page_id": "page_8a7ef51deb74819192c8b8ed7911a547",
+      "title": "学习待办",
+      "url": "https://chatgpt.com/space/page_8a7ef51deb74819192c8b8ed7911a547",
+      "parent_page_id": "page_6af5a1168c7c8191acc0c435f00e18e2",
+      "kind": "system"
+    },
+    "@guide": {
+      "page_id": "page_315d46fa88308191b4aca477c390936a",
+      "title": "知识库使用说明",
+      "url": "https://chatgpt.com/space/page_315d46fa88308191b4aca477c390936a",
+      "parent_page_id": "page_6af5a1168c7c8191acc0c435f00e18e2",
+      "kind": "system"
+    },
+    "002-学习笔记/课程学习/数据库系统": {
+      "page_id": "page_6e7ecb6b15c88191a121bd241bc58dd1",
+      "url": "https://chatgpt.com/space/page_6e7ecb6b15c88191a121bd241bc58dd1",
+      "title": "数据库系统",
+      "parent_page_id": "page_5976306c20488191aae3d3cf1172f3fd",
+      "kind": "folder"
+    },
+    "002-学习笔记/课程学习/数学基础": {
+      "page_id": "page_15f824e9e450819188528395dbe10583",
+      "url": "https://chatgpt.com/space/page_15f824e9e450819188528395dbe10583",
+      "title": "数学基础",
+      "parent_page_id": "page_5976306c20488191aae3d3cf1172f3fd",
+      "kind": "folder"
+    },
+    "002-学习笔记/课程学习/移动式编程": {
+      "page_id": "page_efce87fe580881918ca8035f8cec86e6",
+      "url": "https://chatgpt.com/space/page_efce87fe580881918ca8035f8cec86e6",
+      "title": "移动式编程",
+      "parent_page_id": "page_5976306c20488191aae3d3cf1172f3fd",
+      "kind": "folder"
+    },
+    "002-学习笔记/面试准备/数据库篇": {
+      "page_id": "page_cf55cda0a2e0819187fabcd48b9c1785",
+      "url": "https://chatgpt.com/space/page_cf55cda0a2e0819187fabcd48b9c1785",
+      "title": "数据库篇",
+      "parent_page_id": "page_12c166602c0c8191a9b76e170d97b262",
+      "kind": "folder"
+    },
+    "002-学习笔记/面试准备/Redis 篇": {
+      "page_id": "page_ee29968016cc8191a7b37dca09d43b10",
+      "url": "https://chatgpt.com/space/page_ee29968016cc8191a7b37dca09d43b10",
+      "title": "Redis 篇",
+      "parent_page_id": "page_12c166602c0c8191a9b76e170d97b262",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术学习/LLM/So-LLM": {
+      "page_id": "page_fe3a7142bbb48191950266e07000da92",
+      "url": "https://chatgpt.com/space/page_fe3a7142bbb48191950266e07000da92",
+      "title": "So-LLM",
+      "parent_page_id": "page_1026a571c33c8191b52138f688ac9494",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/大数据存储处理/Hadoop": {
+      "page_id": "page_6a4694aec9b08191abf308d5dc429f9c",
+      "url": "https://chatgpt.com/space/page_6a4694aec9b08191abf308d5dc429f9c",
+      "title": "Hadoop",
+      "parent_page_id": "page_ce0ef9281be08191b277bd52a912c9b1",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/大数据存储处理/Hive": {
+      "page_id": "page_6db3601febd08191a234344f33e55f69",
+      "url": "https://chatgpt.com/space/page_6db3601febd08191a234344f33e55f69",
+      "title": "Hive",
+      "parent_page_id": "page_ce0ef9281be08191b277bd52a912c9b1",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/大数据存储处理/Spark": {
+      "page_id": "page_a71090945cf081919b4eb7d0804e5e27",
+      "url": "https://chatgpt.com/space/page_a71090945cf081919b4eb7d0804e5e27",
+      "title": "Spark",
+      "parent_page_id": "page_ce0ef9281be08191b277bd52a912c9b1",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/大数据存储处理/StarRocks": {
+      "page_id": "page_82e17f7802b48191b5c3ab405854f070",
+      "url": "https://chatgpt.com/space/page_82e17f7802b48191b5c3ab405854f070",
+      "title": "StarRocks",
+      "parent_page_id": "page_ce0ef9281be08191b277bd52a912c9b1",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/分布式软件/课程笔记": {
+      "page_id": "page_4715971f66588191aba3c32c0e965f37",
+      "url": "https://chatgpt.com/space/page_4715971f66588191aba3c32c0e965f37",
+      "title": "课程笔记",
+      "parent_page_id": "page_b9f0c5f89a1c8191a4cf68909a5b2d39",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/计算机系统基础/操作系统": {
+      "page_id": "page_0bf14ac6f19081918902b9556c989fa1",
+      "url": "https://chatgpt.com/space/page_0bf14ac6f19081918902b9556c989fa1",
+      "title": "操作系统",
+      "parent_page_id": "page_201e6d1d07a48191bc4781233570ae01",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/计算机系统基础/关系型数据库": {
+      "page_id": "page_7e7b54394f808191936d60d91ad93d0e",
+      "url": "https://chatgpt.com/space/page_7e7b54394f808191936d60d91ad93d0e",
+      "title": "关系型数据库",
+      "parent_page_id": "page_201e6d1d07a48191bc4781233570ae01",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/计算机系统基础/计算机网络": {
+      "page_id": "page_62b860080fd08191a4862db176989a17",
+      "url": "https://chatgpt.com/space/page_62b860080fd08191a4862db176989a17",
+      "title": "计算机网络",
+      "parent_page_id": "page_201e6d1d07a48191bc4781233570ae01",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/数据结构与算法/笔记": {
+      "page_id": "page_1a7be56989a8819198d997aaa1ed7839",
+      "url": "https://chatgpt.com/space/page_1a7be56989a8819198d997aaa1ed7839",
+      "title": "笔记",
+      "parent_page_id": "page_365f8a3de8d08191bc2f025d8228598d",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/现代编程思想/练习": {
+      "page_id": "page_fb1efc0cfcf48191a9c31a86e05ac390",
+      "url": "https://chatgpt.com/space/page_fb1efc0cfcf48191a9c31a86e05ac390",
+      "title": "练习",
+      "parent_page_id": "page_19411066aba88191ad069254e314c460",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/JAVA EE/笔记": {
+      "page_id": "page_a4275b698cf88191b26b236401aa0a74",
+      "url": "https://chatgpt.com/space/page_a4275b698cf88191b26b236401aa0a74",
+      "title": "笔记",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/Spring/笔记": {
+      "page_id": "page_99faaf37933c8191b21391aec4dc8b43",
+      "url": "https://chatgpt.com/space/page_99faaf37933c8191b21391aec4dc8b43",
+      "title": "笔记",
+      "parent_page_id": "page_3eea5db4ebf08191b1531311f4b7a116",
+      "kind": "folder"
+    },
+    "002-学习笔记/课程学习/机器学习/作业": {
+      "page_id": "page_fa5407483dc48191baad81460ddad3ca",
+      "url": "https://chatgpt.com/space/page_fa5407483dc48191baad81460ddad3ca",
+      "title": "作业",
+      "parent_page_id": "page_cda099a9f2588191a679d618105b6744",
+      "kind": "folder"
+    },
+    "002-学习笔记/课程学习/计算机网络/笔记": {
+      "page_id": "page_cac44d49613081919a038c2e87e8a105",
+      "url": "https://chatgpt.com/space/page_cac44d49613081919a038c2e87e8a105",
+      "title": "笔记",
+      "parent_page_id": "page_abc02b9bcf9881919e507241bfeab332",
+      "kind": "folder"
+    },
+    "002-学习笔记/课程学习/计算机网络/读书笔记": {
+      "page_id": "page_91f717fe00588191b48d8947d4692204",
+      "url": "https://chatgpt.com/space/page_91f717fe00588191b48d8947d4692204",
+      "title": "读书笔记",
+      "parent_page_id": "page_abc02b9bcf9881919e507241bfeab332",
+      "kind": "folder"
+    },
+    "002-学习笔记/课程学习/计算机网络/作业": {
+      "page_id": "page_116577b74c5c819181289c526ec6e871",
+      "url": "https://chatgpt.com/space/page_116577b74c5c819181289c526ec6e871",
+      "title": "作业",
+      "parent_page_id": "page_abc02b9bcf9881919e507241bfeab332",
+      "kind": "folder"
+    },
+    "002-学习笔记/课程学习/数据库系统/笔记": {
+      "page_id": "page_c65581ef8a808191b4de433e4f74ad74",
+      "url": "https://chatgpt.com/space/page_c65581ef8a808191b4de433e4f74ad74",
+      "title": "笔记",
+      "parent_page_id": "page_6e7ecb6b15c88191a121bd241bc58dd1",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/计算机系统基础/计算机网络/笔记": {
+      "page_id": "page_c5425305608481919eb3df7a701c59c2",
+      "url": "https://chatgpt.com/space/page_c5425305608481919eb3df7a701c59c2",
+      "title": "笔记",
+      "parent_page_id": "page_62b860080fd08191a4862db176989a17",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/计算机系统基础/计算机网络/知识点摘要": {
+      "page_id": "page_93cca9ddc7b48191a1db467888cc6ed1",
+      "url": "https://chatgpt.com/space/page_93cca9ddc7b48191a1db467888cc6ed1",
+      "title": "知识点摘要",
+      "parent_page_id": "page_62b860080fd08191a4862db176989a17",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/Spring/笔记/Spring": {
+      "page_id": "page_664d8c5ad908819189b9719824c83fbe",
+      "url": "https://chatgpt.com/space/page_664d8c5ad908819189b9719824c83fbe",
+      "title": "Spring",
+      "parent_page_id": "page_99faaf37933c8191b21391aec4dc8b43",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术栈/Spring/笔记/Spring Boot": {
+      "page_id": "page_dabb7cbb3c7081918463bd5318bc931b",
+      "url": "https://chatgpt.com/space/page_dabb7cbb3c7081918463bd5318bc931b",
+      "title": "Spring Boot",
+      "parent_page_id": "page_99faaf37933c8191b21391aec4dc8b43",
+      "kind": "folder"
+    },
+    "002-学习笔记/技术学习/AI Agent/Agent 智能体.md": {
+      "page_id": "page_c71ce9904f308191833d870989d47cea",
+      "url": "https://chatgpt.com/space/page_c71ce9904f308191833d870989d47cea",
+      "title": "Agent 智能体",
+      "parent_page_id": "page_e7a6f13b18f4819197969552c130de4c",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "970193551c6d72591ae552fd99a3f2b3bec2657544a44f5eed2474b4102d372b",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术学习/思特奇实训/领域建模实操.md": {
+      "page_id": "page_03e756f0a2ac8191857114a6cb58a22d",
+      "url": "https://chatgpt.com/space/page_03e756f0a2ac8191857114a6cb58a22d",
+      "title": "领域建模实操",
+      "parent_page_id": "page_d0ad6930f5348191aa524e1712137102",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "0915f8bd48841ae902085ba5c4d29d35da63277925cc6bd248ec2c18279cba01",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY12 多线程编程.md": {
+      "page_id": "page_5ce1e259c1a081918990fe5ed1755936",
+      "url": "https://chatgpt.com/space/page_5ce1e259c1a081918990fe5ed1755936",
+      "title": "DAY12 多线程编程",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "e2174141de9659b958ea3236f26deaf1024af464726125c443aa3d6f752ff008",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY21 设计模式收官.md": {
+      "page_id": "page_4fd09533171c8191a01389b6eb73e28a",
+      "url": "https://chatgpt.com/space/page_4fd09533171c8191a01389b6eb73e28a",
+      "title": "DAY21 设计模式收官",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "a3220f77926023c79745fd7c5064c1dc71c3aa8934048aeef31b9b29120ff5dc",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY23 Web开发.md": {
+      "page_id": "page_646fc3d9f688819182775352af76b2ef",
+      "url": "https://chatgpt.com/space/page_646fc3d9f688819182775352af76b2ef",
+      "title": "DAY23 Web开发",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "cfc3d0a31d5099b956e0bae1ba6a5cf6e89bf651ba72158efbc39e6f4d719712",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/Spring/DAY3 Spring 架构.md": {
+      "page_id": "page_c63cdeca49b88191a937714a24183edd",
+      "url": "https://chatgpt.com/space/page_c63cdeca49b88191a937714a24183edd",
+      "title": "DAY3 Spring 架构",
+      "parent_page_id": "page_3eea5db4ebf08191b1531311f4b7a116",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "0d0c4284ae56d02c28eb832eff60da58fdf6485be1ee43313999bcaa8598fb78",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/Spring/DAY4 Spring Review.md": {
+      "page_id": "page_e5d18a30db608191a63bb23ac1f89106",
+      "url": "https://chatgpt.com/space/page_e5d18a30db608191a63bb23ac1f89106",
+      "title": "DAY4 Spring Review",
+      "parent_page_id": "page_3eea5db4ebf08191b1531311f4b7a116",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "58e2fb06320ea4bf3d93eb026c9657f9a5160fd4144de415fe7b44d1f27169f9",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/分布式软件/微服务核心架构技术手册.md": {
+      "page_id": "page_2458d3ae42b48191ac117ef42e1dcc8a",
+      "url": "https://chatgpt.com/space/page_2458d3ae42b48191ac117ef42e1dcc8a",
+      "title": "微服务核心架构技术手册",
+      "parent_page_id": "page_b9f0c5f89a1c8191a4cf68909a5b2d39",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "2ebd9e1fb9a599db93bc2c053364dff90ded870b7987460e1cb325ad0ea7b206",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/分布式软件/课程笔记/C1 一致性与延迟、可用的取舍.md": {
+      "page_id": "page_ee6d0d2593c48191ad9db76b678e81e5",
+      "url": "https://chatgpt.com/space/page_ee6d0d2593c48191ad9db76b678e81e5",
+      "title": "C1 一致性与延迟、可用的取舍",
+      "parent_page_id": "page_4715971f66588191aba3c32c0e965f37",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "c175b4e5bb065ac206e4267c5cb8d374e49725be2c1d973670bab05a5b9a073f",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/计算机系统基础/关系型数据库/数据库中的索引使用.md": {
+      "page_id": "page_6040ee192f748191a9cb11a200439ce6",
+      "url": "https://chatgpt.com/space/page_6040ee192f748191a9cb11a200439ce6",
+      "title": "数据库中的索引使用",
+      "parent_page_id": "page_7e7b54394f808191936d60d91ad93d0e",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "f062c9f46f72f4dc1160a2741153cfd396b50b8f5a91761f63f30aaab0bf1a6c",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/计算机系统基础/操作系统/进程和线程.md": {
+      "page_id": "page_1436cd746c348191aae25d662eaa0213",
+      "url": "https://chatgpt.com/space/page_1436cd746c348191aae25d662eaa0213",
+      "title": "进程和线程",
+      "parent_page_id": "page_0bf14ac6f19081918902b9556c989fa1",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "f09804843a8b28fa811dc8d6bcbd93879e6dd0e1454375a8172bda5f541823f9",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/计算机系统基础/计算机网络/知识点摘要/第一章 概述.md": {
+      "page_id": "page_4b6ab5b288b88191b766ba15a6bf8e0b",
+      "url": "https://chatgpt.com/space/page_4b6ab5b288b88191b766ba15a6bf8e0b",
+      "title": "第一章 概述",
+      "parent_page_id": "page_93cca9ddc7b48191a1db467888cc6ed1",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "54d7ffdac22e23ac5bd5d7df45aca85a4150d08854b73dad096b04d2439427d4",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/计算机系统基础/计算机网络/知识点摘要/第三章 数据链路层.md": {
+      "page_id": "page_211fa399b7508191b78e55e40ad3dd3c",
+      "url": "https://chatgpt.com/space/page_211fa399b7508191b78e55e40ad3dd3c",
+      "title": "第三章 数据链路层",
+      "parent_page_id": "page_93cca9ddc7b48191a1db467888cc6ed1",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "dd2616bdd218e317152e17f4a022c0e2b51f5b357f5b6b31ff9eef2e54340afd",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/计算机系统基础/计算机网络/知识点摘要/第二章 物理层.md": {
+      "page_id": "page_4d3f6f6d7e708191b2ffbe1bba63612f",
+      "url": "https://chatgpt.com/space/page_4d3f6f6d7e708191b2ffbe1bba63612f",
+      "title": "第二章 物理层",
+      "parent_page_id": "page_93cca9ddc7b48191a1db467888cc6ed1",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "65d0ce9bfca8686204c4407abc9e7b7b850a04fdf8746c02e1299a6847a0cf84",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/计算机系统基础/计算机网络/知识点摘要/第五章 传输层.md": {
+      "page_id": "page_ef040bdb4754819198a99167dc30b699",
+      "url": "https://chatgpt.com/space/page_ef040bdb4754819198a99167dc30b699",
+      "title": "第五章 传输层",
+      "parent_page_id": "page_93cca9ddc7b48191a1db467888cc6ed1",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "6ca106fac506ec77f9c03ab0b8d9f62d5beba255f5377a62107dddb908b4d9e3",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/计算机系统基础/计算机网络/知识点摘要/第六章 应用层.md": {
+      "page_id": "page_c7b8757d7a70819183e4bd61ab457619",
+      "url": "https://chatgpt.com/space/page_c7b8757d7a70819183e4bd61ab457619",
+      "title": "第六章 应用层",
+      "parent_page_id": "page_93cca9ddc7b48191a1db467888cc6ed1",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "bde2cda426ea1588dca32870e803759ca21b26d8fa5ca36348ed461b5abf63d2",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/计算机系统基础/计算机网络/知识点摘要/第四章 网络层.md": {
+      "page_id": "page_f740ef44242c81919b3405f19c26c899",
+      "url": "https://chatgpt.com/space/page_f740ef44242c81919b3405f19c26c899",
+      "title": "第四章 网络层",
+      "parent_page_id": "page_93cca9ddc7b48191a1db467888cc6ed1",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "350ef2f861a44fa8872b2c7c79197f73028cd9eeabf558a14f7c8843eaff6111",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/计算机系统基础/计算机网络/笔记/HTTP1.0 HTTP1.1 HTTP2.0 HTTP3.0 HTTPS.md": {
+      "page_id": "page_c4098f0b9db48191a743fc24b64a42d0",
+      "url": "https://chatgpt.com/space/page_c4098f0b9db48191a743fc24b64a42d0",
+      "title": "HTTP1.0 HTTP1.1 HTTP2.0 HTTP3.0 HTTPS",
+      "parent_page_id": "page_c5425305608481919eb3df7a701c59c2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "19991ebf5ca73d4e63f33f1c3cfad98a7ab436ffe8a8c03b1f71cf8d0ffbebcb",
+      "conversion_version": 2
+    },
+    "002-学习笔记/课程学习/操作系统实践/report3.md": {
+      "page_id": "page_0546639af18481919fcd63efcf2aa971",
+      "url": "https://chatgpt.com/space/page_0546639af18481919fcd63efcf2aa971",
+      "title": "report3",
+      "parent_page_id": "page_66bc41f94a508191b06b5c5e1d6e695b",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "185d457b6c183b41a0f513a5edc230bb8ace40e519e4c5f5bda9d94906fb9707",
+      "conversion_version": 2
+    },
+    "002-学习笔记/课程学习/数据库系统/笔记/数据库系统读书笔记1.md": {
+      "page_id": "page_88b80e4171bc8191ab0b30c6feb0aa95",
+      "url": "https://chatgpt.com/space/page_88b80e4171bc8191ab0b30c6feb0aa95",
+      "title": "数据库系统读书笔记1",
+      "parent_page_id": "page_c65581ef8a808191b4de433e4f74ad74",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "8e2be856e6259ba401db4c172b63168951bbb83f7117af6a44903fe37c77da1f",
+      "conversion_version": 2
+    },
+    "002-学习笔记/课程学习/数据库系统/笔记/数据库系统读书笔记2.md": {
+      "page_id": "page_f1de7fe788c88191a4284b11fccec3cb",
+      "url": "https://chatgpt.com/space/page_f1de7fe788c88191a4284b11fccec3cb",
+      "title": "数据库系统读书笔记2",
+      "parent_page_id": "page_c65581ef8a808191b4de433e4f74ad74",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "f7f13cf4b712d5fd189613b9e32aa6040637c5d95d8e3ef712e13007ab510772",
+      "conversion_version": 2
+    },
+    "002-学习笔记/课程学习/数据库系统/笔记/数据库系统读书笔记3.md": {
+      "page_id": "page_931d98caa0248191a893b9797025c1c3",
+      "url": "https://chatgpt.com/space/page_931d98caa0248191a893b9797025c1c3",
+      "title": "数据库系统读书笔记3",
+      "parent_page_id": "page_c65581ef8a808191b4de433e4f74ad74",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "b56ba22c692548b38bf8e10c08e2c4342ce2ac84e3a64b88a3a8808298a1e6af",
+      "conversion_version": 2
+    },
+    "002-学习笔记/课程学习/机器学习/叶海峰期末总复习.md": {
+      "page_id": "page_f73fdd8eee488191a621ae1f4516418a",
+      "url": "https://chatgpt.com/space/page_f73fdd8eee488191a621ae1f4516418a",
+      "title": "叶海峰期末总复习",
+      "parent_page_id": "page_cda099a9f2588191a679d618105b6744",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "d2079ef333556c37514431b9ac7d2d4e5ff42dc8cf7b4a9913a07a734d7e6718",
+      "conversion_version": 2
+    },
+    "002-学习笔记/课程学习/计算机网络/笔记/不同协议的传输帧格式.md": {
+      "page_id": "page_7c5834290f308191b18d9efb8df581b7",
+      "url": "https://chatgpt.com/space/page_7c5834290f308191b18d9efb8df581b7",
+      "title": "不同协议的传输帧格式",
+      "parent_page_id": "page_cac44d49613081919a038c2e87e8a105",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "b094fa035fca5bb036981100ab00e0688de3d776fd261983ad4f409b557a0ca8",
+      "conversion_version": 2
+    },
+    "002-学习笔记/课程学习/计算机网络/笔记/信号调制与传输控制.md": {
+      "page_id": "page_3dc7841840748191995b0b9e47c74124",
+      "url": "https://chatgpt.com/space/page_3dc7841840748191995b0b9e47c74124",
+      "title": "信号调制与传输控制",
+      "parent_page_id": "page_cac44d49613081919a038c2e87e8a105",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "fa695b61add343eed82264d0343a9cb79cc118bcafb967f971f3ad29facabfa9",
+      "conversion_version": 2
+    },
+    "002-学习笔记/课程学习/计算机网络/笔记/对于网络层中众多协议的数据报内容.md": {
+      "page_id": "page_a6a82ae8a8388191bffb3f95709b9998",
+      "url": "https://chatgpt.com/space/page_a6a82ae8a8388191bffb3f95709b9998",
+      "title": "对于网络层中众多协议的数据报内容",
+      "parent_page_id": "page_cac44d49613081919a038c2e87e8a105",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "fadce80fa9f59bef96d3deb9712c5da15d8878e53d4034b435c488d815dd5a0d",
+      "conversion_version": 2
+    },
+    "002-学习笔记/课程学习/计算机网络/笔记/数据链路层检验帧的正确性.md": {
+      "page_id": "page_c2be8954c4348191823ec6f6e4480bee",
+      "url": "https://chatgpt.com/space/page_c2be8954c4348191823ec6f6e4480bee",
+      "title": "数据链路层检验帧的正确性",
+      "parent_page_id": "page_cac44d49613081919a038c2e87e8a105",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "517537101771892a0bad8dcb28ae5c2b52fcafda3a97bca6c278ab3da0934f36",
+      "conversion_version": 2
+    },
+    "002-学习笔记/课程学习/计算机网络/笔记/网络层中路由算法.md": {
+      "page_id": "page_c0e07db1534c81919249554c07171d7f",
+      "url": "https://chatgpt.com/space/page_c0e07db1534c81919249554c07171d7f",
+      "title": "网络层中路由算法",
+      "parent_page_id": "page_cac44d49613081919a038c2e87e8a105",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "3e225efdcb04ab239d196c64873851508feaa3b1e6b53ec8ec63a26cb91cdca9",
+      "conversion_version": 2
+    },
+    "002-学习笔记/课程学习/计算机网络/读书笔记/读书笔记1.md": {
+      "page_id": "page_8a2d4c2a87488191a86af1b287ddce5d",
+      "url": "https://chatgpt.com/space/page_8a2d4c2a87488191a86af1b287ddce5d",
+      "title": "读书笔记1",
+      "parent_page_id": "page_91f717fe00588191b48d8947d4692204",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "a7c0174baa403cfe1d45aeaa8829d60dc0fcce674c253ee8a3705ccce2256ea9",
+      "conversion_version": 2
+    },
+    "002-学习笔记/课程学习/计算机网络/读书笔记/读书笔记3.md": {
+      "page_id": "page_8c602165b41081919d4c0b8f9b64ff22",
+      "url": "https://chatgpt.com/space/page_8c602165b41081919d4c0b8f9b64ff22",
+      "title": "读书笔记3",
+      "parent_page_id": "page_91f717fe00588191b48d8947d4692204",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "578f1f895a5b3ff5d39e7e646d31ba9abb557da1a124bd49ff5a41e4a3f3f9e4",
+      "conversion_version": 2
+    },
+    "002-学习笔记/课程学习/计算机网络/读书笔记/读书笔记4.md": {
+      "page_id": "page_a0d2256b1620819191d2ae2b548ce194",
+      "url": "https://chatgpt.com/space/page_a0d2256b1620819191d2ae2b548ce194",
+      "title": "读书笔记4",
+      "parent_page_id": "page_91f717fe00588191b48d8947d4692204",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "72bcfef4317b32c3dc6ae4bce8ae6ba195fc7b545f0762b58b73a75fe2246246",
+      "conversion_version": 2
+    },
+    "002-学习笔记/课程学习/软件安全/C2 汇编代码寻址、寄存器、指令类型、函数调用.md": {
+      "page_id": "page_f7826b77a5b88191b6864cac6f51e2ca",
+      "url": "https://chatgpt.com/space/page_f7826b77a5b88191b6864cac6f51e2ca",
+      "title": "C2 汇编代码寻址、寄存器、指令类型、函数调用",
+      "parent_page_id": "page_d778182e95c88191907e658bd28e2a67",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "5902f2b83e82215dc20e738ee5d8988ba26e6940b3f540529be97763a779921e",
+      "conversion_version": 2
+    },
+    "002-学习笔记/课程学习/软件安全/C5 软件漏洞.md": {
+      "page_id": "page_b82801331b6881919b5b6e7242257411",
+      "url": "https://chatgpt.com/space/page_b82801331b6881919b5b6e7242257411",
+      "title": "C5 软件漏洞",
+      "parent_page_id": "page_d778182e95c88191907e658bd28e2a67",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "dd3592fb5378ac26a77ffffa83872fb07b2c90045d04925903810b93d4d422f4",
+      "conversion_version": 2
+    },
+    "002-学习笔记/零碎知识笔记/Claude Code 从0到1.md": {
+      "page_id": "page_542e8e1d17308191adeb09976cfd116b",
+      "url": "https://chatgpt.com/space/page_542e8e1d17308191adeb09976cfd116b",
+      "title": "Claude Code 从0到1",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "53e711445b4086493c8b1b3469d127696f66f0e0f748ff0078c721abaf0dc921",
+      "conversion_version": 2
+    },
+    "002-学习笔记/零碎知识笔记/MySql 并发机制总结.md": {
+      "page_id": "page_856b101d11548191b3bb757c6ca3a178",
+      "url": "https://chatgpt.com/space/page_856b101d11548191b3bb757c6ca3a178",
+      "title": "MySql 并发机制总结",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "e1dc7f5117716b89b8ac44c1585796fab9a7b73592572446d9b807531ec30224",
+      "conversion_version": 2
+    },
+    "002-学习笔记/零碎知识笔记/Redis 雪崩、击穿、穿透防护.md": {
+      "page_id": "page_664f447a756c8191a483ee4313616082",
+      "url": "https://chatgpt.com/space/page_664f447a756c8191a483ee4313616082",
+      "title": "Redis 雪崩、击穿、穿透防护",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "8358e1353b1a891a322e40ede414edce90bc0f5d9c8c1eb01d9f2c0502a5b54c",
+      "conversion_version": 2
+    },
+    "002-学习笔记/零碎知识笔记/Redis服务器.md": {
+      "page_id": "page_e509e9f3f5dc8191adb7315df7c5af26",
+      "url": "https://chatgpt.com/space/page_e509e9f3f5dc8191adb7315df7c5af26",
+      "title": "Redis服务器",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "7978b957d36288ac36dd2e689598a7e4d4667f4968ba101b26fe3163b411ea6c",
+      "conversion_version": 2
+    },
+    "002-学习笔记/零碎知识笔记/Word2Vec.md": {
+      "page_id": "page_2f3f7bba4ccc81919812d61191dc1196",
+      "url": "https://chatgpt.com/space/page_2f3f7bba4ccc81919812d61191dc1196",
+      "title": "Word2Vec",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "1fc7ee191fda46e16a0286e176477130c4c20762e5b77054832ef62271921802",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术学习/LLM/So-LLM/LLM 到底是怎么一回事.md": {
+      "page_id": "page_8dac7a9689008191a38fa787a45aae24",
+      "title": "LLM 到底是怎么一回事",
+      "url": "https://chatgpt.com/space/page_8dac7a9689008191a38fa787a45aae24",
+      "parent_page_id": "page_fe3a7142bbb48191950266e07000da92",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "2add9d0cc5be8cfb1c8851b3102059a721251dcf010e5659e9a396a7277e89e3"
+    },
+    "002-学习笔记/技术学习/RAG/RAG概念.md": {
+      "page_id": "page_3ddca8ee6cc8819199a047fed7c56f07",
+      "url": "https://chatgpt.com/space/page_3ddca8ee6cc8819199a047fed7c56f07",
+      "title": "RAG概念",
+      "parent_page_id": "page_2e5c31feb8b881918849d0ef32ed28c6",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "c55729469a076b8de11169d0a9f65bca43742eda0a6e26e65448321218105c20"
+    },
+    "002-学习笔记/技术学习/RAG/第一节：模型调用——LLM 与 ChatModel 的深度协议复盘.md": {
+      "page_id": "page_4be9773e277c8191828deda15405452f",
+      "url": "https://chatgpt.com/space/page_4be9773e277c8191828deda15405452f",
+      "title": "第一节：模型调用——LLM 与 ChatModel 的深度协议复盘",
+      "parent_page_id": "page_2e5c31feb8b881918849d0ef32ed28c6",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "6dec9c62a22bb7904176aa3d0b98e0908bad4916bea73d270f8dadda4223047d"
+    },
+    "002-学习笔记/技术学习/RAG/第三节：解析器 (Parser) 与 Chain 组织链 —— 声明式逻辑流转.md": {
+      "page_id": "page_057e21d753e0819192be2bc330b97412",
+      "url": "https://chatgpt.com/space/page_057e21d753e0819192be2bc330b97412",
+      "title": "第三节：解析器 (Parser) 与 Chain 组织链 —— 声明式逻辑流转",
+      "parent_page_id": "page_2e5c31feb8b881918849d0ef32ed28c6",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "8f6a83c21fd121486f6858db9407950e4a7674b24f94cf00ea87f858fc5bc1fc"
+    },
+    "002-学习笔记/技术学习/RAG/第二节：提示词工程 (Prompt Engineering) —— 结构化模板与少样本增强.md": {
+      "page_id": "page_d882095a9874819198235f4118e9c5f3",
+      "url": "https://chatgpt.com/space/page_d882095a9874819198235f4118e9c5f3",
+      "title": "第二节：提示词工程 (Prompt Engineering) —— 结构化模板与少样本增强",
+      "parent_page_id": "page_2e5c31feb8b881918849d0ef32ed28c6",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "ff3ae75558c53a56b9afc5a88051eb5cbf08bedcdcc2692b073e8a405368dd1e"
+    },
+    "002-学习笔记/技术学习/RAG/第五节 记忆存储、文本加载、RAG.md": {
+      "page_id": "page_c87ba6aa14e881919bf31f8af1fede6b",
+      "url": "https://chatgpt.com/space/page_c87ba6aa14e881919bf31f8af1fede6b",
+      "title": "第五节 记忆存储、文本加载、RAG",
+      "parent_page_id": "page_2e5c31feb8b881918849d0ef32ed28c6",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "6b2ef5bfc39059b966d19d31faf7a29c26f28b65486ab6b890bad688698158cd"
+    },
+    "002-学习笔记/技术学习/RAG/第四节：嵌入模型 (Embedding) 与向量存储 (Vector Store) —— RAG 的基石.md": {
+      "page_id": "page_eb274488c6b88191bfb3327918e0037c",
+      "url": "https://chatgpt.com/space/page_eb274488c6b88191bfb3327918e0037c",
+      "title": "第四节：嵌入模型 (Embedding) 与向量存储 (Vector Store) —— RAG 的基石",
+      "parent_page_id": "page_2e5c31feb8b881918849d0ef32ed28c6",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "6e05c448964a0701f041022bf883e5fc27bd3c7f9454596c6d632d18d37854bc"
+    },
+    "002-学习笔记/技术学习/思特奇实训/智能体 (AI Agent) 技术与架构.md": {
+      "page_id": "page_d4a443f4f0b48191a8ae8307cc799f06",
+      "url": "https://chatgpt.com/space/page_d4a443f4f0b48191a8ae8307cc799f06",
+      "title": "智能体 (AI Agent) 技术与架构",
+      "parent_page_id": "page_d0ad6930f5348191aa524e1712137102",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "7a9cf7b7ffad018ce421e1a0f18fbebadec62a102562e2bd6ebc8da393766b94"
+    },
+    "002-学习笔记/技术学习/思特奇实训/离线与实时数仓架构及 Flink 理论实战.md": {
+      "page_id": "page_308246809a9c81919d8e65d51662df5b",
+      "url": "https://chatgpt.com/space/page_308246809a9c81919d8e65d51662df5b",
+      "title": "离线与实时数仓架构及 Flink 理论实战",
+      "parent_page_id": "page_d0ad6930f5348191aa524e1712137102",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "888b9d02599f90b696a2b0456da6fbbcf8334551b9aa6f2bbe0072afd172972c"
+    },
+    "002-学习笔记/技术学习/思特奇实训/软件框架.md": {
+      "page_id": "page_bcdc114406108191a4294733ab40c615",
+      "url": "https://chatgpt.com/space/page_bcdc114406108191a4294733ab40c615",
+      "title": "软件框架",
+      "parent_page_id": "page_d0ad6930f5348191aa524e1712137102",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "3bbb38b546a29abacc8688a043f94a4a77cffc9ea2fb03a578306b212db3ad5e"
+    },
+    "002-学习笔记/技术学习/思特奇实训/软件框架的思考.md": {
+      "page_id": "page_6dcde2f0c49c8191a81448064d5cc2a5",
+      "url": "https://chatgpt.com/space/page_6dcde2f0c49c8191a81448064d5cc2a5",
+      "title": "软件框架的思考",
+      "parent_page_id": "page_d0ad6930f5348191aa524e1712137102",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "f77c2f042096e6c793cfbd44d89cf3c19b39488f7a321d789febf8d5420d4910"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY1 基础部分.md": {
+      "page_id": "page_59968a5142708191a57d5c8f74c7086b",
+      "url": "https://chatgpt.com/space/page_59968a5142708191a57d5c8f74c7086b",
+      "title": "DAY1 基础部分",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "97aab72c7a38f47d9f90a1a7cda660ec67bf1fc5b0079683c1ba21f27254ccb6"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY10 JUnit.md": {
+      "page_id": "page_cf6cb7c730d8819193c73b3b61e4c532",
+      "url": "https://chatgpt.com/space/page_cf6cb7c730d8819193c73b3b61e4c532",
+      "title": "DAY10 JUnit",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "3b83f51905bc4d91f1a6c441ddad918bca233159c29433f0c49cfe9b9b79dc75"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY11 正则表达式.md": {
+      "page_id": "page_c370d0a21b748191b53c85f0ee43f6ba",
+      "url": "https://chatgpt.com/space/page_c370d0a21b748191b53c85f0ee43f6ba",
+      "title": "DAY11 正则表达式",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "b3ab323ec475f97f58e52869ea055e26823816aad3fbc137288dbd51b337f2f9"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY13 线程编程理解加固.md": {
+      "page_id": "page_db7c4f5c8ac881918e6861b313452e1f",
+      "url": "https://chatgpt.com/space/page_db7c4f5c8ac881918e6861b313452e1f",
+      "title": "DAY13 线程编程理解加固",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "bdc96de1464ca7d1c4db168b537a68792822f48103be60a7188bf2833206adcd"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY14 Maven基础.md": {
+      "page_id": "page_d76aed36450c81918df7c8beacf408df",
+      "url": "https://chatgpt.com/space/page_d76aed36450c81918df7c8beacf408df",
+      "title": "DAY14 Maven基础",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "b6a17742779c449847a040d797ecf23c16c57bd1cf914af05819fc250dfcb4d4"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY15 网络编程.md": {
+      "page_id": "page_480f0179da248191a4da56b1ed976832",
+      "url": "https://chatgpt.com/space/page_480f0179da248191a4da56b1ed976832",
+      "title": "DAY15 网络编程",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "570fb4fb78648ff18071b92f3b30302848bc5d0b1fbc159c0fa6295301c77a5f"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY16 XML Json.md": {
+      "page_id": "page_afe465dda00c81918247ceb8b2c5959d",
+      "url": "https://chatgpt.com/space/page_afe465dda00c81918247ceb8b2c5959d",
+      "title": "DAY16 XML Json",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "a3becf73595449ac6858900771476e9b75b84338929c536be563dc6498e713cf"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY17 JDBC.md": {
+      "page_id": "page_200585cd05c08191b0fb383762eb918f",
+      "url": "https://chatgpt.com/space/page_200585cd05c08191b0fb383762eb918f",
+      "title": "DAY17 JDBC",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "ee52c51ef93020fe7e4624197bb3a333e5e54db07bac44c236aeefe2cb1f144b"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY18 函数式编程.md": {
+      "page_id": "page_354e7db5b1b08191b539e998171aabcc",
+      "url": "https://chatgpt.com/space/page_354e7db5b1b08191b539e998171aabcc",
+      "title": "DAY18 函数式编程",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "8990430ee9c3c958d13f0305042f774f6bb8febf6321d80cd4395400b28d0d6f"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY2 基础部分.md": {
+      "page_id": "page_d0bf0d6a58cc8191b65bd95a8479f959",
+      "url": "https://chatgpt.com/space/page_d0bf0d6a58cc8191b65bd95a8479f959",
+      "title": "DAY2 基础部分",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "d808ef61fc15b90ec69543aea15e44bf0c753db00a47ff2b6b9e0ae54becadc3"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY22 基础解疑.md": {
+      "page_id": "page_2978cd26fac881919de80d33be7c75b7",
+      "url": "https://chatgpt.com/space/page_2978cd26fac881919de80d33be7c75b7",
+      "title": "DAY22 基础解疑",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "e79973c13606c580ed933cb62729e124a5533ba94d752b883f1f53dea83d69f0"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY24 HashMap 源码理解.md": {
+      "page_id": "page_5c867906918c8191b2096e9d1dae602d",
+      "url": "https://chatgpt.com/space/page_5c867906918c8191b2096e9d1dae602d",
+      "title": "DAY24 HashMap 源码理解",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "3cb74a6cb33a8ccb848546d13200199d021f51159543a0cb28c3ad03dcb75a4c"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY25 Spring 学习前导-认识SpringBoot.md": {
+      "page_id": "page_e180071c29d08191844f206c3240fcb6",
+      "url": "https://chatgpt.com/space/page_e180071c29d08191844f206c3240fcb6",
+      "title": "DAY25 Spring 学习前导-认识SpringBoot",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "754f8aad290a8127a2a9ae71b8a538ec4fb04708a189f6a2f2a0f0d20f1436af"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY3 基础部分.md": {
+      "page_id": "page_c1bde1790a788191a603092f9ecfd4b1",
+      "url": "https://chatgpt.com/space/page_c1bde1790a788191a603092f9ecfd4b1",
+      "title": "DAY3 基础部分",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "af06cceb28a286ac23c5906f8cf51ac7c0ae0b47dad2d3d23c86ab3205301450",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY4 基础部分.md": {
+      "page_id": "page_e5ee3d9dcd4481918481f5b53302483b",
+      "url": "https://chatgpt.com/space/page_e5ee3d9dcd4481918481f5b53302483b",
+      "title": "DAY4 基础部分",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "ff8f2750d9133848aaa14ff1251e236f61ef9dbf8c7c6b543ae73064518d9939"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY5 异常.md": {
+      "page_id": "page_1bc19d52da98819181bf7d9b46a6911e",
+      "url": "https://chatgpt.com/space/page_1bc19d52da98819181bf7d9b46a6911e",
+      "title": "DAY5 异常",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "69787785bf09e9995b81f8372a2dc949645e514272dbf5777b1b009bc69f8b25"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY6 日志 & 反射.md": {
+      "page_id": "page_b736f7fa45f88191b76f5fc7c1ec99d0",
+      "url": "https://chatgpt.com/space/page_b736f7fa45f88191b76f5fc7c1ec99d0",
+      "title": "DAY6 日志 & 反射",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "ac9878fdd9a45476c83897d48fcc71cb1ef857e913e51c4fbfa10402d013f146",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/JAVA EE/Day7 注解 && 泛型.md": {
+      "page_id": "page_fe47365956e08191adaf5671ae19f81f",
+      "url": "https://chatgpt.com/space/page_fe47365956e08191adaf5671ae19f81f",
+      "title": "Day7 注解 && 泛型",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "82d11470f485f053c87e9485ec274ca13d4cf5852f02c0857cf918335a15941e"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY8 集合.md": {
+      "page_id": "page_b56a52affb50819194016858940f6054",
+      "url": "https://chatgpt.com/space/page_b56a52affb50819194016858940f6054",
+      "title": "DAY8 集合",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "8311fbc5ca12a6a187e9bec5b7bbd54644adc6d143360ccd95ab6eb537f8d727"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY9 IO.md": {
+      "page_id": "page_8d99849f19248191b3891a3226857353",
+      "url": "https://chatgpt.com/space/page_8d99849f19248191b3891a3226857353",
+      "title": "DAY9 IO",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "6fb0eba10c104456f5da164d0d3d17ff7834a36d26b0fd663badaa7c9aed87d3"
+    },
+    "002-学习笔记/技术栈/JAVA EE/笔记/Java 基础.md": {
+      "page_id": "page_758d5ebc45248191a850457383f5a4ce",
+      "url": "https://chatgpt.com/space/page_758d5ebc45248191a850457383f5a4ce",
+      "title": "Java 基础",
+      "parent_page_id": "page_a4275b698cf88191b26b236401aa0a74",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "39a8234aaaf6d34402603710882277ce1336c6d1fb1de567ea37f067ca350e94"
+    },
+    "002-学习笔记/技术栈/JAVA EE/笔记/Java 并发编程.md": {
+      "page_id": "page_2949a66ed86081918876c27ec2235b0f",
+      "url": "https://chatgpt.com/space/page_2949a66ed86081918876c27ec2235b0f",
+      "title": "Java 并发编程",
+      "parent_page_id": "page_a4275b698cf88191b26b236401aa0a74",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "3f2a4ecea6c0fd4cb3aa61c94c88c6411d4e0231f40c5ae72f71c28411ffeef0"
+    },
+    "002-学习笔记/技术栈/JAVA EE/笔记/Java 模块.md": {
+      "page_id": "page_57ffd00e96908191b5a1ceaa5754c664",
+      "url": "https://chatgpt.com/space/page_57ffd00e96908191b5a1ceaa5754c664",
+      "title": "Java 模块",
+      "parent_page_id": "page_a4275b698cf88191b26b236401aa0a74",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "5bfce8ce212a150712015e9db17d728b53eef78b063a9121ee32b3baea60722a"
+    },
+    "002-学习笔记/技术栈/JAVA EE/笔记/Java 集合.md": {
+      "page_id": "page_423e02e96b60819186b1cd212a958c66",
+      "url": "https://chatgpt.com/space/page_423e02e96b60819186b1cd212a958c66",
+      "title": "Java 集合",
+      "parent_page_id": "page_a4275b698cf88191b26b236401aa0a74",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "5318d553597f97620ecc0b56fd2dc7f7f4a600816cddc5e9f3160828990b5693"
+    },
+    "002-学习笔记/技术栈/JVM/JVM 内存空间管理.md": {
+      "page_id": "page_c05288a99ee48191bad7394be9d52ffd",
+      "url": "https://chatgpt.com/space/page_c05288a99ee48191bad7394be9d52ffd",
+      "title": "JVM 内存空间管理",
+      "parent_page_id": "page_0f3ffe2dfadc8191939b195c2c91c88a",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "cdf8ec56795f0db2a8aaeb92b8c801afed460ec80bff96da12c11b2a5386f1aa"
+    },
+    "002-学习笔记/技术栈/JVM/JVM 加载类.md": {
+      "page_id": "page_7d681a8901bc819181126eb33b0e5ca3",
+      "url": "https://chatgpt.com/space/page_7d681a8901bc819181126eb33b0e5ca3",
+      "title": "JVM 加载类",
+      "parent_page_id": "page_0f3ffe2dfadc8191939b195c2c91c88a",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "d168294e8c08b5c9bb01dc103227f13082251813293b93c8278880b9264bf4d9"
+    },
+    "002-学习笔记/技术栈/JVM/JVM 堆区GC机制.md": {
+      "page_id": "page_c2ebb4fa1f9481919d9840de8595865c",
+      "url": "https://chatgpt.com/space/page_c2ebb4fa1f9481919d9840de8595865c",
+      "title": "JVM 堆区GC机制",
+      "parent_page_id": "page_0f3ffe2dfadc8191939b195c2c91c88a",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "6b0d70769b0dc5c6c8202bc1ea017072ae5d6b9984a66fa6bf33a04b2aba478a"
+    },
+    "002-学习笔记/技术栈/LangChain/note1 LangChain六大模块初识.md": {
+      "page_id": "page_54cc9106ee6c8191a7e81027619a6a38",
+      "url": "https://chatgpt.com/space/page_54cc9106ee6c8191a7e81027619a6a38",
+      "title": "note1 LangChain六大模块初识",
+      "parent_page_id": "page_38bd7d7357d881918990d0f925f45d4a",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "22b806b818f4a149e3e5ee0ed45766a9276a82efd1d73db3c4ef1ac405adfc1b"
+    },
+    "002-学习笔记/技术栈/Spring/B1 BeanFactory.md": {
+      "page_id": "page_249494bfe5f08191ae38994e5727b928",
+      "url": "https://chatgpt.com/space/page_249494bfe5f08191ae38994e5727b928",
+      "title": "B1 BeanFactory",
+      "parent_page_id": "page_3eea5db4ebf08191b1531311f4b7a116",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "613d283f6986aba7aa341828819234283374343bcf4627dc56b633844dac34d8"
+    },
+    "002-学习笔记/技术栈/Spring/B3 Spring XML 整合第三方框架.md": {
+      "page_id": "page_eae4beda77f8819185b6424ce7db1adc",
+      "url": "https://chatgpt.com/space/page_eae4beda77f8819185b6424ce7db1adc",
+      "title": "B3 Spring XML 整合第三方框架",
+      "parent_page_id": "page_3eea5db4ebf08191b1531311f4b7a116",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "b85d91e1d67a6fb225837f556d54ec066397f68dd2abd00d6d59056b2479dccc"
+    },
+    "002-学习笔记/技术栈/Spring/B4 注解配置Spring.md": {
+      "page_id": "page_82f3d3cbe7108191b1f7e4b8263d0999",
+      "url": "https://chatgpt.com/space/page_82f3d3cbe7108191b1f7e4b8263d0999",
+      "title": "B4 注解配置Spring",
+      "parent_page_id": "page_3eea5db4ebf08191b1531311f4b7a116",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "790f67a199d5073130544a508d6e5acc5e7558f41abf8b7af9bb262db57de8b1"
+    },
+    "002-学习笔记/技术栈/Spring/B5 总结 + AOP.md": {
+      "page_id": "page_5760e20d16588191b6fd694b6d2cdb25",
+      "url": "https://chatgpt.com/space/page_5760e20d16588191b6fd694b6d2cdb25",
+      "title": "B5 总结 + AOP",
+      "parent_page_id": "page_3eea5db4ebf08191b1531311f4b7a116",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "fa15954110b72e58ad37b2de23582c530acc2332672adaaadf92f150bd51a5c9"
+    },
+    "002-学习笔记/技术栈/Spring/B6 Spring 事务.md": {
+      "page_id": "page_b2136a406a2c8191bc447f4bf4269cc7",
+      "url": "https://chatgpt.com/space/page_b2136a406a2c8191bc447f4bf4269cc7",
+      "title": "B6 Spring 事务",
+      "parent_page_id": "page_3eea5db4ebf08191b1531311f4b7a116",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "6278734473db8f7477b52f507c0a0a244a0afd40760a49de0970797f465c2e07"
+    },
+    "002-学习笔记/技术栈/Spring/笔记/Spring/Autowired 与 Resource.md": {
+      "page_id": "page_892c6b8d00d4819186ee5bed75c844bc",
+      "url": "https://chatgpt.com/space/page_892c6b8d00d4819186ee5bed75c844bc",
+      "title": "Autowired 与 Resource",
+      "parent_page_id": "page_664d8c5ad908819189b9719824c83fbe",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "a585cc074a4c6295d75d2f43819e56af4a08801a46b5a31747f309a73ebb8e57"
+    },
+    "002-学习笔记/技术栈/Spring/笔记/Spring/Bean 之间的循环依赖.md": {
+      "page_id": "page_34180c99e1648191b813d68cd14a2a78",
+      "url": "https://chatgpt.com/space/page_34180c99e1648191b813d68cd14a2a78",
+      "title": "Bean 之间的循环依赖",
+      "parent_page_id": "page_664d8c5ad908819189b9719824c83fbe",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "beab40b88b1bed0b59a549550b0f58077a7d2e1514cc456195326143c811e8d0"
+    },
+    "002-学习笔记/技术栈/Spring/笔记/Spring/Spring Bean 的作用域.md": {
+      "page_id": "page_0b0f5f9ba81c8191bf0ad8e8cfaae72b",
+      "url": "https://chatgpt.com/space/page_0b0f5f9ba81c8191bf0ad8e8cfaae72b",
+      "title": "Spring Bean 的作用域",
+      "parent_page_id": "page_664d8c5ad908819189b9719824c83fbe",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "12e644cafa614b303015e5536fc0cf9d1231bd3b3f8c2e3db4f050b1f91438b0"
+    },
+    "002-学习笔记/技术栈/Spring/笔记/Spring/Spring、SpringMVC、SpringBoot之间的区别和联系.md": {
+      "page_id": "page_64c1ddcea8cc8191a0ead025a843af23",
+      "url": "https://chatgpt.com/space/page_64c1ddcea8cc8191a0ead025a843af23",
+      "title": "Spring、SpringMVC、SpringBoot之间的区别和联系",
+      "parent_page_id": "page_664d8c5ad908819189b9719824c83fbe",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "9a0fdea6f756834e449cfe7e0b4067c9825c75753c146da56b68a6d66929e18b"
+    },
+    "002-学习笔记/技术栈/Spring/笔记/Spring/事务传播机制、隔离级别.md": {
+      "page_id": "page_22fda6145c18819184b62ce8f7b37e3e",
+      "url": "https://chatgpt.com/space/page_22fda6145c18819184b62ce8f7b37e3e",
+      "title": "事务传播机制、隔离级别",
+      "parent_page_id": "page_664d8c5ad908819189b9719824c83fbe",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "2063f35cdc0b32a7693b2e0d332e93aaf3c05e32bf451a71c4354924533de511"
+    },
+    "002-学习笔记/技术栈/Spring/笔记/Spring Boot/SpringBoot 启动时如何自动执行一段初始化逻辑.md": {
+      "page_id": "page_d7fd491f18788191a6780ba2d53342ab",
+      "url": "https://chatgpt.com/space/page_d7fd491f18788191a6780ba2d53342ab",
+      "title": "SpringBoot 启动时如何自动执行一段初始化逻辑",
+      "parent_page_id": "page_dabb7cbb3c7081918463bd5318bc931b",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "9f909a0feadba40d2acdda7d81078164ef1a57d5c19c9041612f112f54683c73"
+    },
+    "002-学习笔记/技术栈/云计算平台与技术/Docker 整理.md": {
+      "page_id": "page_5c8f32edac58819191b6314d8d5d426c",
+      "url": "https://chatgpt.com/space/page_5c8f32edac58819191b6314d8d5d426c",
+      "title": "Docker 整理",
+      "parent_page_id": "page_2e747f6d9cf481919cd3ee5f0c132f48",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "eb700768f1c372ae0856ad14cd12d46e97b9f967fba1e1ee403da3f4410f599a"
+    },
+    "002-学习笔记/技术栈/云计算平台与技术/概念引入.md": {
+      "page_id": "page_0f133165a8708191aa221278ec29c686",
+      "url": "https://chatgpt.com/space/page_0f133165a8708191aa221278ec29c686",
+      "title": "概念引入",
+      "parent_page_id": "page_2e747f6d9cf481919cd3ee5f0c132f48",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "065908b2cc09e9632bb926ef1703f99102c2ced90cc49085a9721547254c176b"
+    },
+    "002-学习笔记/技术栈/分布式软件/Canel + MQ 保证数据库和Redis数据一致性.md": {
+      "page_id": "page_55c6c130821c819190f14017d428ce49",
+      "url": "https://chatgpt.com/space/page_55c6c130821c819190f14017d428ce49",
+      "title": "Canel + MQ 保证数据库和Redis数据一致性",
+      "parent_page_id": "page_b9f0c5f89a1c8191a4cf68909a5b2d39",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "d8ca04ef2b7680abafddbd82d777ed0826f28bf132fd1360921048c85e792d11"
+    },
+    "002-学习笔记/技术栈/分布式软件/Kafka、分库分表.md": {
+      "page_id": "page_ef785cad19d481918bb3b5cd04c69322",
+      "url": "https://chatgpt.com/space/page_ef785cad19d481918bb3b5cd04c69322",
+      "title": "Kafka、分库分表",
+      "parent_page_id": "page_b9f0c5f89a1c8191a4cf68909a5b2d39",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "8626df39c7b674abc85ea1c435aa1f1418ffd1702a02b3ced802b12814a628cf"
+    },
+    "002-学习笔记/技术栈/分布式软件/SpringCloud 服务管理.md": {
+      "page_id": "page_d300c36b56c881919169435d613104af",
+      "url": "https://chatgpt.com/space/page_d300c36b56c881919169435d613104af",
+      "title": "SpringCloud 服务管理",
+      "parent_page_id": "page_b9f0c5f89a1c8191a4cf68909a5b2d39",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "a029cf22bed2a58a21d9586120ca83e775374f4b8efbc34441d342aeac8f1cf8"
+    },
+    "002-学习笔记/技术栈/分布式软件/SpringCloud 流量治理.md": {
+      "page_id": "page_17af5dff9edc8191994cdbdd04925c32",
+      "url": "https://chatgpt.com/space/page_17af5dff9edc8191994cdbdd04925c32",
+      "title": "SpringCloud 流量治理",
+      "parent_page_id": "page_b9f0c5f89a1c8191a4cf68909a5b2d39",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "5dbd0747e3bd99110fcb6db7f7269ba7d016facd920183e9c6543f3b39c174be"
+    },
+    "002-学习笔记/技术栈/分布式软件/分布式软件理论.md": {
+      "page_id": "page_8a7e001dd0908191a5ea47ad8a1790c6",
+      "url": "https://chatgpt.com/space/page_8a7e001dd0908191a5ea47ad8a1790c6",
+      "title": "分布式软件理论",
+      "parent_page_id": "page_b9f0c5f89a1c8191a4cf68909a5b2d39",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "d9a70d4cab17bbe8100bc83aaabe41ee8dbed13c9cf978fbbc70bfb9d8cd6073",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/分布式软件/课程笔记/C6 高并发共识.md": {
+      "page_id": "page_8601ba3f587c8191b65a52bd0b12eaed",
+      "url": "https://chatgpt.com/space/page_8601ba3f587c8191b65a52bd0b12eaed",
+      "title": "C6 高并发共识",
+      "parent_page_id": "page_4715971f66588191aba3c32c0e965f37",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "ffcc981827c976fd39cb481a6195dab9c700cf1020d13f104f0d0e1c8fb1f980"
+    },
+    "002-学习笔记/技术栈/大数据存储处理/Hadoop/HDFS.md": {
+      "page_id": "page_5d85d71ef12481918dca92a6f2b15078",
+      "url": "https://chatgpt.com/space/page_5d85d71ef12481918dca92a6f2b15078",
+      "title": "HDFS",
+      "parent_page_id": "page_6a4694aec9b08191abf308d5dc429f9c",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "6195f66c810e2773440a6ccf10c6a0e4f5172d7e52d6c55a442ae1d8c3b5836b"
+    },
+    "002-学习笔记/技术栈/大数据存储处理/Hadoop/MapReduce && YARN.md": {
+      "page_id": "page_3caad3b13a6481919a6a1c723d96250c",
+      "url": "https://chatgpt.com/space/page_3caad3b13a6481919a6a1c723d96250c",
+      "title": "MapReduce && YARN",
+      "parent_page_id": "page_6a4694aec9b08191abf308d5dc429f9c",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "53b4d38242cc63f7aeab291200d80b0f983c703c67fbc7324a6995f34fece6db"
+    },
+    "002-学习笔记/技术栈/大数据存储处理/Hive/Hive.md": {
+      "page_id": "page_b54782b5e51c8191955c9ce4ef4fa4a7",
+      "url": "https://chatgpt.com/space/page_b54782b5e51c8191955c9ce4ef4fa4a7",
+      "title": "Hive",
+      "parent_page_id": "page_6db3601febd08191a234344f33e55f69",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "b7b434088dcc64bec8ae4b7ec0417ff756030c79d537c6c0696a1eda6d035b80"
+    },
+    "002-学习笔记/技术栈/大数据存储处理/Spark/Spark.md": {
+      "page_id": "page_64287a4ccfac8191bd83570960f04c21",
+      "url": "https://chatgpt.com/space/page_64287a4ccfac8191bd83570960f04c21",
+      "title": "Spark",
+      "parent_page_id": "page_a71090945cf081919b4eb7d0804e5e27",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "8b49b62827aa2c87130dfcaab312431e78f67af0738b36c7f728265c8dc4d87d"
+    },
+    "002-学习笔记/技术栈/大数据存储处理/StarRocks/从 MYSQL 到 StarRocks.md": {
+      "page_id": "page_aed58e4be4988191afaf709cf01c4517",
+      "url": "https://chatgpt.com/space/page_aed58e4be4988191afaf709cf01c4517",
+      "title": "从 MYSQL 到 StarRocks",
+      "parent_page_id": "page_82e17f7802b48191b5c3ab405854f070",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "37e4d448a7e9899bbe152ec120427b8c46e6bd8725d7cd9438dda968f82426ab"
+    },
+    "002-学习笔记/技术栈/数据结构与算法/笔记/单调栈.md": {
+      "page_id": "page_bd3b7aa18c148191a317ce89ca6e3962",
+      "url": "https://chatgpt.com/space/page_bd3b7aa18c148191a317ce89ca6e3962",
+      "title": "单调栈",
+      "parent_page_id": "page_1a7be56989a8819198d997aaa1ed7839",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "a11bc19d50ddcdbc969b11397a1192b7a361b1719187ca2d92d3ae4a8dc02473"
+    },
+    "002-学习笔记/技术栈/数据结构与算法/笔记/堆.md": {
+      "page_id": "page_1c4043436ee88191950aee0291cb091d",
+      "url": "https://chatgpt.com/space/page_1c4043436ee88191950aee0291cb091d",
+      "title": "堆",
+      "parent_page_id": "page_1a7be56989a8819198d997aaa1ed7839",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "987847e839796d15ac7fe42aaddb5065a58359b480e47d256637b4758134d121",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/数据结构与算法/笔记/字符串匹配-KMP匹配.md": {
+      "page_id": "page_5086d7bb0ce48191876a2bc9aae44bc7",
+      "url": "https://chatgpt.com/space/page_5086d7bb0ce48191876a2bc9aae44bc7",
+      "title": "字符串匹配-KMP匹配",
+      "parent_page_id": "page_1a7be56989a8819198d997aaa1ed7839",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "7f6e9fa4e9cbe037b0fd0e194099bcb36141221b57a88e5f7b83a63375c8f024"
+    },
+    "002-学习笔记/技术栈/数据结构与算法/笔记/数据结构与算法.md": {
+      "page_id": "page_2e2df0ae1ef8819193e2cf046b5b1694",
+      "url": "https://chatgpt.com/space/page_2e2df0ae1ef8819193e2cf046b5b1694",
+      "title": "数据结构与算法",
+      "parent_page_id": "page_1a7be56989a8819198d997aaa1ed7839",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "0009f28cfd3a6047f025372f779f1d41fd401587294bc6fa793e7772332937f2"
+    },
+    "002-学习笔记/技术栈/数据结构与算法/笔记/线性表.md": {
+      "page_id": "page_ecbbdb2aa43c81919bd4d3092a29a6f3",
+      "url": "https://chatgpt.com/space/page_ecbbdb2aa43c81919bd4d3092a29a6f3",
+      "title": "线性表",
+      "parent_page_id": "page_1a7be56989a8819198d997aaa1ed7839",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "66f5608fcdef6b8d8359a5d2da77b109afd62d41e52d4f61b2564168a140b2ba"
+    },
+    "002-学习笔记/技术栈/数据结构与算法/笔记/递归程序.md": {
+      "page_id": "page_a542309caa9481919bbcb286d3558abd",
+      "url": "https://chatgpt.com/space/page_a542309caa9481919bbcb286d3558abd",
+      "title": "递归程序",
+      "parent_page_id": "page_1a7be56989a8819198d997aaa1ed7839",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "6cad3a1fb2ce8a800ddbfe14e69a96248ad67102b1761ad8c134933a828bfed7"
+    },
+    "002-学习笔记/技术栈/现代编程思想/Course1.md": {
+      "page_id": "page_e5f81042d99c8191a4f8add79ef1c3ac",
+      "url": "https://chatgpt.com/space/page_e5f81042d99c8191a4f8add79ef1c3ac",
+      "title": "Course1",
+      "parent_page_id": "page_19411066aba88191ad069254e314c460",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "5d9c9cae31356870e628cdaefdb347721ae61bbe56c88ad5eafb2bab7e651383"
+    },
+    "002-学习笔记/技术栈/现代编程思想/Course2 泛型.md": {
+      "page_id": "page_5a1f66c08fa48191ba5a27b72810aa89",
+      "url": "https://chatgpt.com/space/page_5a1f66c08fa48191ba5a27b72810aa89",
+      "title": "Course2 泛型",
+      "parent_page_id": "page_19411066aba88191ad069254e314c460",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "f97f7624ff95e7d9fd7d51c8c7ad82292a7ce63eba7eef9a5264cdb3669614aa"
+    },
+    "002-学习笔记/技术栈/现代编程思想/Course3 反射 & 注解.md": {
+      "page_id": "page_63938a8d8d9c8191aaa7c14ae1753bcb",
+      "url": "https://chatgpt.com/space/page_63938a8d8d9c8191aaa7c14ae1753bcb",
+      "title": "Course3 反射 & 注解",
+      "parent_page_id": "page_19411066aba88191ad069254e314c460",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "c5b816beee9c16cc22960e5eacc44473849a13c0bf1fe3771e8a07fd6c5a38ef"
+    },
+    "002-学习笔记/技术栈/现代编程思想/Course5 AOP.md": {
+      "page_id": "page_c00447e5e63481918f3756e0c0a49725",
+      "url": "https://chatgpt.com/space/page_c00447e5e63481918f3756e0c0a49725",
+      "title": "Course5 AOP",
+      "parent_page_id": "page_19411066aba88191ad069254e314c460",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "231f78fa1bf17d25f36d6cd0c6e479c26a2b50d829073d33d8fd1750b64e0f1c"
+    },
+    "002-学习笔记/技术栈/现代编程思想/Course6 函数式编程.md": {
+      "page_id": "page_bed46869d01081919acfb6faa1f0c8e5",
+      "url": "https://chatgpt.com/space/page_bed46869d01081919acfb6faa1f0c8e5",
+      "title": "Course6 函数式编程",
+      "parent_page_id": "page_19411066aba88191ad069254e314c460",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "7abbd28fc25f396e9775a494bfa7e33d18c559583818ed3d0fba6ec605c81580",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/现代编程思想/练习/AOP练习.md": {
+      "page_id": "page_12d545561fb08191814312b218420837",
+      "url": "https://chatgpt.com/space/page_12d545561fb08191814312b218420837",
+      "title": "AOP练习",
+      "parent_page_id": "page_fb1efc0cfcf48191a9c31a86e05ac390",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "facadd91358b37b795faa99e804cd4600cbab48479278eec0bcf80c0194d7820"
+    },
+    "002-学习笔记/技术栈/现代编程思想/练习/Java 泛型课堂测验卷.md": {
+      "page_id": "page_ea555af7d4308191805fe9d14f2a2ae8",
+      "url": "https://chatgpt.com/space/page_ea555af7d4308191805fe9d14f2a2ae8",
+      "title": "Java 泛型课堂测验卷",
+      "parent_page_id": "page_fb1efc0cfcf48191a9c31a86e05ac390",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "bef7e799333fa7685b2a4324e8b7d038d24cf90ef96bfd5c19f269b94a809290"
+    },
+    "002-学习笔记/技术学习/AI Agent/SmolAgent 框架.md": {
+      "page_id": "page_59ba1b7349f48191b1b856d357892d3d",
+      "url": "https://chatgpt.com/space/page_59ba1b7349f48191b1b856d357892d3d",
+      "title": "SmolAgent 框架",
+      "parent_page_id": "page_e7a6f13b18f4819197969552c130de4c",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "8d090f6f32797d71aae8eac0eed34aa1bc8d02bd2a1646a5f0c8357ad7561d6e"
+    },
+    "002-学习笔记/技术学习/思特奇实训/开营仪式.md": {
+      "page_id": "page_759f8f54dac8819198cffa2a73f00e90",
+      "url": "https://chatgpt.com/space/page_759f8f54dac8819198cffa2a73f00e90",
+      "title": "开营仪式",
+      "parent_page_id": "page_d0ad6930f5348191aa524e1712137102",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "b4906d74e364ec7016a701843527eb65b962ba3aac57874d26a5f2389a47e543"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY19 设计模式.md": {
+      "page_id": "page_b2fdc00aded481919078d127144c9b7a",
+      "url": "https://chatgpt.com/space/page_b2fdc00aded481919078d127144c9b7a",
+      "title": "DAY19 设计模式",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "be01851588ea8d5d18d11044ecbf3ab3a1fa08ae38b64e814bdf0cf97ce9aa8b"
+    },
+    "002-学习笔记/技术栈/JAVA EE/DAY20 设计模式-结构+行为.md": {
+      "page_id": "page_02850480439881919a62afd386ee3095",
+      "url": "https://chatgpt.com/space/page_02850480439881919a62afd386ee3095",
+      "title": "DAY20 设计模式-结构+行为",
+      "parent_page_id": "page_21ce2be92d78819182e5b9a5b69954ef",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "c97591423e5692c8a31490e0a8736f729e82c26b512d8683e9dbc9c2879d882e"
+    },
+    "002-学习笔记/技术栈/JAVA EE/笔记/Java IO.md": {
+      "page_id": "page_caf0de185fc88191a15f1231d78a4712",
+      "url": "https://chatgpt.com/space/page_caf0de185fc88191a15f1231d78a4712",
+      "title": "Java IO",
+      "parent_page_id": "page_a4275b698cf88191b26b236401aa0a74",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "d79399d8fac5af9b444c83d84048de9535ff355584c376a64355f441b22697bb"
+    },
+    "002-学习笔记/技术栈/Spring/B2 Bean初始化.md": {
+      "page_id": "page_1ce4afc5aca48191afdfa9a4099bf952",
+      "url": "https://chatgpt.com/space/page_1ce4afc5aca48191afdfa9a4099bf952",
+      "title": "B2 Bean初始化",
+      "parent_page_id": "page_3eea5db4ebf08191b1531311f4b7a116",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "8e5f16d0bdd33523736a893a18b5a0cf9f24b5a13e66e5c12439da1daafbd9b9"
+    },
+    "002-学习笔记/技术栈/Spring/B7 Spring Web.md": {
+      "page_id": "page_cad897bbc6888191a954fe2c1af015ab",
+      "url": "https://chatgpt.com/space/page_cad897bbc6888191a954fe2c1af015ab",
+      "title": "B7 Spring Web",
+      "parent_page_id": "page_3eea5db4ebf08191b1531311f4b7a116",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "274099a6973606d279be51055782003b7f666985e7d39e0d1fa0735466f944f6",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/Spring/DAY1 设计原则回顾.md": {
+      "page_id": "page_faf76ed75b888191bc5b3c2068bfbb79",
+      "url": "https://chatgpt.com/space/page_faf76ed75b888191bc5b3c2068bfbb79",
+      "title": "DAY1 设计原则回顾",
+      "parent_page_id": "page_3eea5db4ebf08191b1531311f4b7a116",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "5168417803bfdc268d24314420680f9d542197fe20e0232bae3575809ffade93"
+    },
+    "002-学习笔记/技术栈/Spring/DAY2 Spring 编程概念.md": {
+      "page_id": "page_f9dd0994adf88191bcfd5e2fb2acab25",
+      "url": "https://chatgpt.com/space/page_f9dd0994adf88191bcfd5e2fb2acab25",
+      "title": "DAY2 Spring 编程概念",
+      "parent_page_id": "page_3eea5db4ebf08191b1531311f4b7a116",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "df67b9a87437e410b05adcdbcdbf395647886e335c7d1ade6e5d9fe7010fd240"
+    },
+    "002-学习笔记/技术栈/Spring/笔记/Spring/Spring 的框架体系.md": {
+      "page_id": "page_9ab47abee4d08191ac9c1eab8a97c376",
+      "url": "https://chatgpt.com/space/page_9ab47abee4d08191ac9c1eab8a97c376",
+      "title": "Spring 的框架体系",
+      "parent_page_id": "page_664d8c5ad908819189b9719824c83fbe",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "2b799b716b934cda21b22273add66d5871de04f5eaeabdbb7081c98d95a09118"
+    },
+    "002-学习笔记/技术栈/Spring/笔记/Spring Boot/Spring Boot Starter 有什么用.md": {
+      "page_id": "page_97902230bda081919b6981cd9b4769d1",
+      "url": "https://chatgpt.com/space/page_97902230bda081919b6981cd9b4769d1",
+      "title": "Spring Boot Starter 有什么用",
+      "parent_page_id": "page_dabb7cbb3c7081918463bd5318bc931b",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "4781156ad2d1433a0635433338389f706ceab88a48bc5377f87b815e610ffc38"
+    },
+    "002-学习笔记/技术栈/云计算平台与技术/Kubernetes.md": {
+      "page_id": "page_f00288c6a96c8191a7fa4f33bb81297f",
+      "url": "https://chatgpt.com/space/page_f00288c6a96c8191a7fa4f33bb81297f",
+      "title": "Kubernetes",
+      "parent_page_id": "page_2e747f6d9cf481919cd3ee5f0c132f48",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "356d80a3aa77c3f3a0839f096b51e82a191cec4c2a09dfcda5fd58d9e793fc1c"
+    },
+    "002-学习笔记/技术栈/分布式软件/课程笔记/C2 高并发设计（1）CDN + 负载均衡.md": {
+      "page_id": "page_02e0e1cfa0f48191a30d14b9ab093cd1",
+      "url": "https://chatgpt.com/space/page_02e0e1cfa0f48191a30d14b9ab093cd1",
+      "title": "C2 高并发设计（1）CDN + 负载均衡",
+      "parent_page_id": "page_4715971f66588191aba3c32c0e965f37",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "2d8e280e076c9b3dedb52e2344c8fa1c5dca07470d7501be2a77b520c6e2edf2"
+    },
+    "002-学习笔记/技术栈/分布式软件/课程笔记/C3 高并发设计（2）缓存.md": {
+      "page_id": "page_507ec404768881918b62b962e590a3f6",
+      "url": "https://chatgpt.com/space/page_507ec404768881918b62b962e590a3f6",
+      "title": "C3 高并发设计（2）缓存",
+      "parent_page_id": "page_4715971f66588191aba3c32c0e965f37",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "4e2c639834a810b6b9440725c1a05aaae9c8472e2f43699614a128582cf1d17e"
+    },
+    "002-学习笔记/技术栈/分布式软件/课程笔记/C4 高并发（3）异步 + 分库分表.md": {
+      "page_id": "page_52d08c9bd1548191a41e222c1e53148e",
+      "url": "https://chatgpt.com/space/page_52d08c9bd1548191a41e222c1e53148e",
+      "title": "C4 高并发（3）异步 + 分库分表",
+      "parent_page_id": "page_4715971f66588191aba3c32c0e965f37",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "e959c411af042cd6e5ef7d83832ea40f62bdeb29cb5237906a3a73de08a230ec"
+    },
+    "002-学习笔记/技术栈/分布式软件/课程笔记/C5 分布式中的事务实现.md": {
+      "page_id": "page_85d1a5d42640819191a567e1ef47da9e",
+      "url": "https://chatgpt.com/space/page_85d1a5d42640819191a567e1ef47da9e",
+      "title": "C5 分布式中的事务实现",
+      "parent_page_id": "page_4715971f66588191aba3c32c0e965f37",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "91930fc274e4bebe562ee77309e4714a9992c856af7488aa67ece3f02e770c03"
+    },
+    "002-学习笔记/技术栈/分布式软件/课程笔记/C7 服务治理.md": {
+      "page_id": "page_07572f9e309c8191b4a07ba9162fb2de",
+      "url": "https://chatgpt.com/space/page_07572f9e309c8191b4a07ba9162fb2de",
+      "title": "C7 服务治理",
+      "parent_page_id": "page_4715971f66588191aba3c32c0e965f37",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "567a3ea3a594719cba4f9c34dd7c1a4fec74cbc15d3d2f7fcd2ad8766d81efc6"
+    },
+    "002-学习笔记/技术栈/大数据存储处理/Hadoop/Hadoop 快速上手.md": {
+      "page_id": "page_0b3a601b033481918072cb94683df595",
+      "url": "https://chatgpt.com/space/page_0b3a601b033481918072cb94683df595",
+      "title": "Hadoop 快速上手",
+      "parent_page_id": "page_6a4694aec9b08191abf308d5dc429f9c",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "d91746c6a73b234cfeb6c01cc64b1187bfd51a417c632c9dee925dbfe551c432"
+    },
+    "002-学习笔记/技术栈/大数据存储处理/Spark/RDD.md": {
+      "page_id": "page_efc3e6d23f1c8191be10197667c77238",
+      "url": "https://chatgpt.com/space/page_efc3e6d23f1c8191be10197667c77238",
+      "title": "RDD",
+      "parent_page_id": "page_a71090945cf081919b4eb7d0804e5e27",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "350e8b9b50e28e4bdc685670d063b1705fb311eb111f7639deae8d8983bd5bc5"
+    },
+    "002-学习笔记/技术栈/数据结构与算法/笔记/数组的压缩存储.md": {
+      "page_id": "page_189ecc508c408191ade132d94ba7766a",
+      "url": "https://chatgpt.com/space/page_189ecc508c408191ade132d94ba7766a",
+      "title": "数组的压缩存储",
+      "parent_page_id": "page_1a7be56989a8819198d997aaa1ed7839",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "70b501208b4582d193e7a8d4b64ad4bbe318a366e3df4c62c7f0edbe64d10d76"
+    },
+    "002-学习笔记/技术栈/数据结构与算法/笔记/树.md": {
+      "page_id": "page_26271e04dcec8191a68e32894687d019",
+      "url": "https://chatgpt.com/space/page_26271e04dcec8191a68e32894687d019",
+      "title": "树",
+      "parent_page_id": "page_1a7be56989a8819198d997aaa1ed7839",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "561d7bd0550d6944d31fdbc6e52c980c5de260e78158bd38569188d56be1eb66"
+    },
+    "002-学习笔记/技术栈/现代编程思想/练习/函数式编程.md": {
+      "page_id": "page_fd39cd092f50819187edf138a1a66dd1",
+      "url": "https://chatgpt.com/space/page_fd39cd092f50819187edf138a1a66dd1",
+      "title": "函数式编程",
+      "parent_page_id": "page_fb1efc0cfcf48191a9c31a86e05ac390",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "ef8e8ea99733dc98dd1dce2f0ff8e4b06bd8fc1b4e43b349a5829ee0592594d3"
+    },
+    "002-学习笔记/技术栈/现代编程思想/练习/函数式编程2.md": {
+      "page_id": "page_dee5f86d72248191926ca86c791e0a4a",
+      "url": "https://chatgpt.com/space/page_dee5f86d72248191926ca86c791e0a4a",
+      "title": "函数式编程2",
+      "parent_page_id": "page_fb1efc0cfcf48191a9c31a86e05ac390",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "174c3871dc803e989c7bea440a927443819adf5de7e826b24f8fc81c98eb5274"
+    },
+    "002-学习笔记/技术栈/现代编程思想/练习/反射&注解练习题.md": {
+      "page_id": "page_e42d00f0545081918c52a471b668a4dc",
+      "url": "https://chatgpt.com/space/page_e42d00f0545081918c52a471b668a4dc",
+      "title": "反射&注解练习题",
+      "parent_page_id": "page_fb1efc0cfcf48191a9c31a86e05ac390",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "f263885fd991d20df4db087190922c386fd0f49370f8f4ee61d5e20b9f2232da"
+    },
+    "002-学习笔记/技术栈/现代编程思想/练习/现代编程思想 · 综合练习.md": {
+      "page_id": "page_1175528ca1b481918490ebb573c6810d",
+      "url": "https://chatgpt.com/space/page_1175528ca1b481918490ebb573c6810d",
+      "title": "现代编程思想 · 综合练习",
+      "parent_page_id": "page_fb1efc0cfcf48191a9c31a86e05ac390",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "859dcf06838c8f2841b696e7d0f45854aa12eef3b7607808b1db1532413db808"
+    },
+    "002-学习笔记/技术栈/计算机系统基础/关系型数据库/B树、B+树，数据库索引使用数据结构.md": {
+      "page_id": "page_e04c516662c88191ba88c4ac6946fe1c",
+      "url": "https://chatgpt.com/space/page_e04c516662c88191ba88c4ac6946fe1c",
+      "title": "B树、B+树，数据库索引使用数据结构",
+      "parent_page_id": "page_7e7b54394f808191936d60d91ad93d0e",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "b33fd4bd16700e409cb70eeaeee1e818dc3c912852c2dc47ac887fd689cc4203",
+      "conversion_version": 2
+    },
+    "002-学习笔记/技术栈/计算机系统基础/关系型数据库/数据库索引优化.md": {
+      "page_id": "page_69d5886ff8908191b3badad0dc330241",
+      "url": "https://chatgpt.com/space/page_69d5886ff8908191b3badad0dc330241",
+      "title": "数据库索引优化",
+      "parent_page_id": "page_7e7b54394f808191936d60d91ad93d0e",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "7bd52652176a8c5ecb9b4a5ffdd674e525ffa56e1165a543d29fd5ecc4cc40e9"
+    },
+    "002-学习笔记/技术栈/计算机系统基础/关系型数据库/锁.md": {
+      "page_id": "page_473aa9d28db8819189492534d4fa8ffc",
+      "url": "https://chatgpt.com/space/page_473aa9d28db8819189492534d4fa8ffc",
+      "title": "锁",
+      "parent_page_id": "page_7e7b54394f808191936d60d91ad93d0e",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "db31b62be1c95f134631b1e63fcbfba6dc679ec2a4812040c6783ffce66baf70"
+    },
+    "002-学习笔记/技术栈/计算机系统基础/操作系统/内存管理.md": {
+      "page_id": "page_2b2e9956d7088191a6d32af0359e1cbc",
+      "url": "https://chatgpt.com/space/page_2b2e9956d7088191a6d32af0359e1cbc",
+      "title": "内存管理",
+      "parent_page_id": "page_0bf14ac6f19081918902b9556c989fa1",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "7e700dd31c5623cefa43b80a45d0226ed4ffa730a46820edc95fa871b970ff17"
+    },
+    "002-学习笔记/技术栈/计算机系统基础/操作系统/操作系统基础.md": {
+      "page_id": "page_1fb0cc4704548191b5ace6dd6f347c9a",
+      "url": "https://chatgpt.com/space/page_1fb0cc4704548191b5ace6dd6f347c9a",
+      "title": "操作系统基础",
+      "parent_page_id": "page_0bf14ac6f19081918902b9556c989fa1",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "1543ebaf44f7a57a8d2dda77686b6a734626b6381ae786d9ab47042ac9013e65"
+    },
+    "002-学习笔记/技术栈/计算机系统基础/操作系统/文件管理.md": {
+      "page_id": "page_8bfef0f84b0081918429f11320d48892",
+      "url": "https://chatgpt.com/space/page_8bfef0f84b0081918429f11320d48892",
+      "title": "文件管理",
+      "parent_page_id": "page_0bf14ac6f19081918902b9556c989fa1",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "ba280e4c79cebe21bd1f7c8b8d014749f6e400ff07e189e33bba455056ab5b78"
+    },
+    "002-学习笔记/技术栈/计算机系统基础/操作系统/有趣的思考问题.md": {
+      "page_id": "page_4d7bd7bac7208191967a813ea8163084",
+      "url": "https://chatgpt.com/space/page_4d7bd7bac7208191967a813ea8163084",
+      "title": "有趣的思考问题",
+      "parent_page_id": "page_0bf14ac6f19081918902b9556c989fa1",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "879894455d89e240d3a782af84c7e362dbf8548cf9d1adad6c97e7dd87d466b5"
+    },
+    "002-学习笔记/技术栈/计算机系统基础/操作系统/设备管理.md": {
+      "page_id": "page_f975aedee7b88191a55dcf399ef7954d",
+      "url": "https://chatgpt.com/space/page_f975aedee7b88191a55dcf399ef7954d",
+      "title": "设备管理",
+      "parent_page_id": "page_0bf14ac6f19081918902b9556c989fa1",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "fd21a5f67a0c166db4dee4317be66b87af14d11ff38736c87a02f3dc4e4dee37"
+    },
+    "002-学习笔记/技术栈/计算机系统基础/计算机网络/笔记/TCP 和 UDP 的区别.md": {
+      "page_id": "page_0fe2732b308c819189d4c057c53f0438",
+      "url": "https://chatgpt.com/space/page_0fe2732b308c819189d4c057c53f0438",
+      "title": "TCP 和 UDP 的区别",
+      "parent_page_id": "page_c5425305608481919eb3df7a701c59c2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "01babcfb65051de093e52dd77f4680e3cd1e9969dc5b3589d60e355ca70b4009"
+    },
+    "002-学习笔记/技术栈/计算机系统基础/计算机网络/笔记/TCP 连接断开的情景.md": {
+      "page_id": "page_3365dfb98f108191887dd8f3620bdaaf",
+      "url": "https://chatgpt.com/space/page_3365dfb98f108191887dd8f3620bdaaf",
+      "title": "TCP 连接断开的情景",
+      "parent_page_id": "page_c5425305608481919eb3df7a701c59c2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "d2df682da26e6dd8af86e84b7ba407cd2254e70d925fff5b6518f958fe47ab96"
+    },
+    "002-学习笔记/技术栈/计算机系统基础/计算机网络/笔记/从输入URL到页面展示.md": {
+      "page_id": "page_84cdb07d534c8191a0ea84c2cd6061e3",
+      "url": "https://chatgpt.com/space/page_84cdb07d534c8191a0ea84c2cd6061e3",
+      "title": "从输入URL到页面展示",
+      "parent_page_id": "page_c5425305608481919eb3df7a701c59c2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "cc2f6c3fd73537bb805aebccc919b7c7f2bf2fed919d57565834e36cf34b03f3"
+    },
+    "002-学习笔记/技术栈/设计模式/动态代理.md": {
+      "page_id": "page_73526d87a0248191b210ac7576ac3cb5",
+      "url": "https://chatgpt.com/space/page_73526d87a0248191b210ac7576ac3cb5",
+      "title": "动态代理",
+      "parent_page_id": "page_b164d3cedad881919143c5ce4712367a",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "ab74e7472bd85183d835b169ff52bbaf265210402ea27df585c73df8c3d098c1"
+    },
+    "002-学习笔记/技术栈/设计模式/单例模式.md": {
+      "page_id": "page_9cce5f2988d08191a7dfa14bc2d4236f",
+      "url": "https://chatgpt.com/space/page_9cce5f2988d08191a7dfa14bc2d4236f",
+      "title": "单例模式",
+      "parent_page_id": "page_b164d3cedad881919143c5ce4712367a",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "9e9f8130a2c7555ee55759aebd30f0a70ffaee2b80ebce224ebbae79a3988957"
+    },
+    "002-学习笔记/技术栈/设计模式/备忘录模式.md": {
+      "page_id": "page_d627462112d8819191412f4095e61971",
+      "url": "https://chatgpt.com/space/page_d627462112d8819191412f4095e61971",
+      "title": "备忘录模式",
+      "parent_page_id": "page_b164d3cedad881919143c5ce4712367a",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "6b936355b26f4a9c60e80ca02beedf2da4cc86a6957c824344fc052fa3af4aa5"
+    },
+    "002-学习笔记/课程学习/操作系统实践/report 8 COW实现.md": {
+      "page_id": "page_c3e23628e2b08191b8d52e5c22838800",
+      "url": "https://chatgpt.com/space/page_c3e23628e2b08191b8d52e5c22838800",
+      "title": "report 8 COW实现",
+      "parent_page_id": "page_66bc41f94a508191b06b5c5e1d6e695b",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "a9095b1a684044725ddd48641c7818d2feda5cfc93f4db36aa17d8045424276f"
+    },
+    "002-学习笔记/课程学习/操作系统实践/report1.md": {
+      "page_id": "page_9a55b8c7c03c8191b834c929c8ace13f",
+      "url": "https://chatgpt.com/space/page_9a55b8c7c03c8191b834c929c8ace13f",
+      "title": "report1",
+      "parent_page_id": "page_66bc41f94a508191b06b5c5e1d6e695b",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "08ce1be292bbbeb6838fe5154702ecbe2043f6b8f99ce8d8210601d5b32e2db1"
+    },
+    "002-学习笔记/课程学习/操作系统实践/report2.md": {
+      "page_id": "page_9d67c0f4317c81918684a295c0a5730e",
+      "url": "https://chatgpt.com/space/page_9d67c0f4317c81918684a295c0a5730e",
+      "title": "report2",
+      "parent_page_id": "page_66bc41f94a508191b06b5c5e1d6e695b",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "a0f012cee1cbcda7253516dbfa32626c134734f5abe187509255fbc01c33a324"
+    },
+    "002-学习笔记/课程学习/操作系统实践/report4.md": {
+      "page_id": "page_476d445ac0008191a7ae2c1f77785468",
+      "url": "https://chatgpt.com/space/page_476d445ac0008191a7ae2c1f77785468",
+      "title": "report4",
+      "parent_page_id": "page_66bc41f94a508191b06b5c5e1d6e695b",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "4e4fce9153a459befb8317cbb0f2eccd4db40bdf45d4e940cc63dc4f20b26696"
+    },
+    "002-学习笔记/课程学习/操作系统实践/report5.md": {
+      "page_id": "page_e4b3eb6bdd8481918da8b91ca0912b27",
+      "url": "https://chatgpt.com/space/page_e4b3eb6bdd8481918da8b91ca0912b27",
+      "title": "report5",
+      "parent_page_id": "page_66bc41f94a508191b06b5c5e1d6e695b",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "95b48379de4ef9d559e0baf18999d05acb1ce7bf7aed8dd8f1229741ae9fc8be"
+    },
+    "002-学习笔记/课程学习/操作系统实践/report6.md": {
+      "page_id": "page_3d60c17a8f088191a1b05e875b7e68fa",
+      "url": "https://chatgpt.com/space/page_3d60c17a8f088191a1b05e875b7e68fa",
+      "title": "report6",
+      "parent_page_id": "page_66bc41f94a508191b06b5c5e1d6e695b",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "9ba56455293acc67efd02eaf3a0b1dbdb5aaecca49557b12b610b4f56d2d7119",
+      "conversion_version": 2
+    },
+    "002-学习笔记/课程学习/操作系统实践/report7.md": {
+      "page_id": "page_34a573955fa0819186ad8ad5df9f32d8",
+      "url": "https://chatgpt.com/space/page_34a573955fa0819186ad8ad5df9f32d8",
+      "title": "report7",
+      "parent_page_id": "page_66bc41f94a508191b06b5c5e1d6e695b",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "cde5344d90411b90fc80211cc1adad8609b791b92a0421eb71094e45d57901ad"
+    },
+    "002-学习笔记/课程学习/操作系统实践/riscv工具箱.md": {
+      "page_id": "page_5312b3d3d1208191a61b185f4f2dced2",
+      "url": "https://chatgpt.com/space/page_5312b3d3d1208191a61b185f4f2dced2",
+      "title": "riscv工具箱",
+      "parent_page_id": "page_66bc41f94a508191b06b5c5e1d6e695b",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "8deaca905dd9a7eddf83ddd2adaf5e181ab2be15c2e255a13d05104b651e6ee7",
+      "conversion_version": 2
+    },
+    "002-学习笔记/课程学习/操作系统实践/VSCode 远程连接.md": {
+      "page_id": "page_a564596e2ae08191afdb24c27e9bdb5d",
+      "url": "https://chatgpt.com/space/page_a564596e2ae08191afdb24c27e9bdb5d",
+      "title": "VSCode 远程连接",
+      "parent_page_id": "page_66bc41f94a508191b06b5c5e1d6e695b",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "41e2aa7c2d67e896c89958d70cea82ef14a903105fcd4fac0011317a82c56c75"
+    },
+    "002-学习笔记/课程学习/操作系统实践/实验3思考题.md": {
+      "page_id": "page_11e158758e208191a71f3bda39bb8981",
+      "url": "https://chatgpt.com/space/page_11e158758e208191a71f3bda39bb8981",
+      "title": "实验3思考题",
+      "parent_page_id": "page_66bc41f94a508191b06b5c5e1d6e695b",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "8ac78c379f5c924cb7331a56b70ee1b28fb8a42c5ec5caaa123a8694538dd1cb"
+    },
+    "002-学习笔记/课程学习/操作系统实践/操作系统内核综合实验报告.md": {
+      "page_id": "page_e17eecea35908191990947d3e90fa0a7",
+      "url": "https://chatgpt.com/space/page_e17eecea35908191990947d3e90fa0a7",
+      "title": "操作系统内核综合实验报告",
+      "parent_page_id": "page_66bc41f94a508191b06b5c5e1d6e695b",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "0ce80bfe8279855e422c22c18a7e6fbf817370373beb10219bf6620c667a60c2"
+    },
+    "002-学习笔记/课程学习/操作系统实践/进程涉及锁.md": {
+      "page_id": "page_4498048ed00c81919efb06993ce3b491",
+      "url": "https://chatgpt.com/space/page_4498048ed00c81919efb06993ce3b491",
+      "title": "进程涉及锁",
+      "parent_page_id": "page_66bc41f94a508191b06b5c5e1d6e695b",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "1d9fc764f3f1594282d91076a86d4d222f5b18a8b298ddf4a30e3366ff8849a3"
+    },
+    "002-学习笔记/课程学习/数学基础/概率论.md": {
+      "page_id": "page_613c89508ec08191b76d23af71a078e9",
+      "url": "https://chatgpt.com/space/page_613c89508ec08191b76d23af71a078e9",
+      "title": "概率论",
+      "parent_page_id": "page_15f824e9e450819188528395dbe10583",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "88376638767e04f54dd5982d0b4c6607b3f498065ea92166c1fc6631b8e7930d"
+    },
+    "002-学习笔记/课程学习/数学基础/线性代数.md": {
+      "page_id": "page_bbd8d1dd0be881918350ee2fea47a3d8",
+      "url": "https://chatgpt.com/space/page_bbd8d1dd0be881918350ee2fea47a3d8",
+      "title": "线性代数",
+      "parent_page_id": "page_15f824e9e450819188528395dbe10583",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "a72922c8979c076125d35dd978efddcbe0bd1bb562cada6dbbea5dceed1ba240"
+    },
+    "002-学习笔记/课程学习/数据库系统/作业记录.md": {
+      "page_id": "page_61725af0dba48191a82b9159139a6569",
+      "url": "https://chatgpt.com/space/page_61725af0dba48191a82b9159139a6569",
+      "title": "作业记录",
+      "parent_page_id": "page_6e7ecb6b15c88191a121bd241bc58dd1",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "b18a83abf841b33b796747f1478958f9b0628aa5ce6a839de18fe3f609132b97"
+    },
+    "002-学习笔记/课程学习/数据库系统/复习摘要.md": {
+      "page_id": "page_95ff5736ed548191b3b842178506b8c9",
+      "url": "https://chatgpt.com/space/page_95ff5736ed548191b3b842178506b8c9",
+      "title": "复习摘要",
+      "parent_page_id": "page_6e7ecb6b15c88191a121bd241bc58dd1",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "8933730dbb757bb6bd88d3c4ed2c8415b9601d3bc8d42c7ae019d6046ebccfdb"
+    },
+    "002-学习笔记/课程学习/数据库系统/笔记/数据库系统读书笔记4.md": {
+      "page_id": "page_232e412a541081918fdd0872c107f59d",
+      "url": "https://chatgpt.com/space/page_232e412a541081918fdd0872c107f59d",
+      "title": "数据库系统读书笔记4",
+      "parent_page_id": "page_c65581ef8a808191b4de433e4f74ad74",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "c8113e06141c7071e897d6c9f66bc076e0560bdd9dc84724f75f33a2c0f12b55"
+    },
+    "002-学习笔记/课程学习/数据库系统/笔记/数据库系统读书笔记5.md": {
+      "page_id": "page_bc654b0379d88191b4863c093e546d71",
+      "url": "https://chatgpt.com/space/page_bc654b0379d88191b4863c093e546d71",
+      "title": "数据库系统读书笔记5",
+      "parent_page_id": "page_c65581ef8a808191b4de433e4f74ad74",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "8a5255ddd31def76399fbaf4accd90e457f3b7991c5ce04c4e887bee746cbb51"
+    },
+    "002-学习笔记/课程学习/数据库系统/笔记/数据库系统读书笔记6.md": {
+      "page_id": "page_581751beead48191b0a642ce9802f305",
+      "url": "https://chatgpt.com/space/page_581751beead48191b0a642ce9802f305",
+      "title": "数据库系统读书笔记6",
+      "parent_page_id": "page_c65581ef8a808191b4de433e4f74ad74",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "ae6d89aa3146f39e447bdc5ccdf2b79131944e9cbc2e690107a77092e5447bc1"
+    },
+    "002-学习笔记/课程学习/数据库系统/笔记/数据库系统读书笔记7.md": {
+      "page_id": "page_3fa9327f58488191be860ae1822034b4",
+      "url": "https://chatgpt.com/space/page_3fa9327f58488191be860ae1822034b4",
+      "title": "数据库系统读书笔记7",
+      "parent_page_id": "page_c65581ef8a808191b4de433e4f74ad74",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "9b67ff9498ed8d4b937130495389a7c043a129c355367d20c627c0fcec0acc81"
+    },
+    "002-学习笔记/课程学习/数据库系统/笔记/数据库系统读书笔记8.md": {
+      "page_id": "page_075d7367fe908191b084f69c394e6971",
+      "url": "https://chatgpt.com/space/page_075d7367fe908191b084f69c394e6971",
+      "title": "数据库系统读书笔记8",
+      "parent_page_id": "page_c65581ef8a808191b4de433e4f74ad74",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "81fb9a79b403b9c16b4cb06560916c3c9ef6f8cb1f5397213e6c9bc805a992d8"
+    },
+    "002-学习笔记/课程学习/数据库系统/笔记/数据库系统读书笔记9.md": {
+      "page_id": "page_6fb719062b9c81919dfc56f242dfe679",
+      "url": "https://chatgpt.com/space/page_6fb719062b9c81919dfc56f242dfe679",
+      "title": "数据库系统读书笔记9",
+      "parent_page_id": "page_c65581ef8a808191b4de433e4f74ad74",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "c2f153b5fcabd91824348a4c81996b97cb38729fe1a13616ea05f27ee480ab98"
+    },
+    "002-学习笔记/课程学习/数据库系统/练习.md": {
+      "page_id": "page_bbf07ac5ead08191abc0b7894e63aaee",
+      "url": "https://chatgpt.com/space/page_bbf07ac5ead08191abc0b7894e63aaee",
+      "title": "练习",
+      "parent_page_id": "page_6e7ecb6b15c88191a121bd241bc58dd1",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "b8d2d26bfeb3109aca58c6f16d53d8c911164da1978bc64ed0fd976976a7e677"
+    },
+    "002-学习笔记/课程学习/机器学习/Pytorch.md": {
+      "page_id": "page_c7f3cad5c3608191a45117eccaf572ef",
+      "url": "https://chatgpt.com/space/page_c7f3cad5c3608191a45117eccaf572ef",
+      "title": "Pytorch",
+      "parent_page_id": "page_cda099a9f2588191a679d618105b6744",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "a99c0753cf656543054c187792441c52d6a362e6e5278f57fa9aa1e95cb32d44"
+    },
+    "002-学习笔记/课程学习/机器学习/作业/第三次作业.md": {
+      "page_id": "page_5aa36f455bfc81919439a5e7834c8266",
+      "url": "https://chatgpt.com/space/page_5aa36f455bfc81919439a5e7834c8266",
+      "title": "第三次作业",
+      "parent_page_id": "page_fa5407483dc48191baad81460ddad3ca",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "9d4ef91872eb2a217a512504038fa2e3c064fe3967caf24b63ec1d69512a5c24"
+    },
+    "002-学习笔记/课程学习/机器学习/作业/第二次作业.md": {
+      "page_id": "page_33a36264f1e08191870c80cc876e73bc",
+      "url": "https://chatgpt.com/space/page_33a36264f1e08191870c80cc876e73bc",
+      "title": "第二次作业",
+      "parent_page_id": "page_fa5407483dc48191baad81460ddad3ca",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "8dc71f47cc8fb8bf70259b41e1673d6234f09e727e075ad47064ca5d5cc75dcc"
+    },
+    "002-学习笔记/课程学习/机器学习/知识点补充.md": {
+      "page_id": "page_73ac0359683c819182c08ae9125d466a",
+      "url": "https://chatgpt.com/space/page_73ac0359683c819182c08ae9125d466a",
+      "title": "知识点补充",
+      "parent_page_id": "page_cda099a9f2588191a679d618105b6744",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "a8a8fef95e478efd5ec89c9762b4923725088356359b1497986ca33356e11803"
+    },
+    "002-学习笔记/课程学习/离散数学/离散数学笔记.md": {
+      "page_id": "page_7930b23fbeec8191956d066726cf1a8c",
+      "url": "https://chatgpt.com/space/page_7930b23fbeec8191956d066726cf1a8c",
+      "title": "离散数学笔记",
+      "parent_page_id": "page_1ccdbdcd32208191a21347e469f477bc",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "ce066a12841ca20bf88eca8089797eb81bd3aa1d93dfa5b17b247b1220475b8f"
+    },
+    "002-学习笔记/课程学习/移动式编程/ArkTS.md": {
+      "page_id": "page_1cb0d1bd3d188191bf66479f7f4043e5",
+      "url": "https://chatgpt.com/space/page_1cb0d1bd3d188191bf66479f7f4043e5",
+      "title": "ArkTS",
+      "parent_page_id": "page_efce87fe580881918ca8035f8cec86e6",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "52b2ce8ef8d61c516c9a8fd91d5f98f72095cfc09272da8e2b0e7b7d5292c2b6"
+    },
+    "002-学习笔记/课程学习/移动式编程/Harmony 应用开发目录结构.md": {
+      "page_id": "page_255534e1acc48191b434baef5433c5f5",
+      "url": "https://chatgpt.com/space/page_255534e1acc48191b434baef5433c5f5",
+      "title": "Harmony 应用开发目录结构",
+      "parent_page_id": "page_efce87fe580881918ca8035f8cec86e6",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "555366ddbdf6bddee987e06e5ee5b5112920c24b4b11e480665c919a8116db4b"
+    },
+    "002-学习笔记/课程学习/移动式编程/tips.md": {
+      "page_id": "page_69fe09013c588191a54440964aced397",
+      "url": "https://chatgpt.com/space/page_69fe09013c588191a54440964aced397",
+      "title": "tips",
+      "parent_page_id": "page_efce87fe580881918ca8035f8cec86e6",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "ba3047afc9e01d20887015cfbaff50fe26cb37274995d377e33b9843fbb3eaef"
+    },
+    "002-学习笔记/课程学习/移动式编程/应用开发.md": {
+      "page_id": "page_5674f140f1ec81919a662025575c0707",
+      "url": "https://chatgpt.com/space/page_5674f140f1ec81919a662025575c0707",
+      "title": "应用开发",
+      "parent_page_id": "page_efce87fe580881918ca8035f8cec86e6",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "45615a107a115f29465d7253a08df3a5fd39f3f78c81cbdc9134e409b190bb8c"
+    },
+    "002-学习笔记/课程学习/编译原理/C1 Basic Concept.md": {
+      "page_id": "page_6ba56ad3b9248191a42365ad434b55bc",
+      "url": "https://chatgpt.com/space/page_6ba56ad3b9248191a42365ad434b55bc",
+      "title": "C1 Basic Concept",
+      "parent_page_id": "page_55476665523c819186d42c397953f07f",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "a22e0b6bf8bfc6d048e441411c48f3ebeff5ee87b9c61452e7836c04750a69eb"
+    },
+    "002-学习笔记/课程学习/编译原理/C2 Lexical Analysis.md": {
+      "page_id": "page_a5da6baf1a30819182aa8aaff8abd789",
+      "url": "https://chatgpt.com/space/page_a5da6baf1a30819182aa8aaff8abd789",
+      "title": "C2 Lexical Analysis",
+      "parent_page_id": "page_55476665523c819186d42c397953f07f",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "530ca34094599171de3248115b4deacda4b601dca8caf47c6d90e06bf1280d20"
+    },
+    "002-学习笔记/课程学习/编译原理/C3 Grammer.md": {
+      "page_id": "page_8ebd416dc13c8191b3225c719fc02669",
+      "url": "https://chatgpt.com/space/page_8ebd416dc13c8191b3225c719fc02669",
+      "title": "C3 Grammer",
+      "parent_page_id": "page_55476665523c819186d42c397953f07f",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "f351fa410bf1929724d297e07f4d5e5af8197fdff0b065fbfbd4223539b468ab"
+    },
+    "002-学习笔记/课程学习/编译原理/C4 语义分析.md": {
+      "page_id": "page_cf1041c31060819192350f16929ee945",
+      "url": "https://chatgpt.com/space/page_cf1041c31060819192350f16929ee945",
+      "title": "C4 语义分析",
+      "parent_page_id": "page_55476665523c819186d42c397953f07f",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "96279db039abbf767f63e73a04a0b6a6869d05bfe55a3c8d503a2e569abaaab2"
+    },
+    "002-学习笔记/课程学习/编译原理/C5 文法二义性.md": {
+      "page_id": "page_e14c770f1ff08191b0eaabd7cc975939",
+      "url": "https://chatgpt.com/space/page_e14c770f1ff08191b0eaabd7cc975939",
+      "title": "C5 文法二义性",
+      "parent_page_id": "page_55476665523c819186d42c397953f07f",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "0e812f4f6cf38f67a2a4181c604f2b8f0ba9483f57f120f757830a35cd85b2d3"
+    },
+    "002-学习笔记/课程学习/编译原理/C6 运行时的存储组织管理.md": {
+      "page_id": "page_bce71f6b66788191b1001585399e0203",
+      "url": "https://chatgpt.com/space/page_bce71f6b66788191b1001585399e0203",
+      "title": "C6 运行时的存储组织管理",
+      "parent_page_id": "page_55476665523c819186d42c397953f07f",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "135a51b1e5f2c56b0893933a36e212b66a78bbcec66b34b6542d7762580a63e2"
+    },
+    "002-学习笔记/课程学习/计算机网络/作业/第一章作业.md": {
+      "page_id": "page_8d77bf60fe748191b5ddd85e776959b4",
+      "url": "https://chatgpt.com/space/page_8d77bf60fe748191b5ddd85e776959b4",
+      "title": "第一章作业",
+      "parent_page_id": "page_116577b74c5c819181289c526ec6e871",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "339afaea74638d6d6b6b92d42df6dfecaee2ad20dec045913e96e1f7eae0fd78"
+    },
+    "002-学习笔记/课程学习/计算机网络/作业/第三章作业.md": {
+      "page_id": "page_641fe0a2a77081919f238b4ade735152",
+      "url": "https://chatgpt.com/space/page_641fe0a2a77081919f238b4ade735152",
+      "title": "第三章作业",
+      "parent_page_id": "page_116577b74c5c819181289c526ec6e871",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "d2f394d207887fbd92467eff42ff8967ea05fd1d46c27e46816fdabbbac77dc2"
+    },
+    "002-学习笔记/课程学习/计算机网络/作业/第二章作业.md": {
+      "page_id": "page_d1130ea3916481918bd96bc48327d6a4",
+      "url": "https://chatgpt.com/space/page_d1130ea3916481918bd96bc48327d6a4",
+      "title": "第二章作业",
+      "parent_page_id": "page_116577b74c5c819181289c526ec6e871",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "a3c520d98580c0e0d7089853d56a79fe1e8cc86e3380db47f667396129f06626"
+    },
+    "002-学习笔记/课程学习/计算机网络/作业/第五章作业.md": {
+      "page_id": "page_cb10e629f8c88191bde4759ab0cc8466",
+      "url": "https://chatgpt.com/space/page_cb10e629f8c88191bde4759ab0cc8466",
+      "title": "第五章作业",
+      "parent_page_id": "page_116577b74c5c819181289c526ec6e871",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "bc2be6a5b9e36dfdfc6968cb2a6268c2ae8e86aac7d883d18ff0fd83416cdc1c"
+    },
+    "002-学习笔记/课程学习/计算机网络/作业/第六章作业.md": {
+      "page_id": "page_49cb93302d0081918e49574da8da139c",
+      "url": "https://chatgpt.com/space/page_49cb93302d0081918e49574da8da139c",
+      "title": "第六章作业",
+      "parent_page_id": "page_116577b74c5c819181289c526ec6e871",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "5db35f426397f87be92caeb6c188a874ac99cd917e86c99be83de5c1b7319524"
+    },
+    "002-学习笔记/课程学习/计算机网络/作业/第四章作业.md": {
+      "page_id": "page_6f734c545f3081918d93673230cbeefc",
+      "url": "https://chatgpt.com/space/page_6f734c545f3081918d93673230cbeefc",
+      "title": "第四章作业",
+      "parent_page_id": "page_116577b74c5c819181289c526ec6e871",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "b50dce65490cf634f43a5e112cd25b79d7df13eae22c0a5db40af7fd99fa7d57"
+    },
+    "002-学习笔记/课程学习/计算机网络/笔记/IP地址与配置的理解.md": {
+      "page_id": "page_e8277cdaecdc819183a857aa3ae4dfab",
+      "url": "https://chatgpt.com/space/page_e8277cdaecdc819183a857aa3ae4dfab",
+      "title": "IP地址与配置的理解",
+      "parent_page_id": "page_cac44d49613081919a038c2e87e8a105",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "cf6cbfb60bc30e238820a09ba76e27d0b86eea0277c139efafb7dc566a53ecb0"
+    },
+    "002-学习笔记/课程学习/计算机网络/笔记/不同类型网络链路层传输帧格式及使用协议.md": {
+      "page_id": "page_496716c9912c8191872a8fe0b48c4021",
+      "url": "https://chatgpt.com/space/page_496716c9912c8191872a8fe0b48c4021",
+      "title": "不同类型网络链路层传输帧格式及使用协议",
+      "parent_page_id": "page_cac44d49613081919a038c2e87e8a105",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "71f5ddd4d664a460ee2cba09950088e09a269d91daaaaffcc5ea0fe1798bd364"
+    },
+    "002-学习笔记/课程学习/计算机网络/笔记/以太网通信的物理设备.md": {
+      "page_id": "page_399029d60f80819189ff6b554615366e",
+      "url": "https://chatgpt.com/space/page_399029d60f80819189ff6b554615366e",
+      "title": "以太网通信的物理设备",
+      "parent_page_id": "page_cac44d49613081919a038c2e87e8a105",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "58f1f3683870e7b085cfa95bc544e9fa496b9dae3f15c054d9dd0da44d1f1086"
+    },
+    "002-学习笔记/课程学习/计算机网络/读书笔记/读书笔记2.md": {
+      "page_id": "page_5e305259ee7c819189e4fc9818a207b4",
+      "url": "https://chatgpt.com/space/page_5e305259ee7c819189e4fc9818a207b4",
+      "title": "读书笔记2",
+      "parent_page_id": "page_91f717fe00588191b48d8947d4692204",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "204af683eda18a5ed8308b465685f10d80869b1b97da4fc05a7e41d5da926bcf"
+    },
+    "002-学习笔记/课程学习/计算机网络/读书笔记/读书笔记5.md": {
+      "page_id": "page_c249bc4263808191a5c4443a81a7210d",
+      "url": "https://chatgpt.com/space/page_c249bc4263808191a5c4443a81a7210d",
+      "title": "读书笔记5",
+      "parent_page_id": "page_91f717fe00588191b48d8947d4692204",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "d2f275925a9af81a8be885614612b6c946be362e81d99748953131c277d11591"
+    },
+    "002-学习笔记/课程学习/计算机网络/读书笔记/读书笔记6.md": {
+      "page_id": "page_88ad5e854fa08191886df09413075b3b",
+      "url": "https://chatgpt.com/space/page_88ad5e854fa08191886df09413075b3b",
+      "title": "读书笔记6",
+      "parent_page_id": "page_91f717fe00588191b48d8947d4692204",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "2a9ba6232151ee9cbbc2f38f7f749e63300129477d395ef9f79d211932004c76"
+    },
+    "002-学习笔记/课程学习/软件安全/C1 软件安全基本概念.md": {
+      "page_id": "page_9b8d7dcbd3c48191900a510e9c34f85f",
+      "url": "https://chatgpt.com/space/page_9b8d7dcbd3c48191900a510e9c34f85f",
+      "title": "C1 软件安全基本概念",
+      "parent_page_id": "page_d778182e95c88191907e658bd28e2a67",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "8fe2fc2935cc9a9ad04022ca72867c63c2e38937764c112a4f9b0992a0cb97b8"
+    },
+    "002-学习笔记/课程学习/软件安全/C3 进程内存空间.md": {
+      "page_id": "page_64664fd280a88191ad75fbe623ff9701",
+      "url": "https://chatgpt.com/space/page_64664fd280a88191ad75fbe623ff9701",
+      "title": "C3 进程内存空间",
+      "parent_page_id": "page_d778182e95c88191907e658bd28e2a67",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "f297e56be6f805cfb7fc085b01d491d8bf40a7769e0db19d4211153f338497fe"
+    },
+    "002-学习笔记/课程学习/软件安全/C4 PE 文件加载到内存.md": {
+      "page_id": "page_25101ce9c9588191a007e84cdf7e7c30",
+      "url": "https://chatgpt.com/space/page_25101ce9c9588191a007e84cdf7e7c30",
+      "title": "C4 PE 文件加载到内存",
+      "parent_page_id": "page_d778182e95c88191907e658bd28e2a67",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "1621d5af70a97d563c04ddba8d620d43c49771a9cb3acdd4f376cf94d44213c7"
+    },
+    "002-学习笔记/课程学习/软件安全/C6 漏洞挖掘.md": {
+      "page_id": "page_2274f9ac513881918ced08bca2e30c05",
+      "url": "https://chatgpt.com/space/page_2274f9ac513881918ced08bca2e30c05",
+      "title": "C6 漏洞挖掘",
+      "parent_page_id": "page_d778182e95c88191907e658bd28e2a67",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "3a0ecfa603e91414fbe92daa28e1004ec7eac4fa791d9340d08b2318cb50ec3a"
+    },
+    "002-学习笔记/课程学习/软件安全/C7 渗透测试.md": {
+      "page_id": "page_f07a87b77b488191bd448e84f17cbe02",
+      "url": "https://chatgpt.com/space/page_f07a87b77b488191bd448e84f17cbe02",
+      "title": "C7 渗透测试",
+      "parent_page_id": "page_d778182e95c88191907e658bd28e2a67",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "a0741e7aa741cd0aadb138590edeba019db967eb38b3365ea4f9fa4e76d429d9"
+    },
+    "002-学习笔记/课程学习/软件安全/C8 Web渗透.md": {
+      "page_id": "page_2aa0ed3078f4819184573edd5cfeb136",
+      "url": "https://chatgpt.com/space/page_2aa0ed3078f4819184573edd5cfeb136",
+      "title": "C8 Web渗透",
+      "parent_page_id": "page_d778182e95c88191907e658bd28e2a67",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "e4538ae5d2fbd2f2a333d7a66437e58591c119346cb8f192b5c20e65a448a618"
+    },
+    "002-学习笔记/零碎知识笔记/BIO、NIO、AIO 理论体系.md": {
+      "page_id": "page_3277095c1e7481918c0200dca052cf1b",
+      "url": "https://chatgpt.com/space/page_3277095c1e7481918c0200dca052cf1b",
+      "title": "BIO、NIO、AIO 理论体系",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "2cfa25380adc3478b2cda452b72f5d87409edea7780b50bc0677a0416501cd86"
+    },
+    "002-学习笔记/零碎知识笔记/Clash Verge 使用手册.md": {
+      "page_id": "page_11eb7e981c1c8191bdb18ea58644b790",
+      "url": "https://chatgpt.com/space/page_11eb7e981c1c8191bdb18ea58644b790",
+      "title": "Clash Verge 使用手册",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "c5847b8f549efa066a2ce8cbc06a73ed96df0d2d85791df03d7852b1560f0148"
+    },
+    "002-学习笔记/零碎知识笔记/ClassLoader.md": {
+      "page_id": "page_4413a7a2667481919e3622bfc9b8c27f",
+      "url": "https://chatgpt.com/space/page_4413a7a2667481919e3622bfc9b8c27f",
+      "title": "ClassLoader",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "ab085f41bcea8fa38e4ab8675200e56e38ab87fbcadfc5c7c4176915084de4ae"
+    },
+    "002-学习笔记/零碎知识笔记/Docker 命令、网络配置.md": {
+      "page_id": "page_b6136748de6c819186b80dadb4ddabe2",
+      "url": "https://chatgpt.com/space/page_b6136748de6c819186b80dadb4ddabe2",
+      "title": "Docker 命令、网络配置",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "f4efedf7f08afdd9fb6937cc12ecfcdc36960f42d9911dbd5e6510c4c130ae7e"
+    },
+    "002-学习笔记/零碎知识笔记/Docker 部署使用命令工具.md": {
+      "page_id": "page_c480cac9badc819198c904febc0a85f8",
+      "url": "https://chatgpt.com/space/page_c480cac9badc819198c904febc0a85f8",
+      "title": "Docker 部署使用命令工具",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "e46bfc3432287e62949ddb39962745fb0afecfb73925b59d87c1fd796807e093"
+    },
+    "002-学习笔记/零碎知识笔记/JWT（Json Web Token）--》双Token.md": {
+      "page_id": "page_ae4541cff1908191873f3b7c164e7d45",
+      "url": "https://chatgpt.com/space/page_ae4541cff1908191873f3b7c164e7d45",
+      "title": "JWT（Json Web Token）--》双Token",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "e06019b4dfcec3bb3e3c4494f8f9eb89744d436fe8210cdc43a4d4f250a0d236"
+    },
+    "002-学习笔记/零碎知识笔记/OpenClaw 养成计划.md": {
+      "page_id": "page_6f87aeaf857081918bb011a3cea79860",
+      "url": "https://chatgpt.com/space/page_6f87aeaf857081918bb011a3cea79860",
+      "title": "OpenClaw 养成计划",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "082b0d8884c1e32dfc892ffe1a9c5865a272db249db57c13e1112810d5f71142"
+    },
+    "002-学习笔记/零碎知识笔记/SSE 通信.md": {
+      "page_id": "page_ab5522465d308191bfae09ee36f14e8d",
+      "url": "https://chatgpt.com/space/page_ab5522465d308191bfae09ee36f14e8d",
+      "title": "SSE 通信",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "e57c3f9e8ad6a19287597727f71167df11f6e6b941ea03c86257bea367a10e40"
+    },
+    "002-学习笔记/零碎知识笔记/Stream 并行计算的原则.md": {
+      "page_id": "page_74270c02ce7c8191a5734c058744a7fc",
+      "url": "https://chatgpt.com/space/page_74270c02ce7c8191a5734c058744a7fc",
+      "title": "Stream 并行计算的原则",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "4897f10531c5d3e1ffcf5e38fbda73c9caa349f1e1f440d36f83ccf67f6a1132"
+    },
+    "002-学习笔记/零碎知识笔记/WebSocket 配置.md": {
+      "page_id": "page_335b3e851b0c8191b4c4bc0bfe2348c4",
+      "url": "https://chatgpt.com/space/page_335b3e851b0c8191b4c4bc0bfe2348c4",
+      "title": "WebSocket 配置",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "c71be7d019ff20c011f293c9198b49eeb2c1d51cd0e0c35d918ae3d752d1acc2"
+    },
+    "002-学习笔记/零碎知识笔记/函数式编程的接口方法.md": {
+      "page_id": "page_246f7656196c8191959f432cfd89ba40",
+      "url": "https://chatgpt.com/space/page_246f7656196c8191959f432cfd89ba40",
+      "title": "函数式编程的接口方法",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "a33e33e1d45c2512d0210119cc6f57f1ef95e4b9b8f7250ec3ab473c31715d5c"
+    },
+    "002-学习笔记/零碎知识笔记/异常处理通用流程.md": {
+      "page_id": "page_46646bb3bbb08191a9f330d1e217bd37",
+      "url": "https://chatgpt.com/space/page_46646bb3bbb08191a9f330d1e217bd37",
+      "title": "异常处理通用流程",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "4d81720abde6cc4b6b1fc45035c31cafdd8e525f00a14dd9807dc6c96b953b8f"
+    },
+    "002-学习笔记/零碎知识笔记/提示词工程.md": {
+      "page_id": "page_a3512005c4448191bf5a716a96dc3b64",
+      "url": "https://chatgpt.com/space/page_a3512005c4448191bf5a716a96dc3b64",
+      "title": "提示词工程",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "59bc50e3832a6533050d4f46fd281e048cf1398684f59558b797ac99ba664e48"
+    },
+    "002-学习笔记/零碎知识笔记/虚拟机的网络虚拟化.md": {
+      "page_id": "page_98ee309b59888191933c3a048aa4ca95",
+      "url": "https://chatgpt.com/space/page_98ee309b59888191933c3a048aa4ca95",
+      "title": "虚拟机的网络虚拟化",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "004d57b5008e8232e6d6f8b3b353da1eb4ec67dc49d130c42b91729df800ae0c"
+    },
+    "002-学习笔记/零碎知识笔记/虚拟线程&协程.md": {
+      "page_id": "page_b969025160088191b73b58a0aeaa0ed0",
+      "url": "https://chatgpt.com/space/page_b969025160088191b73b58a0aeaa0ed0",
+      "title": "虚拟线程&协程",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "e187a9a2a919d7a5fdaa39cd56ae23de94472956109ced90e3eca3b6f218d138"
+    },
+    "002-学习笔记/零碎知识笔记/跨域问题.md": {
+      "page_id": "page_ef1b08e902fc8191a7ad93a5fed9e65e",
+      "url": "https://chatgpt.com/space/page_ef1b08e902fc8191a7ad93a5fed9e65e",
+      "title": "跨域问题",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "36cdc44c100afd157edcce87115e75a07cd9c0122cfb9e8eb72ca5f1779558d4"
+    },
+    "002-学习笔记/零碎知识笔记/（反）序列化对字段类型（getter、setter）要求.md": {
+      "page_id": "page_c62ef0d3b4088191bc244dd20f3421f1",
+      "url": "https://chatgpt.com/space/page_c62ef0d3b4088191bc244dd20f3421f1",
+      "title": "（反）序列化对字段类型（getter、setter）要求",
+      "parent_page_id": "page_73c8e56be75c8191868f2d698e9e02e2",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "4d3b2f96397248c986bdcf22178a065b7e74a84adc7ca47ca07581832d802641"
+    },
+    "002-学习笔记/面试准备/Redis 篇/Redis 使用场景.md": {
+      "page_id": "page_85e782d077b88191a09ca1255aea6a09",
+      "url": "https://chatgpt.com/space/page_85e782d077b88191a09ca1255aea6a09",
+      "title": "Redis 使用场景",
+      "parent_page_id": "page_ee29968016cc8191a7b37dca09d43b10",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "d22ed9a2f99c81f02336a6210d1bfc6076ff4720f3f3c2033dc855f54c1d1640"
+    },
+    "002-学习笔记/面试准备/数据库篇/MySQL.md": {
+      "page_id": "page_ea99cf7b11b08191883576c1627f16c6",
+      "url": "https://chatgpt.com/space/page_ea99cf7b11b08191883576c1627f16c6",
+      "title": "MySQL",
+      "parent_page_id": "page_cf55cda0a2e0819187fabcd48b9c1785",
+      "kind": "note",
+      "populated": true,
+      "source_sha256": "2098520d3f7f94e25671f331f6306abf601d3cb4d1995758c10f899fcc2c3a9d"
+    },
+    "@inline-demo": {
+      "page_id": "page_7708f2b5219c8191830d9951e2283249",
+      "title": "行内格式兼容测试",
+      "url": "https://chatgpt.com/space/page_7708f2b5219c8191830d9951e2283249",
+      "parent_page_id": "page_315d46fa88308191b4aca477c390936a",
+      "kind": "system"
+    },
+    "@catalog": {
+      "page_id": "page_2544adb0401c81918c557defea20a577",
+      "title": "笔记与 Worker 关联索引",
+      "url": "https://chatgpt.com/space/page_2544adb0401c81918c557defea20a577",
+      "parent_page_id": "page_315d46fa88308191b4aca477c390936a",
+      "kind": "system"
+    }
+  },
+  "assets": {
+    "003-Attachments/convnext-t-two-level.png": {
+      "page_id": "page_6af5a1168c7c8191acc0c435f00e18e2",
+      "reference": "library-file:fde1_bGliZmlsZV9GMEpwLTBMOUFOVjlsVnB2ZVUxQldR_FileDrive_b3f6a7801bb481918a512e3a7ded2724",
+      "file_name": "convnext-t-two-level-0f670d2f307f430faa9770a8eb7acf8a.png",
+      "mime_type": "image/jpeg",
+      "byte_size": 170340,
+      "sha256": "e3e95ef3dcdbdfb319aade768f0d05e5b2abc2d7a69a2ee0ea275abae22ab8aa",
+      "file_access_confirmed": true,
+      "is_image": true,
+      "markdown": "![convnext-t-two-level.png](library-file:fde1_bGliZmlsZV9GMEpwLTBMOUFOVjlsVnB2ZVUxQldR_FileDrive_b3f6a7801bb481918a512e3a7ded2724)",
+      "inserted": false,
+      "next_step": "Read the Page and use edit_page with its fresh guards to insert markdown."
+    }
+  },
+  "controller": {
+    "threadId": "01a1cf78-a31d-7541-9deb-28bde445a168"
+  },
+  "experts": {
+    "engineering": {
+      "threadId": "01a1cf7f-14a4-7752-8fb7-fb1b00522a45",
+      "title": "Worker 知识库工程"
+    },
+    "media": {
+      "threadId": "01a1cf85-fb15-71c3-ac4b-34ca1f7dbc9a",
+      "title": "Worker 笔记图文与格式"
+    }
+  },
+  "createdAt": "2026-11-12",
+  "curator": {
+    "threadId": "01a1cf87-561b-7e40-91e9-246b0d676f85",
+    "title": "Worker 每周归纳"
+  },
+  "router": {
+    "threadId": "01a1cf78-a31d-7541-9deb-28bde445a168"
+  },
+  "workers": {
+    "engineering": {
+      "threadId": "01a1cf7f-14a4-7752-8fb7-fb1b00522a45",
+      "title": "Worker 知识库工程"
+    },
+    "media": {
+      "threadId": "01a1cf85-fb15-71c3-ac4b-34ca1f7dbc9a",
+      "title": "Worker 笔记图文与格式"
+    },
+    "curator": {
+      "threadId": "01a1cf87-561b-7e40-91e9-246b0d676f85",
+      "title": "Worker 每周归纳"
+    }
+  }
+}

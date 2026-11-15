@@ -315,6 +315,21 @@ describe("link strategies", () => {
   })
 })
 
+test("explicit and existing note-relative image paths survive shortest-link resolution", () => {
+  const source = "002-学习笔记/课程学习/离散数学/离散数学笔记" as FullSlug
+  const image = "002-学习笔记/课程学习/离散数学/pictures/SubstitutionRules.png" as FullSlug
+  const options = { strategy: "shortest" as const, allSlugs: [source, image] }
+  assert.strictEqual(
+    path.transformLink(source, "./pictures/SubstitutionRules.png", options),
+    "./pictures/SubstitutionRules.png",
+  )
+  assert.strictEqual(
+    path.transformLink(source, "pictures/SubstitutionRules.png", options),
+    "../../../002-学习笔记/课程学习/离散数学/pictures/SubstitutionRules.png",
+  )
+  assert.strictEqual(path.transformLink(source, "../概率论", options), "../概率论")
+})
+
 describe("resolveRelative", () => {
   test("from index", () => {
     assert.strictEqual(path.resolveRelative("index" as FullSlug, "index" as FullSlug), "./")

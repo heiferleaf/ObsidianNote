@@ -15,7 +15,8 @@ export async function glob(
     await globby(pattern, {
       cwd,
       ignore: ignorePatterns,
-      gitignore: true,
+      // Staging is deliberately Git-ignored; publication exclusions still apply above.
+      gitignore: process.env.QUARTZ_STAGED_CONTENT !== "1",
     })
   ).map(toPosixPath)
   return fps as FilePath[]

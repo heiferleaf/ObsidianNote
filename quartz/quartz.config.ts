@@ -8,46 +8,47 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "ObsidianNote",
-    pageTitleSuffix: "",
+    pageTitle: "yhf.",
+    pageTitleSuffix: " · yhf. 学习笔记",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
     locale: "zh-CN",
-    baseUrl: "/ObsidianNote/",
-    ignorePatterns: ["private", ".obsidian"],
+    baseUrl: "heiferleaf.github.io/ObsidianNote",
+    // Apply publication exclusions before parsing so every index agrees with the output.
+    ignorePatterns: ["private", ".obsidian", "**/*练习*/**", "**/*作业*/**", "**/*.excalidraw.md"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: "Manrope",
+        body: "Inter",
         code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#f4f3ee",
+          lightgray: "#dedfd6",
+          gray: "#616f64",
+          darkgray: "#3c4940",
+          dark: "#222c28",
+          secondary: "#355a43",
+          tertiary: "#b74931",
+          highlight: "rgba(89, 118, 83, 0.09)",
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#1c2420",
+          lightgray: "#3b453e",
+          gray: "#a0ada0",
+          darkgray: "#ccd5c8",
+          dark: "#e1e7dc",
+          secondary: "#b0c9a5",
+          tertiary: "#e6aa83",
+          highlight: "rgba(153, 181, 138, 0.12)",
           textHighlight: "#b3aa0288",
         },
       },
@@ -58,6 +59,7 @@ const config: QuartzConfig = {
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "git", "filesystem"],
+        sourceRoot: "..",
       }),
       Plugin.SyntaxHighlighting({
         theme: {
@@ -82,8 +84,8 @@ const config: QuartzConfig = {
       Plugin.TagPage(),
       Plugin.ContentIndex({
         enableSiteMap: true,
-        enableRSS: false,  // 完全禁用 RSS 生成
-        rssSlug: "",      // 防止生成 index.xml
+        enableRSS: false, // 完全禁用 RSS 生成
+        rssSlug: "", // 防止生成 index.xml
       }),
       Plugin.Assets(),
       Plugin.Static(),

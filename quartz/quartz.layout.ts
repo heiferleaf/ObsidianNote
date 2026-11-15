@@ -8,8 +8,7 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/HeiferLeaf/ObsidianNote",
     },
   }),
 }
@@ -25,9 +24,12 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.Breadcrumbs(),
       condition: (page) => page.fileData.slug !== "index",
     }),
-    Component.ArticleTitle(),
-    Component.ContentMeta(),
-    Component.TagList(),
+    ...[Component.ArticleTitle(), Component.ContentMeta(), Component.TagList()].map((component) =>
+      Component.ConditionalRender({
+        component,
+        condition: (page) => page.fileData.slug !== "index",
+      }),
+    ),
   ],
   left: [
     Component.PageTitle(),
@@ -45,9 +47,16 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TopicRail(),
   ],
   right: [
-    Component.Graph(),
-    Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
+    ...[
+      Component.DesktopOnly(Component.TableOfContents()),
+      Component.Backlinks(),
+      Component.Graph(),
+    ].map((component) =>
+      Component.ConditionalRender({
+        component,
+        condition: (page) => page.fileData.slug !== "index",
+      }),
+    ),
   ],
 }
 

@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "pages": {
+    "page_1436cd746c348191aae25d662eaa0213": {
+      "kind": "native_indented_prose_blank_whitespace",
+      "path": "002-学习笔记/技术栈/计算机系统基础/操作系统/进程和线程.md",
+      "page_id": "page_1436cd746c348191aae25d662eaa0213",
+      "source_sha256": "f09804843a8b28fa811dc8d6bcbd93879e6dd0e1454375a8172bda5f541823f9",
+      "expected_body_sha256": "7a07720fac2bb2b569a9816218aaad221f768f0a20cd36ccbb0b249f0f762a78",
+      "actual_body_sha256": "c3f0fa3bda43065c30f5df2c76556cb0bce1d118ea4e0abde6ec3c7bcac55f04",
+      "expected_structure_sha256": "8ca1ceff97967af1a9947e46c4b95f900b38f005c7e1ae810942b236a920d5f8",
+      "actual_structure_sha256": "dc34f8947d997fe87d7bf6f4f1a93bfb2f70af8fa8a44f37f635ad4fb70c16b2",
+      "nonblank_markdown_sha256": "22f85776985cdf75ba3ea25bf72e3dd215eaee7f712088aa55ef62c1bbeb900b",
+      "reason": "Reviewed by Controller: only whitespace-only lines and trailing blank lines in unlanguaged indented prose blocks were normalized by Pages. Every nonempty Markdown line including indentation and every fenced/languaged code byte is unchanged. Original source bytes remain preserved and guarded by source SHA256.",
+      "reviewed_at": "2026-11-14T09:27:21.203Z"
+    },
+    "page_8a7e001dd0908191a5ea47ad8a1790c6": {
+      "kind": "native_indented_prose_blank_whitespace",
+      "path": "002-学习笔记/技术栈/分布式软件/分布式软件理论.md",
+      "page_id": "page_8a7e001dd0908191a5ea47ad8a1790c6",
+      "source_sha256": "d9a70d4cab17bbe8100bc83aaabe41ee8dbed13c9cf978fbbc70bfb9d8cd6073",
+      "expected_body_sha256": "b9583e9dbff6fea0f643491769c42c0521959fc265b8f518ff7908cf1dff9e02",
+      "actual_body_sha256": "7affb63f936dfd735ac5e59990754c1e81c4a6ac4e749006b9cf719925586b03",
+      "expected_structure_sha256": "de7043b42d565c69ba07f3b8827c6fd0594ff2ac5306e032999acd31bbb57b8b",
+      "actual_structure_sha256": "81d3d6254a15701e0d5fcbe7db82f5062b734f36dcbc24b3953636419966aa0b",
+      "nonblank_markdown_sha256": "d980f3b3796c5ba9421075549a37181637637866a4e0233be37713c6d902668b",
+      "reason": "Reviewed by Controller: only whitespace-only lines and trailing blank lines in unlanguaged indented prose blocks were normalized by Pages. Every nonempty Markdown line including indentation and every fenced/languaged code byte is unchanged. Original source bytes remain preserved and guarded by source SHA256.",
+      "reviewed_at": "2026-11-14T09:27:21.411Z"
+    },
+    "page_f73fdd8eee488191a621ae1f4516418a": {
+      "kind": "math_region_native_boundaries",
+      "path": "002-学习笔记/课程学习/机器学习/叶海峰期末总复习.md",
+      "page_id": "page_f73fdd8eee488191a621ae1f4516418a",
+      "source_sha256": "d2079ef333556c37514431b9ac7d2d4e5ff42dc8cf7b4a9913a07a734d7e6718",
+      "expected_body_sha256": "ac816f178387124b2b1cbe157e289d45dc5e223fe237bc971e39bbcde6f917ca",
+      "actual_body_sha256": "07108f0f542bdc3aacaf8eff996d719fa09e511505208b06563507e91b1b1322",
+      "expected_structure_sha256": "2638d3afc4a6f481b03be06e3942b792c00c7aff5cda0e1fbe8a3e29f3d29b4e",
+      "actual_structure_sha256": "2721b127c4b58a66519914514680b270e736ff6b876bf0ccf6f652801bf9dab3",
+      "nonblank_markdown_sha256": "df9ef6a568a36734d9e584bd7006747898db8ca44378e5cbb06c2c41af9de9d1",
+      "reason": "Controller reviewed mathematical-region/native boundaries: 2058 trimmed nonempty Markdown lines retain their order and text; all 121 code payloads, 10 inline code values, 123 headings, 3 links, quoted markers/depths and written step numbers remain identical. Only mathematical paragraph indentation and paragraph/list boundaries were normalized by Pages.",
+      "reviewed_at": "2026-11-14T09:36:36.233Z"
+    },
+    "page_7930b23fbeec8191956d066726cf1a8c": {
+      "kind": "native_indented_prose_blank_whitespace",
+      "path": "002-学习笔记/课程学习/离散数学/离散数学笔记.md",
+      "page_id": "page_7930b23fbeec8191956d066726cf1a8c",
+      "source_sha256": "ce066a12841ca20bf88eca8089797eb81bd3aa1d93dfa5b17b247b1220475b8f",
+      "expected_body_sha256": "6bb3f34692031c65652ad83a4705a686f7ea8a2e1092cfb42c3ba98fc2e7c188",
+      "actual_body_sha256": "b7e53601f072d9223689e5d0217563964af38d57780b356515983779902fef8f",
+      "expected_structure_sha256": "cff17014abf42a7cf78d883260b14d812784eebbd690402b75cc267734737bde",
+      "actual_structure_sha256": "9634033dc12d6fce29869a9f51cae1acf7aa2f57d40c7e1bb613d31489997b88",
+      "nonblank_markdown_sha256": "1ce92f5d5c9249a9ecbfbab3d0233a6bfe14435692bb78d2d8a2eb90c90e28b0",
+      "reason": "Controller reviewed native prose formatting: 1648 trimmed nonempty Markdown lines, 178 headings, 7 images, 6 inline code values and all quote/list structures remain unchanged. Only whitespace-only lines and trailing blanks in an unlanguaged indented quote/prose fragment were normalized by Pages; every fenced/languaged code byte stays strict.",
+      "reviewed_at": "2026-11-14T09:36:36.596Z"
+    }
+  }
+}
