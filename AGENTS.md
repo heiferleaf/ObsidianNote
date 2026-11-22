@@ -26,7 +26,7 @@ Worker 通过 `.codex/docs` 共享结论、Router 中转协调、项目负责 Pa
 - ID 从 `.knowledge/state.json`、`manifest.json`、`threads.json` 与 live 工具回执读取；不硬编码、不猜造、不混用 Space ID 与 Page ID。
 - 原始迁入笔记 `source_thread=null`；维持者另记 `maintainer_expert`。聊天 ID 只存管理文件，学习正文仅放用户可理解的关联链接。
 - 笔记与 Worker 表仅维护本次规则生效后新建的笔记；已有笔记不补录，编辑、更名、移动也不自动入表。已收录笔记查找和返工先查持久表；旧笔记通过 manifest、Pages 和本地正文定位。catalog-policy.json 保留既有 Page ID 排除范围，每周只核验已收录项。字段及流程见 Router 的 references/note-catalog.md。
-- 新模板先创建为 inbox 的真实子页；归档用同 Space 的 `move_page`，保留原 Page ID、历史与链接。
+- 临时笔记用于用户自行创建、待整理的页面；每周只归档其中由用户自行创建的直接子页。Router 或 Worker 创建的笔记（含模板、用户提供正文和聊天总结）直接放入合适的正式目录，目录无法确定时先澄清再创建。以页面创建方式判断，不把“用户提供正文”等同于“用户自行创建页面”；创建方式在 manifest 的 page_creator 中记录为 user / agent / unknown，无法核实的不猜。归档用同 Space 的 `move_page`，保留原 Page ID、历史与链接。
 - 修改前读取目标及 guidance，带最新块 hash/sequence；不整页重写无关内容。结果不明先读回核对。
 - 全量 live Pages 导出保存在 `.knowledge/exports/<page_id>.json` 后再反向转换。用远端摘要和本地 SHA256 比较基线，双边改动标为 conflict，不静默覆盖。未验证迁入页和空占位页不得覆盖原笔记。
 - 附件必须有本地文件与映射才能构建发布；不猜页内锚点；保留源 frontmatter 和人工 tags。

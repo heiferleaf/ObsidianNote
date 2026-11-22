@@ -10343,6 +10343,70 @@
       "parent_page_id": "page_315d46fa88308191b4aca477c390936a",
       "kind": "system",
       "path": "@catalog"
+    },
+    "page_74ff69520eb08191944450b013f6732a": {
+      "page_id": "page_74ff69520eb08191944450b013f6732a",
+      "path": "002-学习笔记/技术栈/计算机系统基础/从字符到字节 完整知识链条.md",
+      "kind": "note",
+      "title": "从字符到字节：完整知识链条",
+      "url": "https://chatgpt.com/space/page_74ff69520eb08191944450b013f6732a",
+      "parent_page_id": "page_201e6d1d07a48191bc4781233570ae01",
+      "origin": "manual",
+      "source_thread": null,
+      "maintainer_expert": null,
+      "source_frontmatter": {
+        "title": "从字符到字节：完整知识链条",
+        "created": "2026-11-18T07:45:00.057913Z",
+        "modified": "2026-11-18T07:45:01.347066Z",
+        "tags": [
+          "字符编码",
+          "Unicode",
+          "UTF-8",
+          "Java",
+          "PowerShell"
+        ],
+        "subject": "字符编码与文本 I/O",
+        "note_type": "通用知识",
+        "aliases": [
+          "字符与字节",
+          "字符集与编码",
+          "Java 字符编码",
+          "锟斤拷"
+        ],
+        "status": "filed",
+        "sources": [
+          "https://www.rfc-editor.org/info/rfc20/",
+          "https://www.unicode.org/faq/utf_bom.html",
+          "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=5664A728BD9D523DE3B99BC37AC7A2CC",
+          "https://www.unicode.org/versions/Unicode16.0.0/UnicodeStandard-16.0.pdf",
+          "https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Character.html",
+          "https://www.oracle.com/java/technologies/javase/9-relnotes.html",
+          "https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/nio/file/Files.html",
+          "https://docs.oracle.com/en/java/javase/25/migrate/migrating-jdk-8-later-jdk-releases.html",
+          "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_character_encoding?view=powershell-7.4"
+        ]
+      },
+      "source_frontmatter_raw": "---\ntitle: \"从字符到字节：完整知识链条\"\ncreated: \"2026-11-18T07:45:00.057913Z\"\nmodified: \"2026-11-18T07:45:01.347066Z\"\ntags: [\"字符编码\",\"Unicode\",\"UTF-8\",\"Java\",\"PowerShell\"]\nsubject: \"字符编码与文本 I/O\"\nnote_type: \"通用知识\"\naliases: [\"字符与字节\",\"字符集与编码\",\"Java 字符编码\",\"锟斤拷\"]\nstatus: \"filed\"\nsources: [\"https://www.rfc-editor.org/info/rfc20/\",\"https://www.unicode.org/faq/utf_bom.html\",\"https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=5664A728BD9D523DE3B99BC37AC7A2CC\",\"https://www.unicode.org/versions/Unicode16.0.0/UnicodeStandard-16.0.pdf\",\"https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Character.html\",\"https://www.oracle.com/java/technologies/javase/9-relnotes.html\",\"https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/nio/file/Files.html\",\"https://docs.oracle.com/en/java/javase/25/migrate/migrating-jdk-8-later-jdk-releases.html\",\"https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_character_encoding?view=powershell-7.4\"]\n---\n",
+      "aliases": [
+        "字符与字节",
+        "字符集与编码",
+        "Java 字符编码",
+        "锟斤拷"
+      ],
+      "migration_status": "verified",
+      "verification_comparison": "user-supplied text checked against complete live Page readback; seven sections, code and original source links preserved",
+      "verification_issues": [],
+      "baseline": {
+        "remote_sha256": "86b7faf8724f9feea3205d79aaf4586d3159a2a2bea3079c2e8d5d60afc43daf",
+        "local_sha256": "59e0a4a49671162a8fb34b710503c90692df8fe7b8075c10b10e0cf49f7f9cba",
+        "synced_at": "2026-11-22T12:07:19.812Z"
+      },
+      "page_creator": "agent",
+      "page_creation_evidence": {
+        "kind": "create_page_receipt",
+        "receipt": ".knowledge/requests/created-encoding-note-receipt.json",
+        "actor_type": "agent"
+      }
     }
   },
   "attachments": {

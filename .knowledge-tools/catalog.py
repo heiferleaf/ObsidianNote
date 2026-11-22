@@ -244,7 +244,7 @@ def export(root):
     def expert_link(row, role):
         key = row.get('maintainer_expert' if role == 'maintainer' else 'source_thread')
         title = row.get('maintainer_expert_title' if role == 'maintainer' else 'source_expert_title')
-        return '[' + label(title) + '](codex://threads/' + key + ')' if key else '待关联' if role == 'maintainer' else '历史迁入' if row['origin'] == 'imported' else '暂无'
+        return '[' + label(title) + '](codex://threads/' + key + ')' if key else '待关联' if role == 'maintainer' else '历史迁入' if row['origin'] == 'imported' else '用户提供' if row['origin'] == 'manual' else '暂无'
     lines = ['本表仅维护之后新建的学习笔记与 Worker 关联。新建时登记，Worker 每周归纳核验目录、聊天状态并刷新本表。', '', '已有笔记不补录，后续编辑、更名或移动也不会自动加入本表。已有笔记仍可通过 Pages 和本地正文查找。', '', '# 新建笔记索引', '', '| 笔记 | 主题 | 类型 | 维护 Worker | 学习来源 | 关联状态 | 最近关联核验 |', '| --- | --- | --- | --- | --- | --- | --- |']
     statuses = {'unassigned': '待关联', 'assigned': '已关联', 'needs_review': '需复核'}
     for row in rows:

@@ -1,6 +1,6 @@
 ---
 name: knowledge-curator
-description: 每周整理本学习知识库 inbox 直接子页，按真实目录移动归档，双向同步 Pages 与本地学习 Markdown，并验证 Quartz 后提交推送本轮文件。
+description: 每周整理本学习知识库 inbox 中用户自行创建的直接子页，按真实目录移动归档，双向同步 Pages 与本地学习 Markdown，并验证 Quartz 后提交推送本轮文件。
 ---
 
 # 学习知识库归纳员
@@ -9,7 +9,9 @@ description: 每周整理本学习知识库 inbox 直接子页，按真实目录
 
 ## 本周归档
 
-从管理文件取得并验证 Space/root/inbox 的真实 ID。先读取根与 inbox guidance，再 `list_pages(parent_page_id=inbox)` 分页直到 `next_cursor=null`，即使某页 items 为空也继续。检查实际 parent，只处理 **inbox 直接子页**；不递归归档它们的后代，不动学习待办、使用说明或旧 Space。
+从管理文件取得并验证 Space/root/inbox 的真实 ID。先读取根与 inbox guidance，再 `list_pages(parent_page_id=inbox)` 分页直到 `next_cursor=null`，即使某页 items 为空也继续。检查实际 parent 与页面创建方式，只归档 **inbox 中用户自行创建的直接子页**；不递归归档它们的后代，不动学习待办、使用说明或旧 Space。
+
+根据 manifest 的 `page_creator`、创建回执或可核实的创建记录区分 user / agent / unknown。正文由用户提供、origin=manual 或创建账户属于用户，都不足以证明页面由用户自行创建。Router / Worker 创建的页应在创建时直接分类；发现历史遗留的代理创建页，不纳入每周人工临时笔记集合。无法确认创建方式时暂留并说明，不猜测或改写来源；确认后将依据写入 manifest。
 
 完整读取各待归档页，按主题、学习语境及内容类型选择已有最具体目录。课程题归课程上下文，独立概念归技术主题；不能靠标题关键词一刀切。使用 live 分页目录树核实目标目录及同 Space 关系。无法判断或正文未形成的页保留 inbox，说明原因；不发明结论。
 

@@ -4,7 +4,7 @@
 
 Pages「学习知识库」是未来学习正文的工作区。`002-学习笔记` 是本地 Markdown 镜像和 Quartz 来源。首次迁移保留原文件；将每页与原文比较、核实图片/公式/链接后，才标记该页 `migration_status: verified`。空占位或迁入未完成的页不能反向覆盖原笔记。日记、项目、根目录杂记与电子书不自动迁移；根 `Agent.md` 保留。
 
-Router 负责理解自然语言、真实建页、Worker 关联与委派。Worker 使用自己的完整学习对话整理或局部修改对应页。归纳员每周只归档 inbox 的直接子页，随后同步、验证 Quartz、提交推送。本机与应用必须可运行；定时任务在本地项目执行。Router 统一创建自动化，其他聊天不重复创建。
+Router 负责理解自然语言、真实建页、Worker 关联与委派。Worker 使用自己的完整学习对话整理或局部修改对应页。Router / Worker 创建的笔记直接放入合适的正式目录；inbox 留给用户自行创建、待整理的页面。归纳员每周只归档 inbox 中用户自行创建的直接子页，随后同步、验证 Quartz、提交推送。本机与应用必须可运行；定时任务在本地项目执行。Router 统一创建自动化，其他聊天不重复创建。
 
 归纳员的每周日北京时间 20:00 自动化已 ACTIVE 并绑定归纳员聊天，无需再建。正文以原生段落为主；含行内公式的段落用 HTML 可视化呈现，由 AI 同时维护源 Markdown 和 HTML，使公式与 inline code 在同一句排版。其他正文和 code 保持原生可编辑。
 
@@ -13,7 +13,7 @@ Router 负责理解自然语言、真实建页、Worker 关联与委派。Worker
 ## 管理数据与可恢复操作
 
 - `state.json`：当前 Space、root、`@inbox/@tasks/@guide` 的真实 IDs 和迁移期收据。读取工具时直接使用观测到的 ID，不重构字符串。
-- `manifest.json`：Router 维护的稳定 Page/目录/本地路径、附件和同步基线。下列脚本约定供 Router 首次写入时采用；已有不同 schema 时先适配，不用新文件覆盖。
+- `manifest.json`：Router 维护的稳定 Page/目录/本地路径、附件和同步基线。笔记的 page_creator 记录 user / agent / unknown，并保留可核实创建依据；它与正文来源 origin/source_thread 分开，不因用户提供正文就记为 user。下列脚本约定供 Router 首次写入时采用；已有不同 schema 时先适配，不用新文件覆盖。
 - `threads.json`：聊天与来源登记，结构为 `{version:1,threads:{threadId:record},pages:{page_id:association}}`。`threads` 中记录 `threadId/title/role/aliases/topics`；`pages` 中记录 `page_id/origin/source_thread/maintainer_expert/url`。
 - `catalog.sqlite`：由 manifest、threads 与本地正文自动生成的笔记/聊天/关联/历史查询表。Router 用 catalog search/show 定位和派工，不依赖会话记忆；输入摘要变化会自动重建。关联事实仍只通过 registry 锁合并，SQLite 为可重建索引。
 - 数据表只收录之后新建并登记的笔记；catalog-policy.json 的既有 Page ID 排除范围不得因更名、移动或返工而取消。旧笔记不生成关联索引，仍保留 manifest 映射和同步基线，用 Pages 与本地正文定位。
@@ -96,7 +96,7 @@ Worker 修改时保留同句文字、公式与 code，重新读 Page/guidance，
 
 ## 自然语言任务
 
-「建 XX 模板」一律先在真实 inbox 页下创建实际子 Page；用户只要空模板时，交付 Page 即可。先查并按需复用合适 Worker 作为维持者；仅在用户明确要求新建 Worker 聊天时才创建。先写角色文档，在首次提示中给出项目路径、角色文件和实际任务，允许它用本人真实 ID 登记自己；Router 随后确认登记并检查首次回复。空模板的 `source_thread` 仍为 null，真正从学习对话总结后才记录来源。按 [六类模板](../.codex/skills/knowledge-controller/references/templates.md) 选择结构，没有内容的段落省略；返回可用链接，不能只回复模板文本。
+「建 XX 模板」、保存用户提供正文或整理 Worker 总结时，先按主题选择并验证正式目录，再直接创建实际子 Page；归属无法确定时先澄清，不默认放入 inbox。manifest 中记录 page_creator=agent 和创建回执依据。用户只要空模板时，交付 Page 即可。先查并按需复用合适 Worker 作为维持者；仅在用户明确要求新建 Worker 聊天时才创建。先写角色文档，在首条消息中给出负责领域、项目路径、角色文档、实际任务和交付要求，Router 根据创建回执维护聊天清单并检查首次回复。空模板的 `source_thread` 仍为 null，真正从学习对话总结后才记录来源。按 [六类模板](../.codex/skills/knowledge-controller/references/templates.md) 选择结构，没有内容的段落省略；返回可用链接，不能只回复模板文本。
 
 「总结 WorkerXX」先按登记标题/别名定位，必要时分页读聊天。Router 向该 Worker 发送模板、准确父 Page ID/目标 Page ID、范围和写入约束，Worker 用自己完整的学习上下文写 Page 并在自己的最终回复交收据。Router 通过 `wait_threads`（保留 cursor）获取结果并 live 读回验证，再更新来源和维持者。用户已指明目标的委派无需重复确认；多义且上下文无法消解时才问。不能要求 Worker 未获用户授权便反向消息给 Router。
 
@@ -107,7 +107,7 @@ Worker 修改时保留同句文字、公式与 code，重新读 Page/guidance，
 以下依据本次已连接工具 schema（2026-11-12）整理；每次执行以 live schema、guidance 与回执为准，不使用旧 MCP 配置假设。
 
 - `list_spaces` 按 cursor 找当前 Space；旧笔记保存但未验证的 Space ID 先与 listing 精确匹配。`get_space` 返回 `root_page_id`，不能拿 Space ID 当 Page ID。
-- `list_pages(parent_page_id=实际页ID, space_id=已验证SpaceID)` 用于遍历真实子树。每一层持续跟随 `next_cursor`，即使 items 为空；检查 parent、partial_results 与 incomplete_reasons。用 BFS/DFS 读取目录树，但周归档处理集合只取 inbox 第一层。
+- `list_pages(parent_page_id=实际页ID, space_id=已验证SpaceID)` 用于遍历真实子树。每一层持续跟随 `next_cursor`，即使 items 为空；检查 parent、partial_results 与 incomplete_reasons。用 BFS/DFS 读取目录树，但周归档处理集合只取 inbox 第一层中用户自行创建的页面。
 - `create_page` 的 `initial_blocks` 是最多 100 个 Markdown 字符串。子页传真实 `parent_page_id`；同一创建沿用同一 `idempotency_key`，子页继承 Space。
 - `read_page({page_id,view:'full'})` 得到完整正文。默认 editing 无 selectors 时也是全块；过大默认读可改 full。`search`、`block_ids` 和 excerpts 只用于定位或刷新编辑 guards，不能当作同步快照。同步器拒绝不完整 selection、excerpts、scratch 与 native artifact。
 - 留存 successful `structuredContent` 为 `p`；真正编辑目标为 `p.content.page_id`。`metadata.parent.page_id` 是导航父级。块取 `b.id/b.hash`；sequence 仅用该次读返回的 `content.through_sequence`，没有就省略。

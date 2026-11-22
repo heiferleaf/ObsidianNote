@@ -10,7 +10,8 @@
 
 - `page_id/title/aliases/keywords/summary/subject/tags/note_type`：精确身份、可搜索标题别名、检索词、摘要、主题和模板类型。未知类型留空；机械摘录不是掌握程度或学习结论。
 - `page_url/local_path/parent_page_id`：真实页面入口、本地镜像和目录位置。
-- `origin/source_thread`：历史迁入、模板或 Worker 总结来源。历史迁入始终 source_thread=null；维护者不是学习来源。
+- manifest 的 `page_creator`：页面由 user / agent / unknown 哪种方式创建，与正文来源分开。Router / Worker 创建页记录 agent 和创建回执依据；每周只归档 inbox 中可确认由用户自行创建的页面，不把 origin=manual 或用户账户 ID 当作用户自行创建的证据。
+- `origin/source_thread`：历史迁入、用户提供、模板或 Worker 总结来源。用户直接提供正文时记 origin=manual、source_thread=null，content_source 说明正文来源；展示表显示“用户提供”。历史迁入始终 source_thread=null；维护者不是学习来源。
 - `maintainer_expert`：当前返工负责人；`contributor_experts` 是参与修改者。所有关联必须指向已登记且 role=worker 的实际聊天。
 - `association_status`：待关联、已关联或需复核。维持者已归档/确证不存在时保留原关联并标需复核，不悄悄改派。
 - `review_status/verification.checked_at/verification.evidence`：关联核验状态、实际核验时间和证据说明，不能拿内容同步时间冒充关联核验时间。

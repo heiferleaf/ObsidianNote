@@ -1,6 +1,6 @@
 ---
 name: knowledge-controller
-description: 在本学习知识库中按自然语言创建临时笔记和 Worker 聊天、总结指定 Worker、定位或局部修改学习笔记，并维护页面与聊天的真实关联。
+description: 在本学习知识库中按自然语言创建并分类学习笔记和 Worker 聊天、总结指定 Worker、定位或局部修改学习笔记，并维护页面与聊天的真实关联。
 ---
 
 # 学习知识库 Router
@@ -11,11 +11,11 @@ description: 在本学习知识库中按自然语言创建临时笔记和 Worker
 
 ## 建模板页与 Worker
 
-从 `.knowledge/state.json` 取得本 Space、根与 `@inbox` 的真实 ID，验证 live 父页可写。无论用户说「建一篇阅读笔记」还是「用课程模板记 XX」，先用 `create_page(parent_page_id=inbox实际PageID)` 创建**实际子页**，不只返回模板文字，也不提前放到最终分类目录。标题来自用户主题；模板只保留有用段落。
+从 `.knowledge/state.json` 和 manifest 取得本 Space 与候选目录的真实 ID，按归档规则选择最合适的正式目录，并验证 live 父页可写。Router 或 Worker 创建的笔记（含空模板、用户提供正文和聊天总结）直接用该目录的真实 `parent_page_id` 创建实际子页，不经过临时笔记。主题或归属无法确定时先澄清再创建。临时笔记仅用于用户自行创建、待每周整理的页面。标题来自用户主题；模板只保留有用段落。
 
 用户只要求空模板时，交付实际 Page 即可，不为每篇模板强制新建 Worker 聊天。先查登记表是否已有合适 Worker，可复用为 `maintainer_expert`。仅当用户明确要求新建 Worker 聊天时，才调用 `create_thread`，沿用本地项目工作目录；传入页面链接、真正父 Page ID、模板类型、主题范围及项目约束，登记精确 `threadId/title/role/aliases/topics`。
 
-空模板的 `source_thread` 始终为 null，关联或新建维持者不等于已有学习来源。真正从 Worker 的学习对话总结生成内容后，才记录该来源。不要把 Router、迁入任务或刚建立的空聊天冒充历史学习来源。
+空模板的 `source_thread` 始终为 null，关联或新建维持者不等于已有学习来源。真正从 Worker 的学习对话总结生成内容后，才记录该来源。不要把 Router、迁入任务或刚建立的空聊天冒充历史学习来源。新页在 manifest 记录 `page_creator:agent` 和创建回执依据；用户提供正文的 `origin:manual` 只说明正文来源，不能据此当作用户自行创建的页面。
 
 先持久化创建意图及幂等键，成功后保存精确回执与映射；超时先查现状，不重复建页/聊天。注册用 `registry.mjs` 锁定合并，不能用旧内存快照覆盖整个 `threads.json`。向用户返回可用的页面与 Worker 聊天入口，local 聊天链接采用已确认的 `codex://threads/<真实threadId>`。
 
@@ -28,7 +28,7 @@ description: 在本学习知识库中按自然语言创建临时笔记和 Worker
 用 `send_message_to_thread` 向用户指定的该 Worker 发总结任务，包含：
 
 - 用户要总结的学习范围与截止范围、选定模板和必须保留的例子/问题；
-- 目标 `page_id`（已有页）或 inbox 的**真正 `parent_page_id`**（需新建）、Space 与可读链接；
+- 目标 `page_id`（已有页）或已选正式目录的**真正 `parent_page_id`**（需新建）、Space 与可读链接；
 - 要求 Worker 使用它自己的完整对话上下文，区分已学结论、未解决问题和待核实内容；
 - 写前读取 Page/guidance，沿用新 guards 做局部编辑；需要新页时复用同一创建幂等键；
 - 普通正文与 code 保持原生；涉及行内公式的段落按下述维护流程同时更新源 Markdown、HTML 和映射，不改成编号附录；
